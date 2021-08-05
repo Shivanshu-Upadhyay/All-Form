@@ -38,7 +38,7 @@ function Hip() {
     
     <div className='respon'>
 
-      <h3 className="text-center"> Hip Evaluation</h3>
+      <h3 className="text-center mt-3"> Hip Evaluation</h3>
 
       <Form onSubmit={onSubmit} >
         {({ handleSubmit }) => (
