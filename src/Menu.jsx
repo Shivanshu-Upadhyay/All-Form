@@ -5,14 +5,14 @@ const Menu = () => {
 return(
 <>
 
-<div className='text-center mb-4'><h4><u> MUSCULD-SKELETAL EVALUATION</u></h4></div>
+<div className='text-center mb-4'><h4> Musculd-Skeletal Evaluation</h4></div>
 
 <div className='menu '>
-<NavLink  exact to='/'>HIP</NavLink>
-<NavLink to='/knee'>KNEE</NavLink>
-<NavLink to='/shoulder'>SHOULDER</NavLink>
-<NavLink to='/elbow'>ELBOW & WRIST </NavLink>
-<NavLink to='/ankle'>ANKLE & FOOT </NavLink>
+<NavLink  exact to='/'>Hip</NavLink>
+<NavLink to='/knee'>Knee</NavLink>
+<NavLink to='/shoulder'>Shoulder</NavLink>
+<NavLink to='/elbow'>Elbow & Wrist </NavLink>
+<NavLink to='/ankle'>Ankle & Foot </NavLink>
 
 </div>
 

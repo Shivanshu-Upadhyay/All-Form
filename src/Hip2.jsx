@@ -17,7 +17,7 @@ function Hip2() {
           style={{ textDecoration: "none" }}
           target={"_blank"}>
          
-        <span> ADD NEW HIP EVALUATION FORM</span>
+        <span> Add New Hip Evaluation Form</span>
           
         
         </Link>

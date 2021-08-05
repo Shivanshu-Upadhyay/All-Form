@@ -5,14 +5,14 @@ const Menu2 = () => {
 return(
 <> 
 
-<div className='text-center mb-4'><h4><u> MORE  EVALUATION FORM</u></h4></div>
+<div className='text-center mb-4'><h4> More  Evaluation Form</h4></div>
 
 <div className='menu '>
-<NavLink exact activeClassName="active" to='/neuro'>NEURO</NavLink>
-<NavLink to='/paediatric'>PAEDIATRIC</NavLink>
-<NavLink to='/cardio'>CARDIO-PULMONARY</NavLink>
-<NavLink to='/antenatal'>ANTENATAL</NavLink>
-<NavLink to='/postnatal'>POSTNATAL </NavLink>
+<NavLink exact activeClassName="active" to='/neuro'>Neuro</NavLink>
+<NavLink to='/paediatric'>Paediatric</NavLink>
+<NavLink to='/cardio'>Cardio-Pulmonary</NavLink>
+<NavLink to='/antenatal'>Antenatal</NavLink>
+<NavLink to='/postnatal'>Postnatal </NavLink>
 </div>
 
 

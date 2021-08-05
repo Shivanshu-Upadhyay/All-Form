@@ -2,19 +2,20 @@
     display: block;
 }
 .menu a{
-display:inline-block;
-padding:0.4em 1.2em;
-margin:0 0.3em 0.3em 0;
-border-radius:0.2em;
-box-sizing: border-box;
-text-decoration:none;
-font-family:'Roboto',sans-serif;
-font-weight:300;
-color:#575B5B;
-background-color:#16DB8C;
-box-shadow:inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
-text-align:center;
-position:relative;
+width: 200px;
+    height: 30px;
+    font-size: 17px;
+    text-align: center;
+    margin-left: 4px;
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+    padding-top:15px;
+     padding-bottom:35px;
+     border-radius:25px; 
+      background:#A9A9A9;
+      text-transform: capitalize ;
+      line-height: 15px;
 }
 
 
@@ -24,12 +25,17 @@ textarea{
 /* """""""""""""  Menu  """"""""""" */
 .menu a.active{
    top: 0.1em;
-   background-color: #7ceec0;
+    color: whitesmoke !important;
+    background-color: #606060 !important;
+    transition: 0.5s !important; 
    
 }
 
 .menu a:hover{
-    border-color: rgb(255, 255, 255);
+     color: whitesmoke !important;
+    background-color: #606060 !important;
+    transition: 0.5s !important; 
+    text-decoration: none;
    
 }
 
@@ -62,8 +68,8 @@ box-sizing: border-box;
 text-decoration:none;
 font-family:'Roboto',sans-serif;
 font-weight:300;
-background-color:#4e9af1;
 color:#FFFFFF;
+background-image: linear-gradient(to right,#00EDFF,#0047ab);   
 text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
 text-align:center;
 transition: all 0.2s;
