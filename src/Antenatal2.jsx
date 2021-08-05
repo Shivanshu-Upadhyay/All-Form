@@ -26,7 +26,7 @@ function Antenatal2() {
         <Link
           to="/antenatalform"    className="button4"
           style={{ textDecoration: "none" }}
-          target={"_blank"}>
+          >
          
         <span> ADD NEW ANTENATAL EVALUATION FORM</span>
           

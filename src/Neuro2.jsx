@@ -30,7 +30,7 @@ function Neuro2() {
  <Link
           to="/neuroform"    className="button4"
           style={{ textDecoration: "none" }}
-          target={"_blank"}>
+          >
          
         <span>   ADD NEW NEURO EVALUATION FORM </span>
                

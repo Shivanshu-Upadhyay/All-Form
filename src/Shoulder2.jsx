@@ -29,7 +29,7 @@ function Shoulder2() {
  <Link
           to="/shoulderform"    className="button4"
           style={{ textDecoration: "none" }}
-          target={"_blank"}>
+          >
          
         <span>   ADD NEW SHOULDER EVALUATION FORM</span>
                

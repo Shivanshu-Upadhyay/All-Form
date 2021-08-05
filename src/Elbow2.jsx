@@ -28,7 +28,7 @@ function Elbow2() {
  <Link
           to="/elbowform"    className="button4"
           style={{ textDecoration: "none" }}
-          target={"_blank"}>
+          >
          
         <span> ADD NEW ELBOW & WRIST EVALUATION FORM </span>
                

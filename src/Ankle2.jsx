@@ -26,7 +26,7 @@ function Ankle2() {
       <Link
           to="/ankleform"    className="button4"
           style={{ textDecoration: "none" }}
-          target={"_blank"}>
+          >
          
         <span> ADD NEW ANKLE EVALUATION FORM</span>
           

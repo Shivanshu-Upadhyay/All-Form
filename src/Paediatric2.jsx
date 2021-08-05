@@ -29,7 +29,7 @@ function Paediatric2() {
  <Link
           to="/paediatricform"    className="button4"
           style={{ textDecoration: "none" }}
-          target={"_blank"}>
+          >
          
         <span>   ADD NEW PAEDIATRIC EVALUATION FORM </span>
                

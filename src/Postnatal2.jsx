@@ -29,7 +29,7 @@ function Postnatal2() {
  <Link
           to="/postnatalform"    className="button4"
           style={{ textDecoration: "none" }}
-          target={"_blank"}>
+          >
          
         <span>   ADD NEW POSTNATAL EVALUATION FORM</span>
                

@@ -30,7 +30,7 @@ function Knee2() {
  <Link
           to="/kneeform"    className="button4"
           style={{ textDecoration: "none" }}
-          target={"_blank"}>
+          >
          
         <span>  ADD NEW KNEE EVALUATION FORM </span>
                

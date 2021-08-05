@@ -29,7 +29,7 @@ function Cardio2() {
         <Link
           to="/cardioform"    className="button4"
           style={{ textDecoration: "none" }}
-          target={"_blank"}>
+          >
          
         <span> ADD NEW CARDIO-PULMONARY EVALUATION FORM</span>
           
