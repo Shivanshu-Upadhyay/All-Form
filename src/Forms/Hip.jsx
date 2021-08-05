@@ -101,8 +101,8 @@ function Hip() {
                   </div>
                 </Grid>
                 <Grid item md={3} xs={12}>
-                  <div className="">
-                    <label>Gender-</label>
+                  <div>
+                    <label style={{display:'block'}}>Gender-</label>
 
                      <label className='p-1 bold1'>
       M:<Field name="Gender" type="radio" value="M" component="input" />
@@ -189,7 +189,7 @@ function Hip() {
                     <Field name="ward">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className="">WARD:</label>
+                          <label className="">Ward:</label>
                            
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -255,14 +255,14 @@ function Hip() {
 
   <Grid container  spacing={2} className='mb-3'>
 
- <Grid item md={4} xs={12}>
+ <Grid item md={12} xs={12}>
                   <div>
                     <Field name="Limitations of ADLs">
                       {({ input }) => (
                         <div className="">
                           <label className="">Limitations of ADLs-</label>
                            
-                          <input type="text" {...input} placeholder="" />
+                          <input type="text" {...input} placeholder="" className='fullw100' />
                         </div>
                       )}
                     </Field>
@@ -316,7 +316,7 @@ function Hip() {
 <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={12} xs={12}>
                   <div>
-                    <label>Vas Score-</label>
+                    <label>VAS Score-</label>
             <Field name="VasScore" component="select">
               <option />
               <option value="1">1</option>
@@ -1041,7 +1041,7 @@ function Hip() {
                     <Field name="TREATMENT GOAL">
                       {({ input }) => (
                         <div className="">
-                          <label className="widthsame bold">Physio Treatment Goal-</label>
+                          <label className="widthsame bold"> Treatment Goal-</label>
                           <input type="text" {...input} placeholder="" className='lastw'/>
                         </div>
                       )}
@@ -1077,7 +1077,7 @@ function Hip() {
                              color="primary"
                               size="small"
                                type='submit'
-                                style={{backgroundColor:'#2185d0'}}>
+                                style={{backgroundColor:'#2185d0',textTransform:"capitalize"}}>
                                    Save
                                 </Button></div>
 

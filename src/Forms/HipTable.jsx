@@ -14,13 +14,13 @@ function HipTable() {
     <div>
       <Form onSubmit={onSubmit} initialValues={initialValues}>
         {({ handleSubmit, form }) => (
-          <form onSubmit={handleSubmit} className="ui form">
+          <form onSubmit={handleSubmit} className="ui form ">
             <div className="">
              
               <h4> <u >Muscular Strength & Joint Range Of Motion</u> </h4>
              
               <br />
-              <Table striped bordered hover>
+              <Table striped bordered hover className='width1'>
                 <thead>
                   <tr>
                     <th className='text-center pb-4' rowSpan='2'> <h5>Movements</h5> </th>
@@ -34,25 +34,25 @@ function HipTable() {
                   <tr>
                     
                     <th>
-                        Mmt(Strength)
+                        MMT(Strength)
                     </th>
                     
                     <th>
-                        Active(Rom)
+                        Active(ROM)
                     </th>
                     <th>
-                         Passive(Rom)
-                    </th>
-
-                    <th>
-                        Mmt(Strength)
+                         Passive(ROM)
                     </th>
 
                     <th>
-                        Active(Rom)
+                        MMT(Strength)
+                    </th>
+
+                    <th>
+                        Active(ROM)
                     </th>
                     <th>
-                        Passive(Rom)
+                        Passive(ROM)
                     </th>
                   </tr>
                   <tr>
