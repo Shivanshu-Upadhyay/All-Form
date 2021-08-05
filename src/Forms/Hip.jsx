@@ -50,7 +50,7 @@ function Hip() {
                     <Field name="dateofassessment">
                       {({ input }) => (
                         <div className="mb-3">
-                          <label className=" ">Date Of Assessment-</label>
+                          <label className=" ">Date Of Assessment </label>
                           <input type="date" {...input} placeholder="" />
                         </div>
                       )}
@@ -63,8 +63,8 @@ function Hip() {
                     <Field name="patientid">
                       {({ input }) => (
                         <div className="cardio">
-                          <label>Patient ID-</label>
-                          <input type="number" {...input} placeholder="" />
+                          <label>Patient ID </label>
+                          <input type="text" {...input} placeholder="" />
                         </div>
                       )}
                     </Field>
@@ -79,7 +79,7 @@ function Hip() {
                     <Field name="name">
                       {({ input }) => (
                         <div className="upname ">
-                          <label className="name">Name-</label>
+                          <label className="name">Name </label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -92,7 +92,7 @@ function Hip() {
                     <Field name="age">
                       {({ input }) => (
                         <div className="">
-                          <label className="age">Age-</label>
+                          <label className="age">Age </label>
                            
                           <input type="text" {...input} placeholder="" className='w50'/>
                         </div>
@@ -102,18 +102,18 @@ function Hip() {
                 </Grid>
                 <Grid item md={3} xs={12}>
                   <div>
-                    <label style={{display:'block'}}>Gender-</label>
+                    <label style={{display:'block'}}>Gender </label>
 
                      <label className='p-1 bold1'>
-      M:<Field name="Gender" type="radio" value="M" component="input" />
+      M <Field name="Gender" type="radio" value="M" component="input" />
           </label>
                     
                       <label className='p-1 bold1'>
-      F:<Field name="Gender" type="radio" value="F" component="input" />
+      F <Field name="Gender" type="radio" value="F" component="input" />
           </label>
                    
                      <label className='p-1 bold1'>
-      O:<Field name="Gender" type="radio" value="O" component="input" />
+      O <Field name="Gender" type="radio" value="O" component="input" />
           </label>
                   </div>
                 </Grid>
@@ -123,7 +123,7 @@ function Hip() {
                     <Field name="Occupation">
                       {({ input }) => (
                         <div className="upname ">
-                          <label className="name">Occupation-</label>
+                          <label className="name">Occupation </label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -251,16 +251,16 @@ function Hip() {
 
 
 
-<div className='mb-3'> <h4><u>Mechanism Of Pain</u></h4>  </div>
+<div className='mb-3'> <h4><u>Mechanism Of Pain </u></h4>  </div>
 
   <Grid container  spacing={2} className='mb-3'>
 
  <Grid item md={12} xs={12}>
                   <div>
-                    <Field name="Limitations of ADLs">
+                    <Field name="Limitations">
                       {({ input }) => (
                         <div className="">
-                          <label className="">Limitations of ADLs-</label>
+                          <label className="">Limitations of ADLs</label>
                            
                           <input type="text" {...input} placeholder="" className='fullw100' />
                         </div>
@@ -271,7 +271,7 @@ function Hip() {
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <label>Pain Onset-</label>
+                    <label>Pain Onset</label>
                  <Field name="painonset" component="select">
               <option />
               <option value="graduol">Gradual</option>
@@ -283,7 +283,7 @@ function Hip() {
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <label>Injury-</label>
+                    <label>Injury</label>
             <Field name="injury" component="select">
               <option />
               <option value="Traumatic">Traumatic</option>
@@ -316,7 +316,7 @@ function Hip() {
 <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={12} xs={12}>
                   <div>
-                    <label>VAS Score-</label>
+                    <label>VAS Score </label>
             <Field name="VasScore" component="select">
               <option />
               <option value="1">1</option>
@@ -348,7 +348,7 @@ function Hip() {
                     <Field name="duration of pain">
                       {({ input }) => (
                         <div className="">
-                          <label className=" ">Duration Of Pain-</label>
+                          <label className=" ">Duration Of Pain </label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -361,7 +361,7 @@ function Hip() {
                     <Field name="Site Of Pain">
                       {({ input }) => (
                         <div className="">
-                          <label className="">Site Of Pain-</label>
+                          <label className="">Site Of Pain </label>
                            
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -381,7 +381,7 @@ function Hip() {
 
                 <Grid item md={6} xs={12}>
                   <div>
-                    <label>Nature Of Pain-</label>
+                    <label>Nature Of Pain </label>
             <Field name="Nature Of Pain" component="select">
               <option />
               <option value="Dull">Dull Ache</option>
@@ -400,11 +400,11 @@ function Hip() {
 
   <Grid item md={6} xs={12}>
                   <div>
-                    <label>Pain Type-</label>
+                    <label>Pain Type</label>
                  <Field name="Pain Type" component="select">
               <option />
               <option value="Constant">Constant</option>
-              <option value="Internittent"> Intermittent</option>
+              <option value="Internittent"> Intermittent </option>
              
              
                   </Field>
@@ -420,7 +420,7 @@ function Hip() {
 
                 <Grid item md={6} xs={12}>
                   <div>
-                    <label>Aggravating Factors-</label>
+                    <label>Aggravating Factors </label>
             <Field name="Aggravating Factors" component="select">
               <option />
               <option value="Walk-">Walk</option>
@@ -439,7 +439,7 @@ function Hip() {
 
   <Grid item md={6} xs={12}>
                   <div>
-                    <label>Relieving Factors-</label>
+                    <label>Relieving Factors </label>
                  <Field name="Pain Type" component="select">
               <option />
               <option value="Rest-">Rest</option>
@@ -461,7 +461,7 @@ function Hip() {
 
 
 <div className='mb-3'> <h4><u>Examination</u></h4>  </div>
-<div className='mb-2'> <h6><u>On Palpation:-</u></h6>  </div>
+<div className='mb-2'> <h6><u>On Palpation:</u></h6>  </div>
 
 <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={4} xs={12}>
@@ -630,14 +630,14 @@ function Hip() {
 <Grid container  spacing={2} className=''>
                 <Grid item md={4} xs={4}>
                   <div>
-                  <h6 className=''> Tests </h6>
+                  <h6 className='text-center'> Tests </h6>
                   </div>
 
                 </Grid>
 
                 <Grid item md={4} xs={4}>
                   <div>
-                    <h6 className=''>Left</h6>
+                    <h6 className='center'>Left</h6>
                   </div>
                 </Grid>
                  <Grid item md={4} xs={4}>
@@ -655,11 +655,11 @@ function Hip() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={8}>
                   <div>
-                    <Field name="Faber's (Patrick) Test">
+                    <Field name="Faber">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Faber's (Patrick) Test-</label>
+                          <label className=" wsame ">Faber's (Patrick) Test</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -670,7 +670,7 @@ function Hip() {
 
                 <Grid item md={4} xs={4}>
                   <div>
-                    <Field name="Faber's (Patrick) Test">
+                    <Field name="Faber2">
                       {({ input }) => (
                         <div >
                           
@@ -691,11 +691,11 @@ function Hip() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={8}>
                   <div>
-                    <Field name="Thomas Test">
+                    <Field name="Thomas">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Thomas Test-</label>
+                          <label className=" wsame ">Thomas Test</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -706,7 +706,7 @@ function Hip() {
 
                 <Grid item md={4} xs={4}>
                   <div>
-                    <Field name="Thomas Test ">
+                    <Field name="Thomas2 ">
                       {({ input }) => (
                         <div >
                           
@@ -727,11 +727,11 @@ function Hip() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={8}>
                   <div>
-                    <Field name="Ober's Test">
+                    <Field name="Ober">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Ober's Test-</label>
+                          <label className=" wsame ">Ober's Test</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -742,7 +742,7 @@ function Hip() {
 
                 <Grid item md={4} xs={4}>
                   <div>
-                    <Field name="Ober's Test2">
+                    <Field name="Ober2">
                       {({ input }) => (
                         <div >
                           
@@ -763,11 +763,11 @@ function Hip() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={8}>
                   <div>
-                    <Field name="Trendelenburg Test">
+                    <Field name="Trendelenburg">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Trendelenburg Test-</label>
+                          <label className=" wsame ">Trendelenburg Test</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -778,7 +778,7 @@ function Hip() {
 
                 <Grid item md={4} xs={4}>
                   <div>
-                    <Field name="Trendelenburg Test1">
+                    <Field name="Trendelenburg2">
                       {({ input }) => (
                         <div >
                           
@@ -799,11 +799,11 @@ function Hip() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={8}>
                   <div>
-                    <Field name="Piriformis Tightness">
+                    <Field name="Piriformis1">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Piriformis Tightness-</label>
+                          <label className=" wsame ">Piriformis Tightness</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -814,7 +814,7 @@ function Hip() {
 
                 <Grid item md={4} xs={4}>
                   <div>
-                    <Field name="Piriformis Tightness">
+                    <Field name="Piriformis2">
                       {({ input }) => (
                         <div >
                           
@@ -835,11 +835,11 @@ function Hip() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={8}>
                   <div>
-                    <Field name="Leg Length">
+                    <Field name="Leg">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Leg Length-</label>
+                          <label className=" wsame ">Leg Length</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -850,7 +850,7 @@ function Hip() {
 
                 <Grid item md={4} xs={4}>
                   <div>
-                    <Field name="Leg Length ">
+                    <Field name="Leg2 ">
                       {({ input }) => (
                         <div >
                           
@@ -874,10 +874,10 @@ function Hip() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={6} xs={12}>
                   <div>
-                    <Field name="Limb Alignment">
+                    <Field name="Limb">
                       {({ input }) => (
-                        <div className="">
-                          <label className=" ">Limb Alignment-</label>
+                        <div className="fullw10">
+                          <label className=" ">Limb Alignment</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -887,10 +887,10 @@ function Hip() {
 
                 <Grid item md={6} xs={12}>
                   <div>
-                    <Field name="LLD(If Any)">
+                    <Field name="LLD2">
                       {({ input }) => (
-                        <div className="">
-                          <label className="">LLD(If Any)-</label>
+                        <div className="fullw10">
+                          <label className="">LLD(If Any)</label>
                            
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -921,7 +921,7 @@ function Hip() {
 <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={12} xs={12}>
                   <div>
-                    <Field name="Gait Pattern">
+                    <Field name="Gait">
                       {({ input }) => (
                         <div className="fullw100">
                           <label className=" ">Gait Pattern:</label>
@@ -942,10 +942,10 @@ function Hip() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={6} xs={12}>
                   <div>
-                    <Field name="Stance Phase">
+                    <Field name="Stance ">
                       {({ input }) => (
-                        <div className="">
-                          <label className=" ">Stance Phase-</label>
+                        <div className="fullw10">
+                          <label className=" ">Stance Phase</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -955,10 +955,10 @@ function Hip() {
 
                 <Grid item md={6} xs={12}>
                   <div>
-                    <Field name="Swing Phase">
+                    <Field name="Swing ">
                       {({ input }) => (
-                        <div className="">
-                          <label className="">Swing Phase-</label>
+                        <div className="fullw10">
+                          <label className="">Swing Phase</label>
                            
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -974,10 +974,10 @@ function Hip() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={6} xs={12}>
                   <div>
-                    <Field name="Weight Beasing">
+                    <Field name="Weight">
                       {({ input }) => (
-                        <div className="">
-                          <label className=" ">Weight Bearing-</label>
+                        <div className="fullw10">
+                          <label className=" ">Weight Bearing</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -987,10 +987,10 @@ function Hip() {
 
                 <Grid item md={6} xs={12}>
                   <div>
-                    <Field name="Walking Aid">
+                    <Field name="Walking ">
                       {({ input }) => (
-                        <div className="">
-                          <label className="">Walking Aid-</label>
+                        <div className="fullw10">
+                          <label className="">Walking Aid</label>
                            
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -1014,7 +1014,7 @@ function Hip() {
                     <Field name="inverstigation">
                       {({ input }) => (
                         <div className="">
-                          <label className="widthsame bold">Investigation-</label>
+                          <label className="widthsame bold">Investigation</label>
                           <input type="text" {...input} placeholder="" className='lastw'/>
                         </div>
                       )}
@@ -1027,7 +1027,7 @@ function Hip() {
                     <Field name="diagnosis">
                       {({ input }) => (
                         <div className=" ">
-                          <label className="widthsame bold">Diagnosis-</label>
+                          <label className="widthsame bold">Diagnosis</label>
                           <input type="text" {...input} placeholder="" className='lastw' />
                         </div>
                       )}
@@ -1038,10 +1038,10 @@ function Hip() {
 
                  <Grid item md={12} xs={12}>
                     <div>
-                    <Field name="TREATMENT GOAL">
+                    <Field name="TREATMENT">
                       {({ input }) => (
                         <div className="">
-                          <label className="widthsame bold"> Treatment Goal-</label>
+                          <label className="widthsame bold"> Treatment Goal</label>
                           <input type="text" {...input} placeholder="" className='lastw'/>
                         </div>
                       )}
@@ -1052,10 +1052,10 @@ function Hip() {
 
                <Grid item md={12} xs={12}>
                     <div>
-                    <Field name="Treatment PLAN">
+                    <Field name="Treatment">
                       {({ input }) => (
                         <div className="">
-                          <label className="widthsame bold">Treatment Plan-</label>
+                          <label className="widthsame bold">Treatment Plan</label>
                           <input type="text" {...input} placeholder="" className='lastw'/>
                         </div>
                       )}
