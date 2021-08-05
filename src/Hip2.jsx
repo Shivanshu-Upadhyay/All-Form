@@ -15,7 +15,7 @@ function Hip2() {
         <Link
           to="/hipform"    className="button4"
           style={{ textDecoration: "none" }}
-          target={"_blank"}>
+          >
          
         <span> Add New Hip Evaluation Form</span>
           
