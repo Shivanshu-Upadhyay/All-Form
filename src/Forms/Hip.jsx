@@ -49,7 +49,7 @@ function Hip() {
                   <div>
                     <Field name="dateofassessment">
                       {({ input }) => (
-                        <div className="mb-3">
+                        <div className="mb-3 fullw10">
                           <label className=" ">Date Of Assessment </label>
                           <input type="date" {...input} placeholder="" />
                         </div>
@@ -62,7 +62,7 @@ function Hip() {
                   <div>
                     <Field name="patientid">
                       {({ input }) => (
-                        <div className="cardio">
+                        <div className="cardio fullw10">
                           <label>Patient ID </label>
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -78,7 +78,7 @@ function Hip() {
                   <div>
                     <Field name="name">
                       {({ input }) => (
-                        <div className="upname ">
+                        <div className="upname fullw10">
                           <label className="name">Name </label>
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -91,7 +91,7 @@ function Hip() {
                   <div>
                     <Field name="age">
                       {({ input }) => (
-                        <div className="">
+                        <div className="fullw10">
                           <label className="age">Age </label>
                            
                           <input type="text" {...input} placeholder="" className='w50'/>
@@ -143,7 +143,7 @@ function Hip() {
               <div>
                     <Field name="address">
                       {({ input }) => (
-                        <div className="fullw100 ">
+                        <div className="fullw100  ">
                           <label className="name">Address:</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -173,10 +173,10 @@ function Hip() {
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Date of Surgery">
+                    <Field name="DateofSurgery">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className="">Date of Surgery:</label>
+                          <label className="">Date of Surgery</label>
                            
                           <input type="date" {...input} placeholder="" />
                         </div>
@@ -189,7 +189,7 @@ function Hip() {
                     <Field name="ward">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className="">Ward:</label>
+                          <label className="">Ward</label>
                            
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -209,10 +209,10 @@ function Hip() {
              <Grid item md={6} xs={12}>
 
               <div>
-                    <Field name="chief complaints">
+                    <Field name="chiefcomplaints">
                       {({ input }) => (
                         <div className="fullw10  ">
-                          <label className="">Chief Complaints:</label>
+                          <label className="">Chief Complaints</label>
                          <textarea
                             className="wnew"
                             
@@ -234,7 +234,7 @@ function Hip() {
                     ">
                       {({ input }) => (
                         <div className="fullw10  ">
-                          <label className="name">Surgery/Procedure:</label>
+                          <label className="name">Surgery/Procedure</label>
                          <textarea
                             className="wnew"
                             
@@ -259,7 +259,7 @@ function Hip() {
                   <div>
                     <Field name="Limitations">
                       {({ input }) => (
-                        <div className="">
+                        <div className="fullw10">
                           <label className="">Limitations of ADLs</label>
                            
                           <input type="text" {...input} placeholder="" className='fullw100' />
@@ -270,7 +270,7 @@ function Hip() {
                 </Grid>
 
                 <Grid item md={4} xs={12}>
-                  <div>
+                  <div className='fullw10'>
                     <label>Pain Onset</label>
                  <Field name="painonset" component="select">
               <option />
@@ -282,7 +282,7 @@ function Hip() {
                 </Grid>
 
                 <Grid item md={4} xs={12}>
-                  <div>
+                  <div className='fullw10'>
                     <label>Injury</label>
             <Field name="injury" component="select">
               <option />
@@ -316,7 +316,7 @@ function Hip() {
 <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={12} xs={12}>
                   <div>
-                    <label>VAS Score </label>
+                    <label>VAS Score- </label>
             <Field name="VasScore" component="select">
               <option />
               <option value="1">1</option>
@@ -347,7 +347,7 @@ function Hip() {
                   <div>
                     <Field name="duration of pain">
                       {({ input }) => (
-                        <div className="">
+                        <div className='fullw10'>
                           <label className=" ">Duration Of Pain </label>
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -360,7 +360,7 @@ function Hip() {
                   <div>
                     <Field name="Site Of Pain">
                       {({ input }) => (
-                        <div className="">
+                        <div className='fullw10'>
                           <label className="">Site Of Pain </label>
                            
                           <input type="text" {...input} placeholder="" />
@@ -380,7 +380,7 @@ function Hip() {
               
 
                 <Grid item md={6} xs={12}>
-                  <div>
+                  <div className='fullw10'>
                     <label>Nature Of Pain </label>
             <Field name="Nature Of Pain" component="select">
               <option />
@@ -399,7 +399,7 @@ function Hip() {
 
 
   <Grid item md={6} xs={12}>
-                  <div>
+                  <div className='fullw10'>
                     <label>Pain Type</label>
                  <Field name="Pain Type" component="select">
               <option />
@@ -419,7 +419,7 @@ function Hip() {
               
 
                 <Grid item md={6} xs={12}>
-                  <div>
+                  <div className='fullw10'>
                     <label>Aggravating Factors </label>
             <Field name="Aggravating Factors" component="select">
               <option />
@@ -438,7 +438,7 @@ function Hip() {
 
 
   <Grid item md={6} xs={12}>
-                  <div>
+                  <div className='fullw10'>
                     <label>Relieving Factors </label>
                  <Field name="Pain Type" component="select">
               <option />
@@ -469,7 +469,7 @@ function Hip() {
                     <Field name="Warmth-">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className=" ">Warmth:</label>
+                          <label className=" ">Warmth</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -482,7 +482,7 @@ function Hip() {
                     <Field name="Skin Changes">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className=" ">Skin Changes:</label>
+                          <label className=" ">Skin Changes</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -496,7 +496,7 @@ function Hip() {
                     <Field name="Tightness">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className=" ">Tightness:</label>
+                          <label className=" ">Tightness</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -518,7 +518,7 @@ function Hip() {
                     <Field name="Edema">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className=" ">Edema:</label>
+                          <label className=" ">Edema</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -531,7 +531,7 @@ function Hip() {
                     <Field name="Clicking Sound">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className=" ">Clicking Sound:</label>
+                          <label className=" ">Clicking Sound</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -545,7 +545,7 @@ function Hip() {
                     <Field name="Muscle Atrophy">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className=" ">Muscle Atrophy:</label>
+                          <label className=" ">Muscle Atrophy</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -568,7 +568,7 @@ function Hip() {
                     <Field name="Contractures/Deformities">
                       {({ input }) => (
                         <div className="fullw100">
-                          <label className=" ">Contractures/Deformities:</label>
+                          <label className=" ">Contractures/Deformities</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -627,17 +627,17 @@ function Hip() {
              
 <div className='mb-3'> <h4><u>Special Tests</u></h4>  </div>
 
-<Grid container  spacing={2} className=''>
+<Grid container   className=''>
                 <Grid item md={4} xs={4}>
                   <div>
-                  <h6 className='text-center'> Tests </h6>
+                  
                   </div>
 
                 </Grid>
 
                 <Grid item md={4} xs={4}>
-                  <div>
-                    <h6 className='center'>Left</h6>
+                  <div >
+                    <h6  className='text-left'> Left</h6>
                   </div>
                 </Grid>
                  <Grid item md={4} xs={4}>
