@@ -109,7 +109,7 @@ function Knee() {
           </label>
                    
                      <label className='p-1 bold1'>
-      O <Field name="Gender" type="radio" value="O" component="input" />
+      Other <Field name="Gender" type="radio" value="O" component="input" />
           </label>
                   </div>
                 </Grid>
