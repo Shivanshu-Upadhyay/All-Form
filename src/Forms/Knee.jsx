@@ -2,11 +2,8 @@ import React from "react";
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import "./index.css";
 import { Form, Field } from "react-final-form";
-
-import SaveIcon from '@material-ui/icons/Save';
-
 import KneeTable from './KneeTable'
-import NewSlider from "./NewSlider";
+
 
 
 import {
