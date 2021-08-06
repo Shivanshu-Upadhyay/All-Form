@@ -36,7 +36,7 @@ function Shoulder() {
 
   return (
     <div >
-      <h3 className="text-center"> SHOULDER EVALUATION</h3>
+      <h3 className="text-center mt-3"> Shoulder Evaluation</h3>
 
       <Form onSubmit={onSubmit}>
         {({ handleSubmit }) => (

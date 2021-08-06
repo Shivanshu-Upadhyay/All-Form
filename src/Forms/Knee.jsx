@@ -37,7 +37,7 @@ function Knee() {
 
   return (
     <div >
-      <h3 className="text-center"> KNEE JOINT EVALUATION</h3>
+      <h3 className="text-center mt-3"> Knee Joint Evaluation</h3>
 
       <Form onSubmit={onSubmit}>
         {({ handleSubmit }) => (
@@ -48,8 +48,8 @@ function Knee() {
                   <div>
                     <Field name="dateofassessment">
                       {({ input }) => (
-                        <div className="mb-3">
-                          <label className=" ">Date Of Assessment-</label>
+                        <div className="mb-3 fullw10">
+                          <label className=" ">Date Of Assessment</label>
                           <input type="date" {...input} placeholder="" />
                         </div>
                       )}
@@ -61,9 +61,9 @@ function Knee() {
                   <div>
                     <Field name="patientid">
                       {({ input }) => (
-                        <div className="cardio">
-                          <label>Patient ID-</label>
-                          <input type="number" {...input} placeholder="" />
+                        <div className="cardio fullw10">
+                          <label>Patient ID</label>
+                          <input type="text" {...input} placeholder="" />
                         </div>
                       )}
                     </Field>
@@ -77,8 +77,8 @@ function Knee() {
                   <div>
                     <Field name="name">
                       {({ input }) => (
-                        <div className="upname ">
-                          <label className="name">Name-</label>
+                        <div className="upname fullw10 ">
+                          <label className="name">Name</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -90,8 +90,8 @@ function Knee() {
                   <div>
                     <Field name="age">
                       {({ input }) => (
-                        <div className="">
-                          <label className="age">Age-</label>
+                        <div className="fullw10">
+                          <label className="age">Age</label>
                            
                           <input type="text" {...input} placeholder="" className='w50'/>
                         </div>
@@ -101,18 +101,18 @@ function Knee() {
                 </Grid>
                 <Grid item md={3} xs={12}>
 <div className="">
-                    <label>Gender-</label>
+                    <label className='d-block'>Gender</label>
 
                      <label className='p-1 bold1'>
-      M:<Field name="Gender" type="radio" value="M" component="input" />
+      M <Field name="Gender" type="radio" value="M" component="input" />
           </label>
                     
                       <label className='p-1 bold1'>
-      F:<Field name="Gender" type="radio" value="F" component="input" />
+      F <Field name="Gender" type="radio" value="F" component="input" />
           </label>
                    
                      <label className='p-1 bold1'>
-      O:<Field name="Gender" type="radio" value="O" component="input" />
+      O <Field name="Gender" type="radio" value="O" component="input" />
           </label>
                   </div>
                 </Grid>
@@ -121,8 +121,8 @@ function Knee() {
                   <div>
                     <Field name="Occupation">
                       {({ input }) => (
-                        <div className="upname ">
-                          <label className="name">Occupation-</label>
+                        <div className="upname fullw10">
+                          <label className="name">Occupation</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -143,7 +143,7 @@ function Knee() {
                     <Field name="address">
                       {({ input }) => (
                         <div className="fullw100 ">
-                          <label className="name">Address:</label>
+                          <label className="name">Address</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -162,7 +162,7 @@ function Knee() {
                     <Field name="dateofadmission">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className=" ">Date Of Admission:</label>
+                          <label className=" ">Date Of Admission</label>
                           <input type="date" {...input} placeholder="" />
                         </div>
                       )}
@@ -172,10 +172,10 @@ function Knee() {
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Date of Surgery">
+                    <Field name="DateofSurgery">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className="">Date of Surgery:</label>
+                          <label className="">Date of Surgery</label>
                            
                           <input type="date" {...input} placeholder="" />
                         </div>
@@ -188,7 +188,7 @@ function Knee() {
                     <Field name="ward">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className="">WARD:</label>
+                          <label className="">WARD</label>
                            
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -208,10 +208,10 @@ function Knee() {
              <Grid item md={6} xs={12}>
 
               <div>
-                    <Field name="chief complaints">
+                    <Field name="chiefcomplaints">
                       {({ input }) => (
                         <div className="fullw10  ">
-                          <label className="">Chief Complaints:</label>
+                          <label className="">Chief Complaints</label>
                          <textarea
                             className="wnew"
                             
@@ -233,7 +233,7 @@ function Knee() {
                     ">
                       {({ input }) => (
                         <div className="fullw10  ">
-                          <label className="name">Surgery/Procedure:</label>
+                          <label className="name">Surgery/Procedure</label>
                          <textarea
                             className="wnew"
                             
@@ -250,12 +250,12 @@ function Knee() {
 
 
 
-<div className='mb-3'> <h4><u>MECHANISM OF PAIN</u></h4>  </div>
+<div className='mb-3'> <h4><u>Mechanism Of Pain</u></h4>  </div>
 
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={4} xs={12}>
-                  <div>
-                    <label>Pain Onset-</label>
+                  <div className='fullw10'>
+                    <label>Pain Onset</label>
                  <Field name="painonset" component="select">
               <option />
               <option value="graduol">Gradual</option>
@@ -266,8 +266,8 @@ function Knee() {
                 </Grid>
 
                 <Grid item md={4} xs={12}>
-                  <div>
-                    <label>Injury-</label>
+                  <div className='fullw10'>
+                    <label>Injury</label>
             <Field name="injury" component="select">
               <option />
               <option value="Traumatic">Traumatic</option>
@@ -278,10 +278,10 @@ function Knee() {
                 </Grid>
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Limitations of ADLs">
+                    <Field name="LimitationsofADLs">
                       {({ input }) => (
-                        <div className="">
-                          <label className="">Limitations of ADLs-</label>
+                        <div className="fullw10">
+                          <label className="">Limitations of ADLs</label>
                            
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -294,40 +294,18 @@ function Knee() {
 
 
 
-                    <div className='mb-3'> <h4><u>BODY CHART</u></h4>  </div>
-            <Grid container  className='mb-3'>
-
-             <Grid item md={12} xs={12}>
-
-              <div>
-                    <Field name="body chart">
-                      {({ input }) => (
-                        <div className=" ">
-                          
-                         <textarea
-                            className="bodychart"
-                            
-                            {...input}
-                          ></textarea>
-                        </div>
-                      )}
-                    </Field>
-                  </div>
-
-           </Grid>
-          
-           </Grid>
 
 
-<div className='mb-3'> <h4><u>ON OBSERVATION</u></h4>  </div>
+
+<div className='mb-3'> <h4><u>On Observation</u></h4>  </div>
 
 
 
 
 <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={4} xs={12}>
-                  <div>
-                    <label>Warmth-</label>
+                  <div className='fullw10'>
+                    <label>Warmth</label>
                  <Field name="warmth" component="select">
               <option />
               <option value="wleft">Left</option>
@@ -339,8 +317,8 @@ function Knee() {
                 </Grid>
 
                 <Grid item md={4} xs={12}>
-                  <div>
-                    <label>Swelling-</label>
+                  <div className='fullw10'>
+                    <label>Swelling</label>
             <Field name="swelling" component="select">
               <option />
               <option value="sleft">Left</option>
@@ -354,8 +332,8 @@ function Knee() {
                   <div>
                     <Field name="Skin Changes">
                       {({ input }) => (
-                        <div className="">
-                          <label className="">Skin Changes-</label>
+                        <div className='fullw10'>
+                          <label className="">Skin Changes</label>
                            
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -370,10 +348,10 @@ function Knee() {
 <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Muscle Atophy">
+                    <Field name="MuscleAtophy">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className=" ">Muscle Atrophy:</label>
+                          <label className=" ">Muscle Atrophy</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -383,10 +361,10 @@ function Knee() {
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="date of surgery">
+                    <Field name="MuscleTightness">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className="">Muscle Tightness:</label>
+                          <label className="">Muscle Tightness</label>
                            
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -396,10 +374,10 @@ function Knee() {
                 </Grid>
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Patellar Tracking">
+                    <Field name="PatellarTracking">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className="">Patellar Tracking:</label>
+                          <label className="">Patellar Tracking</label>
                            
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -411,15 +389,15 @@ function Knee() {
 
 
 
-<div className='mb-3'> <h4><u>ON PALPATION</u></h4>  </div>
+<div className='mb-3'> <h4><u>On Palpation</u></h4>  </div>
 
 
 
 
 <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={4} xs={12}>
-                  <div>
-                    <label>Tenderness-</label>
+                  <div className='fullw10'>
+                    <label>Tenderness</label>
                  <Field name="tendesness" component="select">
               <option />
               <option value="teleft">Left</option>
@@ -431,8 +409,8 @@ function Knee() {
                 </Grid>
 
                 <Grid item md={4} xs={12}>
-                  <div>
-                    <label>Crepitus-</label>
+                  <div className='fullw10'>
+                    <label>Crepitus</label>
             <Field name="Crepitus" component="select">
               <option />
               <option value="crleft">Left</option>
@@ -443,8 +421,8 @@ function Knee() {
                   </div>
                 </Grid>
 <Grid item md={4} xs={12}>
-                  <div>
-                    <label>Stiffness-</label>
+                  <div className='fullw10'>
+                    <label>Stiffness</label>
             <Field name="Siffness" component="select">
               <option />
               <option value="sileft">Left</option>
@@ -460,8 +438,8 @@ function Knee() {
 
 <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={4} xs={12}>
-                  <div>
-                    <label>Locking-</label>
+                  <div className='fullw10'>
+                    <label>Locking</label>
                  <Field name="Locking" component="select">
               <option />
               <option value="loleft">Left</option>
@@ -473,8 +451,8 @@ function Knee() {
                 </Grid>
 
                 <Grid item md={4} xs={12}>
-                  <div>
-                    <label>Giving Away-</label>
+                  <div className='fullw10'>
+                    <label>Giving Away</label>
             <Field name="Giving Away" component="select">
               <option />
               <option value="gileft">Left</option>
@@ -489,19 +467,35 @@ function Knee() {
 
 
 
-<div className='mb-3'> <h4><u>PAIN EVALUATION</u></h4>  </div>
+<div className='mb-3'> <h4><u>Pain Evaluation</u></h4>  </div>
 
 
 {/* ++++++++++++++++++++++++++++++++= */}
 
-  <Grid container  spacing={2} className='mb-3'>
+  
+<Grid container  spacing={2} className='mb-3'>
                 <Grid item md={12} xs={12}>
-                  <div className=''>
-                   <h6 className='text-center'>Intensity of Pain</h6>
-                     <NewSlider />
+                  <div>
+                    <label>Intensity of Pain- </label>
+            <Field name="IntensityofPain" component="select">
+              <option />
+              <option value="1">1</option>
+              <option value="2"> 2</option>
+              <option value="3"> 3</option>
+              <option value="4"> 4</option>
+              <option value="5"> 5</option>
+              <option value="6"> 6</option>
+              <option value="7"> 7</option>
+              <option value="8"> 8</option>
+              <option value="9"> 9</option>
+              <option value="10"> 10</option>
+             
+            </Field>
                   </div>
                 </Grid>
                  </Grid>
+
+
 
 
 {/* ++++++++++++++++++++++++++++++++= */}
@@ -513,10 +507,10 @@ function Knee() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={6} xs={12}>
                   <div>
-                    <Field name="duration of pain">
+                    <Field name="durationofpain">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className=" ">Duration Of Pain:</label>
+                          <label className=" ">Duration Of Pain</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -529,7 +523,7 @@ function Knee() {
                     <Field name="Site Of Pain">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className="">Site Of Pain:</label>
+                          <label className="">Site Of Pain</label>
                            
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -546,9 +540,9 @@ function Knee() {
 
 <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={6} xs={12}>
-                  <div>
-                    <label>Pain Type-</label>
-                 <Field name="Pain Type" component="select">
+                  <div className='fullw10'>
+                    <label>Pain Type</label>
+                 <Field name="PainType" component="select">
               <option />
               <option value="Constant">Constant</option>
               <option value="Internittent"> Intermittent</option>
@@ -559,9 +553,9 @@ function Knee() {
                 </Grid>
 
                 <Grid item md={6} xs={12}>
-                  <div>
-                    <label>Nature Of Pain-</label>
-            <Field name="Nature Of Pain" component="select">
+                  <div className='fullw10'>
+                    <label>Nature Of Pain</label>
+            <Field name="NatureOfPain" component="select">
               <option />
               <option value="Dull">Dull Ache</option>
               <option value="Sharp"> Sharp Shooting</option>
@@ -581,9 +575,9 @@ function Knee() {
 
 <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={6} xs={12}>
-                  <div>
-                    <label>Aggravating Factors-</label>
-                 <Field name="Aggravating Factors" component="select">
+                  <div className='fullw10'>
+                    <label>Aggravating Factors</label>
+                 <Field name="AggravatingFactors" component="select">
               <option />
               <option value="CoWalk">Walk</option>
               <option value="Up/Down Stairs"> Up/Down Stairs</option>
@@ -599,9 +593,9 @@ function Knee() {
                 </Grid>
 
                 <Grid item md={6} xs={12}>
-                  <div>
-                    <label>Relieving Factors-</label>
-            <Field name="Relieving Factors" component="select">
+                  <div className='fullw10'>
+                    <label>Relieving Factors</label>
+            <Field name="RelievingFactors" component="select">
               <option />
               <option value="Rest">Rest</option>
               <option value="Positioning"> Positioning</option>
@@ -652,7 +646,7 @@ function Knee() {
 
 
 
-<div className='mb-3'> <h4><u>SPECIAL TEST</u></h4>  </div>
+<div className='mb-3'> <h4><u>Special Test</u></h4>  </div>
 
 
 
@@ -666,19 +660,17 @@ function Knee() {
 
 <Grid container  spacing={2} className=''>
                 <Grid item md={4} xs={12}>
-                  <div>
-                  <h6 className=''> <u>TEST NAME</u> </h6>
-                  </div>
+                  
                 </Grid>
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <h6 className=''>LEFT</h6>
+                    <h6 className=''>Left</h6>
                   </div>
                 </Grid>
 <Grid item md={4} xs={12}>
                   <div>
-                  <h6 className='text-center'>RIGHT</h6>
+                  <h6 className='text-center'>Right</h6>
                   </div>
                 </Grid>
                </Grid>
@@ -691,11 +683,11 @@ function Knee() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={12}>
                   <div>
-                    <Field name="Anterios Drawes Test">
+                    <Field name="AnteriosDrawesTest">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Anterios Drawer Test-</label>
+                          <label className=" wsame ">Anterios Drawer Test</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -706,7 +698,7 @@ function Knee() {
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Anterios Drawes Test2">
+                    <Field name="AnterioDrawesTest2">
                       {({ input }) => (
                         <div >
                           
@@ -727,11 +719,11 @@ function Knee() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={12}>
                   <div>
-                    <Field name="Posterior Drawer Test">
+                    <Field name="PosteriorDrawerTest">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Posterior Drawer Test-</label>
+                          <label className=" wsame ">Posterior Drawer Test</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -742,7 +734,7 @@ function Knee() {
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Posterior Drawer Test2">
+                    <Field name="PosteriorDrawerTest2">
                       {({ input }) => (
                         <div >
                           
@@ -763,11 +755,11 @@ function Knee() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={12}>
                   <div>
-                    <Field name="Mc Murrays Test">
+                    <Field name="McMurraysTest">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Mc Murrays Test-</label>
+                          <label className=" wsame ">Mc Murrays Test</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -778,7 +770,7 @@ function Knee() {
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Mc Murrays Test2">
+                    <Field name="McMurraysTest2">
                       {({ input }) => (
                         <div >
                           
@@ -799,11 +791,11 @@ function Knee() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={12}>
                   <div>
-                    <Field name="Varus Stress Test">
+                    <Field name="VarusStressTest">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Varus Stress Test-</label>
+                          <label className=" wsame ">Varus Stress Test</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -814,7 +806,7 @@ function Knee() {
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Varus Stress Test1">
+                    <Field name="VarusStressTest1">
                       {({ input }) => (
                         <div >
                           
@@ -835,11 +827,11 @@ function Knee() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={12}>
                   <div>
-                    <Field name="Valgus Stress Test">
+                    <Field name="ValgusStressTest">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Valgus Stress Test-</label>
+                          <label className=" wsame ">Valgus Stress Test</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -850,7 +842,7 @@ function Knee() {
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Valgus Stress Test2">
+                    <Field name="ValgusStressTest2">
                       {({ input }) => (
                         <div >
                           
@@ -871,11 +863,11 @@ function Knee() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={12}>
                   <div>
-                    <Field name="Lachman Test">
+                    <Field name="LachmanTest">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Lachman Test-</label>
+                          <label className=" wsame ">Lachman Test</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -886,7 +878,7 @@ function Knee() {
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Lachman Test3">
+                    <Field name="LachmanTest3">
                       {({ input }) => (
                         <div >
                           
@@ -907,11 +899,11 @@ function Knee() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={12}>
                   <div>
-                    <Field name="Pivot Shift">
+                    <Field name="PivotShift">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Pivot Shift-</label>
+                          <label className=" wsame ">Pivot Shift</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -922,7 +914,7 @@ function Knee() {
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Pivot Shift4">
+                    <Field name="PivotShift4">
                       {({ input }) => (
                         <div >
                           
@@ -943,11 +935,11 @@ function Knee() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={12}>
                   <div>
-                    <Field name="Popliteol Test">
+                    <Field name="PopliteolTest">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Popliteal Test-</label>
+                          <label className=" wsame ">Popliteal Test</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -958,7 +950,7 @@ function Knee() {
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Popliteol Test5">
+                    <Field name="PopliteolTest5">
                       {({ input }) => (
                         <div >
                           
@@ -979,11 +971,11 @@ function Knee() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={12}>
                   <div>
-                    <Field name="Patellar Glide">
+                    <Field name="PatellarGlide">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Patellar Glide-</label>
+                          <label className=" wsame ">Patellar Glide</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -994,7 +986,7 @@ function Knee() {
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Patellar Glide4">
+                    <Field name="PatellarGlide4">
                       {({ input }) => (
                         <div >
                           
@@ -1025,7 +1017,7 @@ function Knee() {
                     <Field name="inverstigation">
                       {({ input }) => (
                         <div className="">
-                          <label className="widthsame bold">INVESTIGATION-</label>
+                          <label className="widthsame bold">Investigation</label>
                           <input type="text" {...input} placeholder="" className='lastw'/>
                         </div>
                       )}
@@ -1038,7 +1030,7 @@ function Knee() {
                     <Field name="diagnosis">
                       {({ input }) => (
                         <div className=" ">
-                          <label className="widthsame bold">DIAGNOSIS-</label>
+                          <label className="widthsame bold">Diagnosis</label>
                           <input type="text" {...input} placeholder="" className='lastw' />
                         </div>
                       )}
@@ -1049,10 +1041,10 @@ function Knee() {
 
                  <Grid item md={12} xs={12}>
                     <div>
-                    <Field name="TREATMENT GOAL">
+                    <Field name="TREATMENTGOAL">
                       {({ input }) => (
                         <div className="">
-                          <label className="widthsame bold">TREATMENT GOAL-</label>
+                          <label className="widthsame bold">Treatment Goal</label>
                           <input type="text" {...input} placeholder="" className='lastw'/>
                         </div>
                       )}
@@ -1063,10 +1055,10 @@ function Knee() {
 
                <Grid item md={12} xs={12}>
                     <div>
-                    <Field name="Treatment PLAN">
+                    <Field name="TreatmentPLAN">
                       {({ input }) => (
                         <div className="">
-                          <label className="widthsame bold">TREATMENT PLAN-</label>
+                          <label className="widthsame bold">Treatment Plan</label>
                           <input type="text" {...input} placeholder="" className='lastw'/>
                         </div>
                       )}
@@ -1088,7 +1080,7 @@ function Knee() {
                              color="primary"
                               size="small"
                                type='submit'
-                                startIcon={<SaveIcon />} >
+                                 style={{backgroundColor:'#2185d0',textTransform:"capitalize"}} >
                                    Save
                                 </Button></div>
 
