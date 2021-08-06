@@ -2,10 +2,9 @@ import React from "react";
 import { Table } from 'react-bootstrap';
 import { Form, Field } from "react-final-form";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
-import PhoneIcon from '@material-ui/icons/Phone';
 import EditIcon from '@material-ui/icons/Edit';
 import DeleteIcon from '@material-ui/icons/Delete';
+import Tooltip from '@material-ui/core/Tooltip';
 
 
 import { Paper,} from "@material-ui/core";
@@ -57,10 +56,13 @@ function Tables() {
                     </td>
 
                     <td className='text-center'>
-                      <MailOutlineIcon color="secondary" className="mr-5 "/>  
-                     <PhoneIcon color="secondary" className="mr-5"/>
-                       <EditIcon color="secondary" className="mr-5"/> 
-                        <DeleteIcon color="secondary"/>
+                      
+                     <Tooltip title="Edit" >
+                       <EditIcon      className="mr-5" style={{color:'yellow'}}/>
+                       </Tooltip> 
+                       <Tooltip title="Delete" >
+                        <DeleteIcon style={{color:'red'}}/>
+                        </Tooltip>
                     </td>
                    
                   </tr>

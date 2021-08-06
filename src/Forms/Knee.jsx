@@ -188,7 +188,7 @@ function Knee() {
                     <Field name="ward">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className="">WARD</label>
+                          <label className="">Ward</label>
                            
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -253,6 +253,21 @@ function Knee() {
 <div className='mb-3'> <h4><u>Mechanism Of Pain</u></h4>  </div>
 
   <Grid container  spacing={2} className='mb-3'>
+
+
+    <Grid item md={12} xs={12}>
+                  <div>
+                    <Field name="LimitationsofADLs">
+                      {({ input }) => (
+                        <div className="fullw100">
+                          <label className="">Limitations of ADLs</label>
+                           
+                          <input type="text" {...input} placeholder="" />
+                        </div>
+                      )}
+                    </Field>
+                  </div>
+                </Grid>
                 <Grid item md={4} xs={12}>
                   <div className='fullw10'>
                     <label>Pain Onset</label>
@@ -276,19 +291,7 @@ function Knee() {
             </Field>
                   </div>
                 </Grid>
-                <Grid item md={4} xs={12}>
-                  <div>
-                    <Field name="LimitationsofADLs">
-                      {({ input }) => (
-                        <div className="fullw10">
-                          <label className="">Limitations of ADLs</label>
-                           
-                          <input type="text" {...input} placeholder="" />
-                        </div>
-                      )}
-                    </Field>
-                  </div>
-                </Grid>
+                
                </Grid>
 
 
@@ -476,8 +479,8 @@ function Knee() {
 <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={12} xs={12}>
                   <div>
-                    <label>Intensity of Pain- </label>
-            <Field name="IntensityofPain" component="select">
+                    <label>VAS Score- </label>
+            <Field name="VASScore" component="select">
               <option />
               <option value="1">1</option>
               <option value="2"> 2</option>

@@ -233,7 +233,7 @@ function Hip() {
                     <Field name="sur/pro
                     ">
                       {({ input }) => (
-                        <div className="fullw10  ">
+                        <div className="fullw10 ">
                           <label className="name">Surgery/Procedure</label>
                          <textarea
                             className="wnew"

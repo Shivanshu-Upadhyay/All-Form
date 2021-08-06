@@ -5,7 +5,7 @@ const Menu = () => {
 return(
 <>
 
-<div className='text-center mb-4'><h4> Musculd-Skeletal Evaluation</h4></div>
+<div className='text-center mb-4'><h4> Musculod-Skeletal Evaluations</h4></div>
 
 <div className='menu '>
 <NavLink  exact to='/'>Hip</NavLink>
