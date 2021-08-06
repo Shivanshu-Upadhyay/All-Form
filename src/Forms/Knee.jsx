@@ -108,7 +108,7 @@ function Knee() {
       F <Field name="Gender" type="radio" value="F" component="input" />
           </label>
                    
-                     <label className='p-1 bold1'>
+                     <label className='p-1 '>
       Other <Field name="Gender" type="radio" value="O" component="input" />
           </label>
                   </div>
