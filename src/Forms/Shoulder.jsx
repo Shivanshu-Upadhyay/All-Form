@@ -32,7 +32,6 @@ function Shoulder() {
   };
 
 
-  
 
   return (
     <div >
@@ -47,8 +46,8 @@ function Shoulder() {
                   <div>
                     <Field name="dateofassessment">
                       {({ input }) => (
-                        <div className="mb-3">
-                          <label className=" ">Date Of Assessment-</label>
+                        <div className="mb-3 fullw10">
+                          <label className=" ">Date Of Assessment</label>
                           <input type="date" {...input} placeholder="" />
                         </div>
                       )}
@@ -60,9 +59,9 @@ function Shoulder() {
                   <div>
                     <Field name="patientid">
                       {({ input }) => (
-                        <div className="cardio">
-                          <label>Patient ID-</label>
-                          <input type="number" {...input} placeholder="" />
+                        <div className="cardio fullw10">
+                          <label>Patient ID</label>
+                          <input type="text" {...input} placeholder="" />
                         </div>
                       )}
                     </Field>
