@@ -25,17 +25,17 @@ function Cardio2() {
       
             <Paper style={{ padding: 30}}>
      
-
+           <div className='text-right'>
         <Link
           to="/cardioform"    className="button4"
           style={{ textDecoration: "none" }}
           >
          
-        <span> ADD NEW CARDIO-PULMONARY EVALUATION FORM</span>
+        <span> Add New Form</span>
           
         
         </Link>
-
+</div>
 {/* ++++++++++++++++++++++++++TABLE+++++++++++++++++++++++++++++++==== */}
        <Tables />
 {/* ++++++++++++++++++++++++++TABLE+++++++++++++++++++++++++++++++==== */}

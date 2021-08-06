@@ -24,6 +24,7 @@ function Postnatal2() {
      
             <Paper style={{ padding: 30}}>
     
+<div className='text-right'>
 
                   
  <Link
@@ -31,10 +32,11 @@ function Postnatal2() {
           style={{ textDecoration: "none" }}
           >
          
-        <span>   ADD NEW POSTNATAL EVALUATION FORM</span>
+        <span>   Add New Form</span>
                
         </Link>
  
+</div>
 
 {/* ++++++++++++++++++++++++++TABLE+++++++++++++++++++++++++++++++==== */}
        <Tables />

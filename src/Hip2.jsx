@@ -10,17 +10,19 @@ import Tables from "./Table";
 
 function Hip2() {
   return (
-    <div>
+    <div className='text-right'>
       <Paper style={{ padding: 30 }}>
+      <div>
         <Link
-          to="/hipform"    className="button4"
+          to="/hipform"    className="button4 "
           style={{ textDecoration: "none" }}
           >
          
-        <span> Add New Hip Evaluation Form</span>
+        <span> Add New Form</span>
           
         
         </Link>
+        </div>
 
         <Tables />
       </Paper>

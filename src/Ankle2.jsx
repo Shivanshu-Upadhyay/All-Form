@@ -23,16 +23,17 @@ function Ankle2() {
 
       
             <Paper style={{ padding: 30}}>
+            <div className='text-right'>
       <Link
           to="/ankleform"    className="button4"
           style={{ textDecoration: "none" }}
           >
          
-        <span> ADD NEW ANKLE EVALUATION FORM</span>
+        <span> Add New Form</span>
           
         
         </Link>
-
+</div>
        
 
 {/* ++++++++++++++++++++++++++TABLE+++++++++++++++++++++++++++++++==== */}

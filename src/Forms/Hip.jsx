@@ -144,7 +144,7 @@ function Hip() {
                     <Field name="address">
                       {({ input }) => (
                         <div className="fullw100  ">
-                          <label className="name">Address:</label>
+                          <label className="name">Address</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -163,7 +163,7 @@ function Hip() {
                     <Field name="dateofadmission">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className=" ">Date Of Admission:</label>
+                          <label className=" ">Date Of Admission</label>
                           <input type="date" {...input} placeholder="" />
                         </div>
                       )}
@@ -461,7 +461,7 @@ function Hip() {
 
 
 <div className='mb-3'> <h4><u>Examination</u></h4>  </div>
-<div className='mb-2'> <h6><u>On Palpation:</u></h6>  </div>
+<div className='mb-2'> <h6><u>On Palpation</u></h6>  </div>
 
 <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={4} xs={12}>
@@ -924,7 +924,7 @@ function Hip() {
                     <Field name="Gait">
                       {({ input }) => (
                         <div className="fullw100">
-                          <label className=" ">Gait Pattern:</label>
+                          <label className=" ">Gait Pattern</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
