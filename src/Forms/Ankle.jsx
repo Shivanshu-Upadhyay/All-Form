@@ -35,7 +35,7 @@ function Ankle() {
 
   return (
     <div  >
-      <h3 className="text-center"> ANKLE & FOOT EVALUATION</h3>
+      <h3 className="text-center mt-3"> Ankle & Foot Evaluation</h3>
 
       <Form onSubmit={onSubmit}>
         {({ handleSubmit }) => (
@@ -46,8 +46,8 @@ function Ankle() {
                   <div>
                     <Field name="dateofassessment">
                       {({ input }) => (
-                        <div className="mb-3">
-                          <label className=" ">Date Of Assessment-</label>
+                        <div className="mb-3 fullw10">
+                          <label className=" ">Date Of Assessment</label>
                           <input type="date" {...input} placeholder="" />
                         </div>
                       )}
@@ -59,9 +59,9 @@ function Ankle() {
                   <div>
                     <Field name="patientid">
                       {({ input }) => (
-                        <div className="cardio">
-                          <label>Patient ID-</label>
-                          <input type="number" {...input} placeholder="" />
+                        <div className="fullw10">
+                          <label>Patient ID</label>
+                          <input type="text" {...input} placeholder="" />
                         </div>
                       )}
                     </Field>
@@ -75,8 +75,8 @@ function Ankle() {
                   <div>
                     <Field name="name">
                       {({ input }) => (
-                        <div className="upname ">
-                          <label className="name">Name-</label>
+                        <div className="upname fullw10">
+                          <label className="name">Name</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -88,8 +88,8 @@ function Ankle() {
                   <div>
                     <Field name="age">
                       {({ input }) => (
-                        <div className="">
-                          <label className="age">Age-</label>
+                        <div className="fullw10">
+                          <label className="age">Age</label>
                            
                           <input type="text" {...input} placeholder="" className='w50'/>
                         </div>
@@ -99,18 +99,18 @@ function Ankle() {
                 </Grid>
                 <Grid item md={3} xs={12}>
                   <div className="">
-                    <label>Gender-</label>
+                    <label className='d-block'>Gender</label>
 
                      <label className='p-1 bold1'>
-      M:<Field name="Gender" type="radio" value="M" component="input" />
+      M <Field name="Gender" type="radio" value="M" component="input" />
           </label>
                     
                       <label className='p-1 bold1'>
-      F:<Field name="Gender" type="radio" value="F" component="input" />
+      F <Field name="Gender" type="radio" value="F" component="input" />
           </label>
                    
                      <label className='p-1 bold1'>
-      O:<Field name="Gender" type="radio" value="O" component="input" />
+      Other <Field name="Gender" type="radio" value="O" component="input" />
           </label>
                   </div>
                 </Grid>
@@ -119,8 +119,8 @@ function Ankle() {
                   <div>
                     <Field name="Occupation">
                       {({ input }) => (
-                        <div className="upname ">
-                          <label className="name">Occupation-</label>
+                        <div className="upname fullw10 ">
+                          <label className="name">Occupation</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -141,7 +141,7 @@ function Ankle() {
                     <Field name="address">
                       {({ input }) => (
                         <div className="fullw100 ">
-                          <label className="name">Address:</label>
+                          <label className="name">Address</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -160,7 +160,7 @@ function Ankle() {
                     <Field name="dateofadmission">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className=" ">Date Of Admission:</label>
+                          <label className=" ">Date Of Admission</label>
                           <input type="date" {...input} placeholder="" />
                         </div>
                       )}
@@ -170,10 +170,10 @@ function Ankle() {
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Date of Surgery">
+                    <Field name="DateofSurgery">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className="">Date of Surgery:</label>
+                          <label className="">Date of Surgery</label>
                            
                           <input type="date" {...input} placeholder="" />
                         </div>
@@ -186,7 +186,7 @@ function Ankle() {
                     <Field name="ward">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className="">WARD:</label>
+                          <label className="">Ward</label>
                            
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -206,10 +206,10 @@ function Ankle() {
              <Grid item md={6} xs={12}>
 
               <div>
-                    <Field name="chief complaints">
+                    <Field name="chiefcomplaints">
                       {({ input }) => (
                         <div className="fullw10  ">
-                          <label className="">Chief Complaints:</label>
+                          <label className="">Chief Complaints</label>
                          <textarea
                             className="wnew"
                             
@@ -231,7 +231,7 @@ function Ankle() {
                     ">
                       {({ input }) => (
                         <div className="fullw10  ">
-                          <label className="name">Surgery/Procedure:</label>
+                          <label className="name">Surgery/Procedure</label>
                          <textarea
                             className="wnew"
                             
@@ -248,12 +248,26 @@ function Ankle() {
 
 
 
-<div className='mb-3'> <h4><u>MECHANISM OF PAIN</u></h4>  </div>
+<div className='mb-3'> <h4><u>Mechanism Of Pain</u></h4>  </div>
+
+                <Grid item md={12} xs={12}>
+                  <div className='fullw10 mb-3'>
+                    <Field name="LimitationsofADLs">
+                      {({ input }) => (
+                        <div className="">
+                          <label className="">Limitations of ADLs</label>
+                           
+                          <input type="text" {...input} placeholder=""className='fullw100' />
+                        </div>
+                      )}
+                    </Field>
+                  </div>
+                </Grid>
 
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={4} xs={12}>
-                  <div>
-                    <label>Pain Onset-</label>
+                  <div className='fullw10'>
+                    <label>Pain Onset</label>
                  <Field name="painonset" component="select">
               <option />
               <option value="graduol">Gradual</option>
@@ -264,8 +278,8 @@ function Ankle() {
                 </Grid>
 
                 <Grid item md={4} xs={12}>
-                  <div>
-                    <label>Injury-</label>
+                  <div className='fullw10'>
+                    <label>Injury</label>
             <Field name="injury" component="select">
               <option />
               <option value="Traumatic">Traumatic</option>
@@ -274,58 +288,24 @@ function Ankle() {
             </Field>
                   </div>
                 </Grid>
-                <Grid item md={4} xs={12}>
-                  <div>
-                    <Field name="Limitations of ADLs">
-                      {({ input }) => (
-                        <div className="">
-                          <label className="">Limitations of ADLs-</label>
-                           
-                          <input type="text" {...input} placeholder="" />
-                        </div>
-                      )}
-                    </Field>
-                  </div>
-                </Grid>
+
                </Grid>
 
 
 
 
-                    <div className='mb-3'> <h4><u>BODY CHART</u></h4>  </div>
-            <Grid container  className='mb-3'>
-
-             <Grid item md={12} xs={12}>
-
-              <div>
-                    <Field name="body chart">
-                      {({ input }) => (
-                        <div className=" ">
-                          
-                         <textarea
-                            className="bodychart"
-                            
-                            {...input}
-                          ></textarea>
-                        </div>
-                      )}
-                    </Field>
-                  </div>
-
-           </Grid>
-          
-           </Grid>
 
 
-<div className='mb-3'> <h4><u>EXAMINATION</u></h4>  </div>
+
+<div className='mb-3'> <h4><u>Examination</u></h4>  </div>
 
 
 
 
 <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={4} xs={12}>
-                  <div>
-                    <label>Warmth-</label>
+                  <div className='fullw10'>
+                    <label>Warmth</label>
                  <Field name="warmth" component="select">
               <option />
               <option value="wleft">Left</option>
@@ -337,8 +317,8 @@ function Ankle() {
                 </Grid>
 
                 <Grid item md={4} xs={12}>
-                  <div>
-                    <label>Swelling-</label>
+                  <div className='fullw10'>
+                    <label>Swelling</label>
             <Field name="swelling" component="select">
               <option />
               <option value="sleft">Left</option>
@@ -349,8 +329,8 @@ function Ankle() {
                   </div>
                 </Grid>
                 <Grid item md={4} xs={12}>
-                   <div>
-                    <label>Bruises-</label>
+                   <div className='fullw10'>
+                    <label>Bruises</label>
             <Field name="Bruises" component="select">
               <option />
               <option value="bruleft">Left</option>
@@ -369,8 +349,8 @@ function Ankle() {
                   <div>
                     <Field name="Tenderness">
                       {({ input }) => (
-                        <div className="">
-                          <label className=" ">Tenderness-</label>
+                        <div className='fullw10'>
+                          <label className=" ">Tenderness</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -379,8 +359,8 @@ function Ankle() {
                 </Grid>
 
                 <Grid item md={4} xs={12}>
-                  <div>
-                    <label>Proprioception-</label>
+                  <div className='fullw10'>
+                    <label>Proprioception</label>
             <Field name="Proprioception" component="select">
               <option />
               <option value="propleft">Left</option>
@@ -391,7 +371,7 @@ function Ankle() {
                   </div>
                 </Grid>
                 <Grid item md={4} xs={12}>
-                  <div>
+                  <div className='fullw10'>
 
             <Field name="pro2" component="select">
               <option />
@@ -409,20 +389,35 @@ function Ankle() {
 
 
 
-<div className='mb-3'> <h4><u>PAIN ASSESSMENT</u></h4>  </div>
+<div className='mb-3'> <h4><u>Pain Assessment</u></h4>  </div>
 
 
 {/* ++++++++++++++++++++++++++++++++= */}
 
 
-           <Grid container  spacing={2} className='mb-3'>
+
+<Grid container  spacing={2} className='mb-3'>
                 <Grid item md={12} xs={12}>
-                  <div className=''>
-                   <h6 className='text-center'>Intensity of Pain</h6>
-                     <NewSlider />
+                  <div>
+                    <label>VAS Score- </label>
+            <Field name="VasScore" component="select">
+              <option />
+              <option value="1">1</option>
+              <option value="2"> 2</option>
+              <option value="3"> 3</option>
+              <option value="4"> 4</option>
+              <option value="5"> 5</option>
+              <option value="6"> 6</option>
+              <option value="7"> 7</option>
+              <option value="8"> 8</option>
+              <option value="9"> 9</option>
+              <option value="10"> 10</option>
+             
+            </Field>
                   </div>
                 </Grid>
                  </Grid>
+
 
 
 {/* ++++++++++++++++++++++++++++++++= */}
@@ -434,10 +429,10 @@ function Ankle() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={6} xs={12}>
                   <div>
-                    <Field name="duration of pain">
+                    <Field name="durationofpain">
                       {({ input }) => (
-                        <div className="">
-                          <label className=" ">Duration Of Pain-</label>
+                        <div className='fullw10'>
+                          <label className=" ">Duration Of Pain</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -447,10 +442,10 @@ function Ankle() {
 
                 <Grid item md={6} xs={12}>
                   <div>
-                    <Field name="Site Of Pain">
+                    <Field name="SiteOfPain">
                       {({ input }) => (
-                        <div className="">
-                          <label className="">Site Of Pain-</label>
+                        <div className='fullw10'>
+                          <label className="">Site Of Pain</label>
                            
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -467,8 +462,8 @@ function Ankle() {
 
 <Grid container  spacing={2} className='mb-2'>
                 <Grid item md={6} xs={12}>
-                  <div>
-                    <label>Pain Type-</label>
+                  <div className='fullw10'>
+                    <label>Pain Type</label>
                  <Field name="Pain Type" component="select">
               <option />
               <option value="Constant">Constant</option>
@@ -480,8 +475,8 @@ function Ankle() {
                 </Grid>
 
                 <Grid item md={6} xs={12}>
-                  <div>
-                    <label>Nature Of Pain-</label>
+                  <div className='fullw10'>
+                    <label>Nature Of Pain</label>
             <Field name="Nature Of Pain" component="select">
               <option />
               <option value="Dull">Dull Ache</option>
@@ -502,8 +497,8 @@ function Ankle() {
 
 <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={6} xs={12}>
-                  <div>
-                    <label>Aggravating Factors-</label>
+                  <div className='fullw10'>
+                    <label>Aggravating Factors</label>
                  <Field name="Aggravating Factors" component="select">
               <option />
               <option value="CoWalk">Walk</option>
@@ -520,8 +515,8 @@ function Ankle() {
                 </Grid>
 
                 <Grid item md={6} xs={12}>
-                  <div>
-                    <label>Relieving Factors-</label>
+                  <div className='fullw10'>
+                    <label>Relieving Factors</label>
             <Field name="Relieving Factors" component="select">
               <option />
               <option value="Rest">Rest</option>
@@ -580,7 +575,7 @@ function Ankle() {
 
 
 
-<div className='mb-3'> <h4><u>MUSCLE STRENGTH</u></h4>  </div>
+<div className='mb-3'> <h4><u>Muscle Strength</u></h4>  </div>
 
 <Grid container  spacing={2} className=''>
                 <Grid item md={4} xs={12}>
@@ -591,12 +586,12 @@ function Ankle() {
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <h6 className=''>LEFT</h6>
+                    <h6 className=''>Left</h6>
                   </div>
                 </Grid>
                  <Grid item md={4} xs={12}>
                   <div>
-                  <h6 className='text-center'>RIGHT</h6>
+                  <h6 className='text-center'>Right</h6>
                   </div>
                 </Grid>
                </Grid>
@@ -613,7 +608,7 @@ function Ankle() {
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Dorsiflexors-</label>
+                          <label className=" wsame ">Dorsiflexors</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -624,7 +619,7 @@ function Ankle() {
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Dorsiflexors Test2">
+                    <Field name="DorsiflexorsTest2">
                       {({ input }) => (
                         <div >
                           
@@ -645,11 +640,11 @@ function Ankle() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={12}>
                   <div>
-                    <Field name="Plantar Flexors">
+                    <Field name="PlantarFlexors">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Plantar Flexors-</label>
+                          <label className=" wsame ">Plantar Flexors</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -660,7 +655,7 @@ function Ankle() {
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Plantar Flexors Test2">
+                    <Field name="PlantarFlexorsTest2">
                       {({ input }) => (
                         <div >
                           
@@ -685,7 +680,7 @@ function Ankle() {
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Evertors-</label>
+                          <label className=" wsame ">Evertors</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -721,7 +716,7 @@ function Ankle() {
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Invertors-</label>
+                          <label className=" wsame ">Invertors</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -753,11 +748,11 @@ function Ankle() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={12}>
                   <div>
-                    <Field name="Flexor Digiotorum">
+                    <Field name="FlexorDigiotorum">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Flexor Digitorum-</label>
+                          <label className=" wsame ">Flexor Digitorum</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -768,7 +763,7 @@ function Ankle() {
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Flexor Digiotorum2">
+                    <Field name="FlexorDigiotorum2">
                       {({ input }) => (
                         <div >
                           
@@ -789,11 +784,11 @@ function Ankle() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={12}>
                   <div>
-                    <Field name="Extensor Digitorum">
+                    <Field name="ExtensorDigitorum">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Extensor Digitorum-</label>
+                          <label className=" wsame ">Extensor Digitorum</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -804,7 +799,7 @@ function Ankle() {
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Extensor Digitorum3">
+                    <Field name="ExtensorDigitorum3">
                       {({ input }) => (
                         <div >
                           
@@ -829,7 +824,7 @@ function Ankle() {
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">EHL/EHB-</label>
+                          <label className=" wsame ">EHL/EHB</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -859,23 +854,21 @@ function Ankle() {
 
 
              
-<div className='mb-3'> <h4><u>SPECIAL TESTS</u></h4>  </div>
+<div className='mb-3'> <h4><u>Special Tests</u></h4>  </div>
 
 <Grid container  spacing={2} className=''>
                 <Grid item md={4} xs={12}>
-                  <div>
-                  <h6 className=''> <u>TEST NAME</u> </h6>
-                  </div>
+                  
                 </Grid>
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <h6 className=''>LEFT</h6>
+                    <h6 className=''>Left</h6>
                   </div>
                 </Grid>
                  <Grid item md={4} xs={12}>
                   <div>
-                  <h6 className='text-center'>RIGHT</h6>
+                  <h6 className='text-center'>Right</h6>
                   </div>
                 </Grid>
                </Grid>
@@ -888,11 +881,11 @@ function Ankle() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={12}>
                   <div>
-                    <Field name="Anterior Drawer Test">
+                    <Field name="AnteriorDrawerTest">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Anterior Drawer Test-</label>
+                          <label className=" wsame ">Anterior Drawer Test</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -903,7 +896,7 @@ function Ankle() {
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Anterior Drawer Test Test2">
+                    <Field name="AnteriorDrawerTestTest2">
                       {({ input }) => (
                         <div >
                           
@@ -924,11 +917,11 @@ function Ankle() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={12}>
                   <div>
-                    <Field name="Inversion Talar Tilt Test">
+                    <Field name="InversionTalarTiltTest">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Inversion Talar Tilt Test-</label>
+                          <label className=" wsame ">Inversion Talar Tilt Test</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -939,7 +932,7 @@ function Ankle() {
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Inversion Talar Tilt Test Test2">
+                    <Field name="InversionTalarTiltTestTest2">
                       {({ input }) => (
                         <div >
                           
@@ -960,11 +953,11 @@ function Ankle() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={12}>
                   <div>
-                    <Field name="Eversion  Talar Tilt Test">
+                    <Field name="EversionTalarTiltTest">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Eversion  Talar Tilt Test-</label>
+                          <label className=" wsame ">Eversion  Talar Tilt Test</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -975,7 +968,7 @@ function Ankle() {
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Eversion  Talar Tilt Test2">
+                    <Field name="EversionTalariltTest2">
                       {({ input }) => (
                         <div >
                           
@@ -996,11 +989,11 @@ function Ankle() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={12}>
                   <div>
-                    <Field name="Squeeze Test">
+                    <Field name="SqueezeTest">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Squeeze Test-</label>
+                          <label className=" wsame ">Squeeze Test</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -1011,7 +1004,7 @@ function Ankle() {
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Squeeze Test1">
+                    <Field name="SqueezeTest1">
                       {({ input }) => (
                         <div >
                           
@@ -1032,11 +1025,11 @@ function Ankle() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={12}>
                   <div>
-                    <Field name="Thompson Test">
+                    <Field name="ThompsonTest">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Thompson Test-</label>
+                          <label className=" wsame ">Thompson Test</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -1047,7 +1040,7 @@ function Ankle() {
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Thompson Test2">
+                    <Field name="ThompsonTest2">
                       {({ input }) => (
                         <div >
                           
@@ -1068,11 +1061,11 @@ function Ankle() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={12}>
                   <div>
-                    <Field name="Varus/Volgus Stress Testing Of MTP">
+                    <Field name="VarusMTP">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Varus/Valgus Stress Testing Of MTP-</label>
+                          <label className=" wsame ">Varus/Valgus Stress Testing Of MTP</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -1083,7 +1076,7 @@ function Ankle() {
 
                 <Grid item md={4} xs={12} className='mt-4'>
                   <div >
-                    <Field name="Varus/Volgus Stress Testing Of MTP3">
+                    <Field name="VarusVolguTP3">
                       {({ input }) => (
                         <div >
                           
@@ -1122,7 +1115,7 @@ function Ankle() {
                     <Field name="inverstigation">
                       {({ input }) => (
                         <div className="">
-                          <label className="widthsame bold">INVESTIGATION-</label>
+                          <label className="widthsame bold">Inverstigation</label>
                           <input type="text" {...input} placeholder="" className='lastw'/>
                         </div>
                       )}
@@ -1135,7 +1128,7 @@ function Ankle() {
                     <Field name="diagnosis">
                       {({ input }) => (
                         <div className=" ">
-                          <label className="widthsame bold">DIAGNOSIS-</label>
+                          <label className="widthsame bold">Diagnosis</label>
                           <input type="text" {...input} placeholder="" className='lastw' />
                         </div>
                       )}
@@ -1146,10 +1139,10 @@ function Ankle() {
 
                  <Grid item md={12} xs={12}>
                     <div>
-                    <Field name="TREATMENT GOAL">
+                    <Field name="TREATMENTGOAL">
                       {({ input }) => (
                         <div className="">
-                          <label className="widthsame bold">TREATMENT GOAL-</label>
+                          <label className="widthsame bold">Treatment Goal</label>
                           <input type="text" {...input} placeholder="" className='lastw'/>
                         </div>
                       )}
@@ -1163,7 +1156,7 @@ function Ankle() {
                     <Field name="Treatment PLAN">
                       {({ input }) => (
                         <div className="">
-                          <label className="widthsame bold">TREATMENT PLAN-</label>
+                          <label className="widthsame bold">Treatment Plan</label>
                           <input type="text" {...input} placeholder="" className='lastw'/>
                         </div>
                       )}
@@ -1185,7 +1178,7 @@ function Ankle() {
                              color="primary"
                               size="small"
                                type='submit'
-                                startIcon={<SaveIcon />} >
+                               style={{backgroundColor:'#2185d0',textTransform:"capitalize"}}  >
                                    Save
                                 </Button></div>
 

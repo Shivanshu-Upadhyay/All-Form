@@ -75,8 +75,8 @@ function Shoulder() {
                   <div>
                     <Field name="name">
                       {({ input }) => (
-                        <div className="upname ">
-                          <label className="name">Name-</label>
+                        <div className="upname fullw10">
+                          <label className="name">Name</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -88,8 +88,8 @@ function Shoulder() {
                   <div>
                     <Field name="age">
                       {({ input }) => (
-                        <div className="">
-                          <label className="age">Age-</label>
+                        <div className="fullw10">
+                          <label className="age">Age</label>
                            
                           <input type="text" {...input} placeholder="" className='w50'/>
                         </div>
@@ -99,18 +99,18 @@ function Shoulder() {
                 </Grid>
                 <Grid item md={3} xs={12}>
                   <div className="">
-                    <label>Gender-</label>
+                    <label className='d-block'>Gender</label>
 
                      <label className='p-1 bold1'>
-      M:<Field name="Gender" type="radio" value="M" component="input" />
+      M <Field name="Gender" type="radio" value="M" component="input" />
           </label>
                     
                       <label className='p-1 bold1'>
-      F:<Field name="Gender" type="radio" value="F" component="input" />
+      F <Field name="Gender" type="radio" value="F" component="input" />
           </label>
                    
                      <label className='p-1 bold1'>
-      O:<Field name="Gender" type="radio" value="O" component="input" />
+      Other <Field name="Gender" type="radio" value="O" component="input" />
           </label>
                   </div>
                 </Grid>
@@ -119,8 +119,8 @@ function Shoulder() {
                   <div>
                     <Field name="Occupation">
                       {({ input }) => (
-                        <div className="upname ">
-                          <label className="name">Occupation-</label>
+                        <div className="upname fullw10">
+                          <label className="name">Occupation</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -140,8 +140,8 @@ function Shoulder() {
               <div>
                     <Field name="address">
                       {({ input }) => (
-                        <div className="fullw100 ">
-                          <label className="name">Address:</label>
+                        <div className="fullw100 fullw10">
+                          <label className="name">Address</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -160,7 +160,7 @@ function Shoulder() {
                     <Field name="dateofadmission">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className=" ">Date Of Admission:</label>
+                          <label className=" ">Date Of Admission</label>
                           <input type="date" {...input} placeholder="" />
                         </div>
                       )}
@@ -170,10 +170,10 @@ function Shoulder() {
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Date of Surgery">
+                    <Field name="DateofSurgery">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className="">Date of Surgery:</label>
+                          <label className="">Date of Surgery</label>
                            
                           <input type="date" {...input} placeholder="" />
                         </div>
@@ -186,7 +186,7 @@ function Shoulder() {
                     <Field name="ward">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className="">WARD:</label>
+                          <label className="">Ward</label>
                            
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -206,10 +206,10 @@ function Shoulder() {
              <Grid item md={6} xs={12}>
 
               <div>
-                    <Field name="chief complaints">
+                    <Field name="chiefcomplaints">
                       {({ input }) => (
                         <div className="fullw10  ">
-                          <label className="">Chief Complaints:</label>
+                          <label className="">Chief Complaints</label>
                          <textarea
                             className="wnew"
                             
@@ -231,7 +231,7 @@ function Shoulder() {
                     ">
                       {({ input }) => (
                         <div className="fullw10  ">
-                          <label className="name">Surgery/Procedure:</label>
+                          <label className="name">Surgery/Procedure</label>
                          <textarea
                             className="wnew"
                             
@@ -248,14 +248,26 @@ function Shoulder() {
 
 
 
-<div className='mb-3'> <h4><u>MECHANISM OF PAIN</u></h4>  </div>
+<div className='mb-3'> <h4><u>Mechanism Of Pain</u></h4>  </div>
 
   <Grid container  spacing={2} className='mb-3'>
-
+            <Grid item md={12} xs={12}>
+                  <div>
+                    <Field name="LimitationsofADLs">
+                      {({ input }) => (
+                        <div className='fullw10'>
+                          <label className="">Limitations of ADLs</label>
+                           
+                          <input type="text" {...input} placeholder="" className='fullw100'/>
+                        </div>
+                      )}
+                    </Field>
+                  </div>
+                </Grid>
  
                 <Grid item md={4} xs={12}>
-                  <div>
-                    <label>Pain Onset-</label>
+                  <div className='fullw10'>
+                    <label>Pain Onset</label>
                  <Field name="painonset" component="select">
               <option />
               <option value="graduol">Gradual</option>
@@ -266,8 +278,8 @@ function Shoulder() {
                 </Grid>
 
                 <Grid item md={4} xs={12}>
-                  <div>
-                    <label>Injury-</label>
+                  <div className='fullw10'>
+                    <label>Injury</label>
             <Field name="injury" component="select">
               <option />
               <option value="Traumatic">Traumatic</option>
@@ -280,64 +292,24 @@ function Shoulder() {
 
 
 
-<Grid item md={4} xs={12}>
-                  <div>
-                    <Field name="Limitations of ADLs">
-                      {({ input }) => (
-                        <div className="">
-                          <label className="">Limitations of ADLs-</label>
-                           
-                          <input type="text" {...input} placeholder="" />
-                        </div>
-                      )}
-                    </Field>
-                  </div>
-                </Grid>
+
 
             </Grid>
 
 
 
 
-                    <div className='mb-3'> <h4><u>BODY CHART</u></h4>  </div>
-            <Grid container  className='mb-3'>
+                    
 
-             <Grid item md={12} xs={12}>
-
-              <div>
-                    <Field name="body chart">
-                      {({ input }) => (
-                        <div className=" ">
-                          
-                         <textarea
-                            className="bodychart"
-                            
-                            {...input}
-                          ></textarea>
-                        </div>
-                      )}
-                    </Field>
-                  </div>
-
-           </Grid>
-          
-           </Grid>
-
-
-
-
-
-
-
-<div className='mb-3'> <h4><u>EXAMINATION</u></h4>  </div>
+<div className='mb-3'> <h4><u>Examination</u></h4>  </div>
 
 
 
 
 <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={4} xs={12}>
-                  <div>
-                    <label>Warmth-</label>
+                  <div className='fullw10'>
+                    <label>Warmth</label>
                  <Field name="warmth" component="select">
               <option />
               <option value="wleft">L</option>
@@ -349,8 +321,8 @@ function Shoulder() {
                 </Grid>
 
                 <Grid item md={4} xs={12}>
-                  <div>
-                    <label>Swelling-</label>
+                  <div className='fullw10'>
+                    <label>Swelling</label>
             <Field name="swelling" component="select">
               <option />
               <option value="sleft">L</option>
@@ -361,8 +333,8 @@ function Shoulder() {
                   </div>
                 </Grid>
                 <Grid item md={4} xs={12}>
-                   <div>
-                    <label>Stiffness-</label>
+                   <div className='fullw10'>
+                    <label>Stiffness</label>
             <Field name="Stiffness" component="select">
               <option />
               <option value="bruleft">Left</option>
@@ -381,8 +353,8 @@ function Shoulder() {
 
 
   <Grid item md={4} xs={12}>
-                  <div>
-                    <label>Clicking Sound-</label>
+                  <div className='fullw10'>
+                    <label>Clicking Sound</label>
             <Field name="Clicking Sound" component="select">
               <option />
               <option value="propleft">Left</option>
@@ -400,8 +372,8 @@ function Shoulder() {
                   <div>
                     <Field name="Alignment">
                       {({ input }) => (
-                        <div className="">
-                          <label className=" ">Alignment-</label>
+                        <div className="fullw10">
+                          <label className=" ">Alignment</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -412,8 +384,8 @@ function Shoulder() {
               
                
   <Grid item md={4} xs={12}>
-                  <div>
-                    <label>Winging-</label>
+                  <div className='fullw10'>
+                    <label>Winging</label>
             <Field name="Winging" component="select">
               <option />
               <option value="propleft">Left</option>
@@ -431,11 +403,11 @@ function Shoulder() {
 
 <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={4} xs={12}>
-                  <div>
-                    <Field name="Muscle Atophy-">
+                  <div className='fullw10'>
+                    <Field name="MuscleAtophy-">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className=" ">Muscle Atrophy:</label>
+                          <label className=" ">Muscle Atrophy</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -445,10 +417,10 @@ function Shoulder() {
 
                <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Muscle Tightness">
+                    <Field name="MuscleTightness">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className=" ">Muscle Tightness:</label>
+                          <label className=" ">Muscle Tightness</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -459,10 +431,10 @@ function Shoulder() {
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Contracture/Deformities">
+                    <Field name="ContractureDeformities">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className=" ">Contracture/Deformities:</label>
+                          <label className=" ">Contracture/Deformities</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -480,7 +452,7 @@ function Shoulder() {
 
 
 
-<div className='mb-3'> <h4><u> PAIN EVALUATION </u></h4>  </div>
+<div className='mb-3'> <h4><u> Pain Evaluation </u></h4>  </div>
 
 
 {/* +++++++++++++++ SLIDER+++++++++++++++++= */}
@@ -492,11 +464,22 @@ function Shoulder() {
 
 <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={12} xs={12}>
-                  <div className=''>
-                  <label >Intensity Of Pain</label>
-                  
-                     <NewSlider />
-                      <h6 className='text-center'>VAS Score</h6>
+                  <div>
+                    <label>VAS Score- </label>
+            <Field name="VasScore" component="select">
+              <option />
+              <option value="1">1</option>
+              <option value="2"> 2</option>
+              <option value="3"> 3</option>
+              <option value="4"> 4</option>
+              <option value="5"> 5</option>
+              <option value="6"> 6</option>
+              <option value="7"> 7</option>
+              <option value="8"> 8</option>
+              <option value="9"> 9</option>
+              <option value="10"> 10</option>
+             
+            </Field>
                   </div>
                 </Grid>
                  </Grid>
@@ -511,10 +494,10 @@ function Shoulder() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={6} xs={12}>
                   <div>
-                    <Field name="duration of pain">
+                    <Field name="durationofpain">
                       {({ input }) => (
-                        <div className="">
-                          <label className=" ">Duration Of Pain-</label>
+                        <div className="fullw10">
+                          <label className=" ">Duration Of Pain</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -524,10 +507,10 @@ function Shoulder() {
 
                 <Grid item md={6} xs={12}>
                   <div>
-                    <Field name="Site Of Pain">
+                    <Field name="SiteOfPain">
                       {({ input }) => (
-                        <div className="">
-                          <label className="">Site Of Pain-</label>
+                        <div className="fullw10">
+                          <label className="">Site Of Pain</label>
                            
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -549,9 +532,9 @@ function Shoulder() {
 
 
   <Grid item md={6} xs={12}>
-                  <div>
-                    <label>Pain Type-</label>
-                 <Field name="Pain Type" component="select">
+                  <div className='fullw10'>
+                    <label>Pain Type</label>
+                 <Field name="PainType" component="select">
               <option />
               <option value="Constant">Constant</option>
               <option value="Internittent"> Intermittent</option>
@@ -563,9 +546,9 @@ function Shoulder() {
 
 
   <Grid item md={6} xs={12}>
-                  <div>
-                    <label>Nature Of Pain-</label>
-            <Field name="Nature Of Pain" component="select">
+                  <div className='fullw10'>
+                    <label>Nature Of Pain</label>
+            <Field name="NatureOfPain" component="select">
               <option />
               <option value="Dull">Dull Ache</option>
               <option value="Sharp"> Sharp Shooting</option>
@@ -583,7 +566,7 @@ function Shoulder() {
 
 
 
-<div className='mb-3'> <h4><u>NECK</u></h4>  </div>
+<div className='mb-3'> <h4><u>Neck</u></h4>  </div>
 
 
 <Grid container  spacing={2} className='mb-3'>
@@ -592,7 +575,7 @@ function Shoulder() {
                     <Field name="STiffness3-">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className=" ">Stiffness:</label>
+                          <label className=" ">Stiffness</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -605,7 +588,7 @@ function Shoulder() {
                     <Field name="Pain12">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className=" ">Pain:</label>
+                          <label className=" ">Pain</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -619,7 +602,7 @@ function Shoulder() {
                     <Field name="Radiation">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className=" ">Radiation:</label>
+                          <label className=" ">Radiation</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -638,10 +621,10 @@ function Shoulder() {
 <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={12} xs={12}>
                   <div>
-                    <Field name="Aggravating Factors">
+                    <Field name="AggravatingFactors">
                       {({ input }) => (
-                        <div className="">
-                          <label className=" ">Aggravating Factors-</label>
+                        <div className="fullw10">
+                          <label className=" ">Aggravating Factors</label>
                           <input type="text" {...input} placeholder="" className='w50' />
                         </div>
                       )}
@@ -658,8 +641,8 @@ function Shoulder() {
                   <div>
                     <Field name="Relieving Factor">
                       {({ input }) => (
-                        <div className="">
-                          <label className=" ">Relieving Factor-</label>
+                        <div className='fullw10'>
+                          <label className=" ">Relieving Factor</label>
                           <input type="text" {...input} placeholder="" className='w50'/>
                         </div>
                       )}
@@ -681,7 +664,7 @@ function Shoulder() {
 
            <Grid container className='mb-3'>
           <Grid item xs={12}>
-             <div className='mb-4'> <h4><u> STRENGTH & ROM</u></h4></div> 
+              
               <div>
                <ShoulderTable />
                   </div>
@@ -706,42 +689,43 @@ function Shoulder() {
 
 
              
-<div className='mb-3'> <h4><u>SPECIAL TESTS</u></h4>  </div>
+<div className='mb-3'> <h4><u>Special Tests</u></h4>  </div>
 
 <Grid container  spacing={2} className=''>
                 <Grid item md={4} xs={4}>
-                  <div>
-                  <h6 className=''> <u> TEST NAME </u> </h6>
-                 
-                  </div>
+                  
+                 <div>
+                   <h6>Rotator Cuff Testing</h6>
+                 </div>
+                  
 
                 </Grid>
 
                 <Grid item md={4} xs={4}>
                   <div>
-                    <h6 className=''>LEFT</h6>
+                    <h6 className=''>Left</h6>
                   </div>
                 </Grid>
                  <Grid item md={4} xs={4}>
                   <div>
-                  <h6 className='text-center'>RIGHT</h6>
+                  <h6 className='text-center'>Right</h6>
                   </div>
                 </Grid>
                </Grid>
 
 
 
-<div><h5 className='mb-4 mt-3'> ROTATOR CUFF TESTING</h5></div>
+
 
 
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={8}>
                   <div>
-                    <Field name="Supraspinatus Test">
+                    <Field name="SupraspinatusTest">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Supraspinatus Test-</label>
+                          <label className=" wsame ">Supraspinatus Test</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -752,7 +736,7 @@ function Shoulder() {
 
                 <Grid item md={4} xs={4}>
                   <div>
-                    <Field name="Supraspinatus Test">
+                    <Field name="SupraspinatusTest1">
                       {({ input }) => (
                         <div >
                           
@@ -773,11 +757,11 @@ function Shoulder() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={8}>
                   <div>
-                    <Field name="Infraspinatus Test">
+                    <Field name="InfraspinatusTest">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Infraspinatus Test-</label>
+                          <label className=" wsame ">Infraspinatus Test</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -788,7 +772,7 @@ function Shoulder() {
 
                 <Grid item md={4} xs={4}>
                   <div>
-                    <Field name="Infraspinatus Test ">
+                    <Field name="InfraspinatuTest2 ">
                       {({ input }) => (
                         <div >
                           
@@ -809,11 +793,11 @@ function Shoulder() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={8}>
                   <div>
-                    <Field name="Drop Arm Test ">
+                    <Field name="DropArmTest ">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Drop Arm Test -</label>
+                          <label className=" wsame ">Drop Arm Test</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -824,7 +808,7 @@ function Shoulder() {
 
                 <Grid item md={4} xs={4}>
                   <div>
-                    <Field name="Drop Arm Test 2">
+                    <Field name="DropArmTest2">
                       {({ input }) => (
                         <div >
                           
@@ -845,11 +829,11 @@ function Shoulder() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={8}>
                   <div>
-                    <Field name="Subscapularis Test">
+                    <Field name="SubscapularisTest">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Subscapularis Test-</label>
+                          <label className=" wsame ">Subscapularis Test</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -860,7 +844,7 @@ function Shoulder() {
 
                 <Grid item md={4} xs={4}>
                   <div>
-                    <Field name="Subscapularis Test1">
+                    <Field name="SubscapularisTest1">
                       {({ input }) => (
                         <div >
                           
@@ -876,16 +860,16 @@ function Shoulder() {
                </Grid>
 
 
-<div><h5 className='mb-4 mt-3'> IMPINGEMENT </h5></div>
+<div><h5 className='mb-4 mt-3'> Impingement </h5></div>
 
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={8}>
                   <div>
-                    <Field name="Hawkins-Kennedy Test">
+                    <Field name="HawkinsKennedyTest">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Hawkins-Kennedy Test-</label>
+                          <label className=" wsame ">Hawkins-Kennedy Test</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -896,7 +880,7 @@ function Shoulder() {
 
                 <Grid item md={4} xs={4}>
                   <div>
-                    <Field name="Hawkins-Kennedy Test">
+                    <Field name="Hawkins3KennedyTest">
                       {({ input }) => (
                         <div >
                           
@@ -917,7 +901,7 @@ function Shoulder() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={8}>
                   <div>
-                    <Field name="Painful Arc">
+                    <Field name="PainfulArc">
                       {({ input }) => (
                         <div className="">
 
@@ -932,7 +916,7 @@ function Shoulder() {
 
                 <Grid item md={4} xs={4}>
                   <div>
-                    <Field name="Painful Arc ">
+                    <Field name="Painful4Arc ">
                       {({ input }) => (
                         <div >
                           
@@ -950,16 +934,16 @@ function Shoulder() {
 
 
 
-<div><h5 className='mb-4 mt-3'> STABILITY TESTS </h5></div>
+<div><h5 className='mb-4 mt-3'> Stability Tests </h5></div>
 
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={8}>
                   <div>
-                    <Field name="Sulcus Sign">
+                    <Field name="SulcusSign">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Sulcus Sign-</label>
+                          <label className=" wsame ">Sulcus Sign</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -970,7 +954,7 @@ function Shoulder() {
 
                 <Grid item md={4} xs={4}>
                   <div>
-                    <Field name="Sulcus Sign">
+                    <Field name="Sulcus4Sign">
                       {({ input }) => (
                         <div >
                           
@@ -991,11 +975,11 @@ function Shoulder() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={8}>
                   <div>
-                    <Field name="Apprehension Test">
+                    <Field name="ApprehensionTest">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Apprehension Test-</label>
+                          <label className=" wsame ">Apprehension Test</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -1006,7 +990,7 @@ function Shoulder() {
 
                 <Grid item md={4} xs={4}>
                   <div>
-                    <Field name="Apprehension Test ">
+                    <Field name="ApprehensionTest7 ">
                       {({ input }) => (
                         <div >
                           
@@ -1045,7 +1029,7 @@ function Shoulder() {
                     <Field name="inverstigation">
                       {({ input }) => (
                         <div className="">
-                          <label className="widthsame bold">INVESTIGATION-</label>
+                          <label className="widthsame bold">Inverstigation</label>
                           <input type="text" {...input} placeholder="" className='lastw'/>
                         </div>
                       )}
@@ -1058,7 +1042,7 @@ function Shoulder() {
                     <Field name="diagnosis">
                       {({ input }) => (
                         <div className=" ">
-                          <label className="widthsame bold">DIAGNOSIS-</label>
+                          <label className="widthsame bold">Diagnosis-</label>
                           <input type="text" {...input} placeholder="" className='lastw' />
                         </div>
                       )}
@@ -1069,10 +1053,10 @@ function Shoulder() {
 
                  <Grid item md={12} xs={12}>
                     <div>
-                    <Field name="TREATMENT GOAL">
+                    <Field name="TREATMENTGOAL">
                       {({ input }) => (
                         <div className="">
-                          <label className="widthsame bold"> TREATMENT GOAL-</label>
+                          <label className="widthsame bold"> Treatment Goal</label>
                           <input type="text" {...input} placeholder="" className='lastw'/>
                         </div>
                       )}
@@ -1083,10 +1067,10 @@ function Shoulder() {
 
                <Grid item md={12} xs={12}>
                     <div>
-                    <Field name="Treatment PLAN">
+                    <Field name="TreatmentPLAN">
                       {({ input }) => (
                         <div className="">
-                          <label className="widthsame bold">TREATMENT PLAN-</label>
+                          <label className="widthsame bold">Treatment Plan</label>
                           <input type="text" {...input} placeholder="" className='lastw'/>
                         </div>
                       )}
@@ -1108,7 +1092,7 @@ function Shoulder() {
                              color="primary"
                               size="small"
                                type='submit'
-                                startIcon={<SaveIcon />} >
+                                  style={{backgroundColor:'#2185d0',textTransform:"capitalize"}}>
                                    Save
                                 </Button></div>
 

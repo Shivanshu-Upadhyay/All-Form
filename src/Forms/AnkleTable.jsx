@@ -17,15 +17,15 @@ function AnkleTable() {
           <form onSubmit={handleSubmit} className="ui form">
             <div className="">
              
-              <h4> <u>RANGE OF MOTION</u> </h4>
+              <h4> <u>Range Of Motion</u> </h4>
              
               <br />
               <Table striped bordered hover>
                 <thead>
                   <tr>
                     <th className='text-center pb-4' rowSpan='2'> <h5>ROM</h5> </th>
-                    <th colSpan='2' className='text-center'>LEFT</th>
-                    <th colSpan='2' className='text-center' >RIGTH</th>
+                    <th colSpan='2' className='text-center'>Left</th>
+                    <th colSpan='2' className='text-center' >Right</th>
 
                     
                   </tr>
@@ -34,16 +34,16 @@ function AnkleTable() {
                   <tr>
                     
                     <th>
-                        ACTIVE
+                        Active
                     </th>
                     <th>
-                        PASSIVE
+                        Passive
                     </th>
                     <th>
-                        ACTIVE
+                        Active
                     </th>
                     <th>
-                         PASSIVE
+                         Passive
                     </th>
                     
                   </tr>

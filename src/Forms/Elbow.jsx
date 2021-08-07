@@ -36,7 +36,7 @@ function Elbow() {
 
   return (
     <div >
-      <h3 className="text-center"> ELBOW/WRIST EVALUATION</h3>
+      <h3 className="text-center mt-3"> Elbow/Wrist Evaluation</h3>
 
       <Form onSubmit={onSubmit}>
         {({ handleSubmit }) => (
@@ -47,8 +47,8 @@ function Elbow() {
                   <div>
                     <Field name="dateofassessment">
                       {({ input }) => (
-                        <div className="mb-3">
-                          <label className=" ">Date Of Assessment-</label>
+                        <div className="mb-3 fullw10">
+                          <label className=" ">Date Of Assessment</label>
                           <input type="date" {...input} placeholder="" />
                         </div>
                       )}
@@ -60,9 +60,9 @@ function Elbow() {
                   <div>
                     <Field name="patientid">
                       {({ input }) => (
-                        <div className="cardio">
-                          <label>Patient ID-</label>
-                          <input type="number" {...input} placeholder="" />
+                        <div className="cardio fullw10">
+                          <label>Patient ID</label>
+                          <input type="text" {...input} placeholder="" />
                         </div>
                       )}
                     </Field>
@@ -76,8 +76,8 @@ function Elbow() {
                   <div>
                     <Field name="name">
                       {({ input }) => (
-                        <div className="upname ">
-                          <label className="name">Name-</label>
+                        <div className="upname fullw10 ">
+                          <label className="name">Name</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -89,8 +89,8 @@ function Elbow() {
                   <div>
                     <Field name="age">
                       {({ input }) => (
-                        <div className="">
-                          <label className="age">Age-</label>
+                        <div className="fullw10">
+                          <label className="age">Age</label>
                            
                           <input type="text" {...input} placeholder="" className='w50'/>
                         </div>
@@ -100,18 +100,18 @@ function Elbow() {
                 </Grid>
                 <Grid item md={3} xs={12}>
                   <div className="">
-                    <label>Gender-</label>
+                    <label className='d-block'>Gender</label>
 
                      <label className='p-1 bold1'>
-      M:<Field name="Gender" type="radio" value="M" component="input" />
+      M <Field name="Gender" type="radio" value="M" component="input" />
           </label>
                     
                       <label className='p-1 bold1'>
-      F:<Field name="Gender" type="radio" value="F" component="input" />
+      F <Field name="Gender" type="radio" value="F" component="input" />
           </label>
                    
                      <label className='p-1 bold1'>
-      O:<Field name="Gender" type="radio" value="O" component="input" />
+      Other <Field name="Gender" type="radio" value="O" component="input" />
           </label>
                   </div>
                 </Grid>
@@ -120,8 +120,8 @@ function Elbow() {
                   <div>
                     <Field name="Occupation">
                       {({ input }) => (
-                        <div className="upname ">
-                          <label className="name">Occupation-</label>
+                        <div className="upname fullw10">
+                          <label className="name">Occupation</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -142,7 +142,7 @@ function Elbow() {
                     <Field name="address">
                       {({ input }) => (
                         <div className="fullw100 ">
-                          <label className="name">Address:</label>
+                          <label className="name">Address</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -161,7 +161,7 @@ function Elbow() {
                     <Field name="dateofadmission">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className=" ">Date Of Admission:</label>
+                          <label className=" ">Date Of Admission</label>
                           <input type="date" {...input} placeholder="" />
                         </div>
                       )}
@@ -171,10 +171,10 @@ function Elbow() {
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Date of Surgery">
+                    <Field name="DateofSurgery">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className="">Date of Surgery:</label>
+                          <label className="">Date of Surgery</label>
                            
                           <input type="date" {...input} placeholder="" />
                         </div>
@@ -187,7 +187,7 @@ function Elbow() {
                     <Field name="ward">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className="">WARD:</label>
+                          <label className="">Ward</label>
                            
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -207,10 +207,10 @@ function Elbow() {
              <Grid item md={6} xs={12}>
 
               <div>
-                    <Field name="chief complaints">
+                    <Field name="chiefcomplaints">
                       {({ input }) => (
                         <div className="fullw10  ">
-                          <label className="">Chief Complaints:</label>
+                          <label className="">Chief Complaints</label>
                          <textarea
                             className="wnew"
                             
@@ -232,7 +232,7 @@ function Elbow() {
                     ">
                       {({ input }) => (
                         <div className="fullw10  ">
-                          <label className="name">Surgery/Procedure:</label>
+                          <label className="name">Surgery/Procedure</label>
                          <textarea
                             className="wnew"
                             
@@ -249,12 +249,28 @@ function Elbow() {
 
 
 
-<div className='mb-3'> <h4><u>MECHANISM OF PAIN</u></h4>  </div>
+<div className='mb-3'> <h4><u>Mechanism Of Pain</u></h4>  </div>
+
+
+
+     <Grid item md={12} xs={12}>
+                  <div className='mb-3'>
+                    <Field name="LimitationsofADLs">
+                      {({ input }) => (
+                        <div className="">
+                          <label className="">Limitations of ADLs</label>
+                           
+                          <input type="text" {...input} placeholder="" className='fullw100'/>
+                        </div>
+                      )}
+                    </Field>
+                  </div>
+                </Grid>
 
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={4} xs={12}>
-                  <div>
-                    <label>Pain Onset-</label>
+                  <div className='fullw10'>
+                    <label>Pain Onset</label>
                  <Field name="painonset" component="select">
               <option />
               <option value="graduol">Gradual</option>
@@ -265,8 +281,8 @@ function Elbow() {
                 </Grid>
 
                 <Grid item md={4} xs={12}>
-                  <div>
-                    <label>Injury-</label>
+                  <div className='fullw10'>
+                    <label>Injury</label>
             <Field name="injury" component="select">
               <option />
               <option value="Traumatic">Traumatic</option>
@@ -275,50 +291,16 @@ function Elbow() {
             </Field>
                   </div>
                 </Grid>
-                <Grid item md={4} xs={12}>
-                  <div>
-                    <Field name="Limitations of ADLs">
-                      {({ input }) => (
-                        <div className="">
-                          <label className="">Limitations of ADLs-</label>
-                           
-                          <input type="text" {...input} placeholder="" />
-                        </div>
-                      )}
-                    </Field>
-                  </div>
-                </Grid>
+                
                </Grid>
 
 
 
 
-                    <div className='mb-3'> <h4><u>BODY CHART</u></h4>  </div>
-            <Grid container  className='mb-3'>
-
-             <Grid item md={12} xs={12}>
-
-              <div>
-                    <Field name="body chart">
-                      {({ input }) => (
-                        <div className=" ">
-                          
-                         <textarea
-                            className="bodychart"
-                            
-                            {...input}
-                          ></textarea>
-                        </div>
-                      )}
-                    </Field>
-                  </div>
-
-           </Grid>
-          
-           </Grid>
+                    
 
 
-<div className='mb-3'> <h4><u>EXAMINATION</u></h4>  </div>
+<div className='mb-3'> <h4><u>Examination</u></h4>  </div>
 
 
 
@@ -328,8 +310,8 @@ function Elbow() {
                   <div>
                     <Field name="Warmth">
                       {({ input }) => (
-                        <div className=" ">
-                          <label className="name">Warmth-</label>
+                        <div className="fullw10 ">
+                          <label className="name">Warmth</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -344,8 +326,8 @@ function Elbow() {
                       <div>
                     <Field name="Swelling">
                       {({ input }) => (
-                        <div className=" ">
-                          <label className="name">Swelling-</label>
+                        <div className="fullw10 ">
+                          <label className="name">Swelling</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -359,8 +341,8 @@ function Elbow() {
                    <div>
                     <Field name="Stiffness">
                       {({ input }) => (
-                        <div className=" ">
-                          <label className="name">Stiffness-</label>
+                        <div className="fullw10 ">
+                          <label className="name">Stiffness</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -380,7 +362,7 @@ function Elbow() {
                     <Field name="Alignment3">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className=" ">Alignment:</label>
+                          <label className=" ">Alignment</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -390,10 +372,10 @@ function Elbow() {
 
                <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Muscle Tightness">
+                    <Field name="MuscleTightness">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className=" ">Muscle Tightness:</label>
+                          <label className=" ">Muscle Tightness</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -407,7 +389,7 @@ function Elbow() {
                     <Field name="Contracture/Deformition">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className=" ">Contracture/Deformity:</label>
+                          <label className=" ">Contracture/Deformity</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -423,7 +405,7 @@ function Elbow() {
 
 
 
-<div className='mb-3'> <h4><u>PAIN ASSESSMENT</u></h4>  </div>
+<div className='mb-3'> <h4><u>Pain Assessment</u></h4>  </div>
 
 
 {/* +++++++++++++++ SLIDER+++++++++++++++++= */}
@@ -435,9 +417,22 @@ function Elbow() {
 
 <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={12} xs={12}>
-                  <div className=''>
-                   <h6 className='text-center'>Intensity of Pain</h6>
-                     <NewSlider />
+                  <div>
+                    <label>VAS Score- </label>
+            <Field name="VasScore" component="select">
+              <option />
+              <option value="1">1</option>
+              <option value="2"> 2</option>
+              <option value="3"> 3</option>
+              <option value="4"> 4</option>
+              <option value="5"> 5</option>
+              <option value="6"> 6</option>
+              <option value="7"> 7</option>
+              <option value="8"> 8</option>
+              <option value="9"> 9</option>
+              <option value="10"> 10</option>
+             
+            </Field>
                   </div>
                 </Grid>
                  </Grid>
@@ -452,10 +447,10 @@ function Elbow() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={6} xs={12}>
                   <div>
-                    <Field name="duration of pain">
+                    <Field name="durationofpain">
                       {({ input }) => (
-                        <div className="">
-                          <label className=" ">Duration Of Pain-</label>
+                        <div className="fullw10">
+                          <label className=" ">Duration Of Pain</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -465,10 +460,10 @@ function Elbow() {
 
                 <Grid item md={6} xs={12}>
                   <div>
-                    <Field name="Site Of Pain">
+                    <Field name="SiteOfPain">
                       {({ input }) => (
-                        <div className="">
-                          <label className="">Site Of Pain-</label>
+                        <div className="fullw10">
+                          <label className="">Site Of Pain</label>
                            
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -485,8 +480,8 @@ function Elbow() {
 
 <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={6} xs={12}>
-                  <div>
-                    <label>Pain Type-</label>
+                  <div className='fullw10'>
+                    <label>Pain Type</label>
                  <Field name="Pain Type" component="select">
               <option />
               <option value="Constant">Constant</option>
@@ -498,8 +493,8 @@ function Elbow() {
                 </Grid>
 
                 <Grid item md={6} xs={12}>
-                  <div>
-                    <label>Nature Of Pain-</label>
+                  <div className='fullw10'>
+                    <label>Nature Of Pain</label>
             <Field name="Nature Of Pain" component="select">
               <option />
               <option value="Dull">Dull Ache</option>
@@ -520,7 +515,7 @@ function Elbow() {
 
 
 
-<div className='mb-3'> <h4><u>NECK</u></h4>  </div>
+<div className='mb-3'> <h4><u>Neck</u></h4>  </div>
 
 
 <Grid container  spacing={2} className='mb-3'>
@@ -529,7 +524,7 @@ function Elbow() {
                     <Field name="Stiffness22">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className=" ">Stiffness:</label>
+                          <label className=" ">Stiffness</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -542,7 +537,7 @@ function Elbow() {
                     <Field name="Pain">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className=" ">Pain:</label>
+                          <label className=" ">Pain</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -556,7 +551,7 @@ function Elbow() {
                     <Field name="Radiation">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className=" ">Radiation:</label>
+                          <label className=" ">Radiation</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -575,10 +570,10 @@ function Elbow() {
 <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={6} xs={12}>
                   <div>
-                    <Field name="Aggravating Factor">
+                    <Field name="AggravatingFactor">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className=" ">Aggravating Factor:</label>
+                          <label className=" ">Aggravating Factor</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -588,10 +583,10 @@ function Elbow() {
 
                <Grid item md={6} xs={12}>
                   <div>
-                    <Field name="Relieving Factors">
+                    <Field name="RelievingFactors">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className=" ">Relieving Factors:</label>
+                          <label className=" ">Relieving Factors</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -605,7 +600,7 @@ function Elbow() {
 
 
 
-<div className='mb-3'> <h4><u>NEUROLOGICAL</u></h4>  </div>
+<div className='mb-3'> <h4><u>Neurological</u></h4>  </div>
 
 <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={12} xs={12}>
@@ -613,7 +608,7 @@ function Elbow() {
                     <Field name="Tingling/Numbness">
                       {({ input }) => (
                         <div className="fullw100">
-                          <label className=" ">Tingling/Numbness:</label>
+                          <label className=" ">Tingling/Numbness</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -670,26 +665,26 @@ function Elbow() {
 
 
              
-<div className='mb-3'> <h4><u>SPECIAL TESTS</u></h4>  </div>
+<div className='mb-3'> <h4><u>Special Tests</u></h4>  </div>
 
 <Grid container  spacing={2} className=''>
                 <Grid item md={4} xs={4}>
                   <div>
-                  <h6 className=''> <u>TEST NAME</u> </h6>
+                  
                   </div>
                    <div>
-                  <h6 className=''> <u>ELBOW</u> </h6>
+                  <h6 className=''> <u>Elbow</u> </h6>
                   </div>
                 </Grid>
 
                 <Grid item md={4} xs={4}>
                   <div>
-                    <h6 className=''>LEFT</h6>
+                    <h6 className=''>Left</h6>
                   </div>
                 </Grid>
                  <Grid item md={4} xs={4}>
                   <div>
-                  <h6 className='text-center'>RIGHT</h6>
+                  <h6 className='text-center'>Right</h6>
                   </div>
                 </Grid>
                </Grid>
@@ -702,11 +697,11 @@ function Elbow() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={8}>
                   <div>
-                    <Field name="Tinel's Sign">
+                    <Field name="TinelSign">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Tinel's Sign-</label>
+                          <label className=" wsame ">Tinel's Sign</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -717,7 +712,7 @@ function Elbow() {
 
                 <Grid item md={4} xs={4}>
                   <div>
-                    <Field name="Tinel's Sign Test2">
+                    <Field name="TinelSignTest2">
                       {({ input }) => (
                         <div >
                           
@@ -738,11 +733,11 @@ function Elbow() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={8}>
                   <div>
-                    <Field name="Mills' Test">
+                    <Field name="MillsTest">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Mills' Test-</label>
+                          <label className=" wsame ">Mills' Test</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -753,7 +748,7 @@ function Elbow() {
 
                 <Grid item md={4} xs={4}>
                   <div>
-                    <Field name="Mills' Test Test2">
+                    <Field name="MillsTestTest2">
                       {({ input }) => (
                         <div >
                           
@@ -774,11 +769,11 @@ function Elbow() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={8}>
                   <div>
-                    <Field name="Golfer's Elbow Test">
+                    <Field name="GolferElbowTest">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Golfer's Elbow Test-</label>
+                          <label className=" wsame ">Golfer's Elbow Test</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -789,7 +784,7 @@ function Elbow() {
 
                 <Grid item md={4} xs={4}>
                   <div>
-                    <Field name="Golfer's Elbow Test2">
+                    <Field name="GolferElbowTest2">
                       {({ input }) => (
                         <div >
                           
@@ -810,11 +805,11 @@ function Elbow() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={8}>
                   <div>
-                    <Field name="Varus Stress Test">
+                    <Field name="VarusStressTest">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Varus Stress Test-</label>
+                          <label className=" wsame ">Varus Stress Test</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -825,7 +820,7 @@ function Elbow() {
 
                 <Grid item md={4} xs={4}>
                   <div>
-                    <Field name="Varus Stress Test1">
+                    <Field name="VarusStressTest1">
                       {({ input }) => (
                         <div >
                           
@@ -846,11 +841,11 @@ function Elbow() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={8}>
                   <div>
-                    <Field name="Valgus Stress Test">
+                    <Field name="ValgusStress9Test">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Valgus Stress Test-</label>
+                          <label className=" wsame ">Valgus Stress Test</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -861,7 +856,7 @@ function Elbow() {
 
                 <Grid item md={4} xs={4}>
                   <div>
-                    <Field name="Valgur Stress Test2">
+                    <Field name="ValgurStressTest2">
                       {({ input }) => (
                         <div >
                           
@@ -886,7 +881,7 @@ function Elbow() {
                 <Grid item md={4} xs={4}>
                   
                    <div>
-                  <h6 className=''> <u>WRIST</u> </h6>
+                  <h6 className=''> <u>Wrist</u> </h6>
                   </div>
                 </Grid>
 
@@ -903,11 +898,11 @@ function Elbow() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={8}>
                   <div>
-                    <Field name="Tinel's Sign">
+                    <Field name="TinelSign">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Tinel's Sign-</label>
+                          <label className=" wsame ">Tinel's Sign</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -918,7 +913,7 @@ function Elbow() {
 
                 <Grid item md={4} xs={4} className=''>
                   <div >
-                    <Field name="Tinel's Sign3">
+                    <Field name="TinelSign3">
                       {({ input }) => (
                         <div >
                           
@@ -940,11 +935,11 @@ function Elbow() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={8}>
                   <div>
-                    <Field name="Phalen's Test">
+                    <Field name="PhalenTest">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Phalen's Test-</label>
+                          <label className=" wsame ">Phalen's Test</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -955,7 +950,7 @@ function Elbow() {
 
                 <Grid item md={4} xs={4} className=''>
                   <div >
-                    <Field name="Phalen's Test3">
+                    <Field name="PhalenTest3">
                       {({ input }) => (
                         <div >
                           
@@ -977,11 +972,11 @@ function Elbow() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={8}>
                   <div>
-                    <Field name="Finkelstein's Test">
+                    <Field name="FinkelsteinTest">
                       {({ input }) => (
                         <div className="">
 
-                          <label className=" wsame ">Finkelstein's Test-</label>
+                          <label className=" wsame ">Finkelstein's Test</label>
 
                           <input type="text" {...input} placeholder="" className='newinput'/>
                         </div>
@@ -992,7 +987,7 @@ function Elbow() {
 
                 <Grid item md={4} xs={4} className=''>
                   <div >
-                    <Field name="Finkelstein's Test3">
+                    <Field name="FinkelsteinTest3">
                       {({ input }) => (
                         <div >
                           
@@ -1031,7 +1026,7 @@ function Elbow() {
                     <Field name="inverstigation">
                       {({ input }) => (
                         <div className="">
-                          <label className="widthsame bold">INVESTIGATION-</label>
+                          <label className="widthsame bold">Inverstigation</label>
                           <input type="text" {...input} placeholder="" className='lastw'/>
                         </div>
                       )}
@@ -1044,7 +1039,7 @@ function Elbow() {
                     <Field name="diagnosis">
                       {({ input }) => (
                         <div className=" ">
-                          <label className="widthsame bold">DIAGNOSIS-</label>
+                          <label className="widthsame bold">Diagnosis</label>
                           <input type="text" {...input} placeholder="" className='lastw' />
                         </div>
                       )}
@@ -1055,10 +1050,10 @@ function Elbow() {
 
                  <Grid item md={12} xs={12}>
                     <div>
-                    <Field name="TREATMENT GOAL">
+                    <Field name="TREATMENTGOAL">
                       {({ input }) => (
                         <div className="">
-                          <label className="widthsame bold">TREATMENT GOAL-</label>
+                          <label className="widthsame bold">Treatment Goal</label>
                           <input type="text" {...input} placeholder="" className='lastw'/>
                         </div>
                       )}
@@ -1069,10 +1064,10 @@ function Elbow() {
 
                <Grid item md={12} xs={12}>
                     <div>
-                    <Field name="Treatment PLAN">
+                    <Field name="TreatmentPLAN">
                       {({ input }) => (
                         <div className="">
-                          <label className="widthsame bold">TREATMENT PLAN-</label>
+                          <label className="widthsame bold">Treatment Plan</label>
                           <input type="text" {...input} placeholder="" className='lastw'/>
                         </div>
                       )}
@@ -1094,7 +1089,7 @@ function Elbow() {
                              color="primary"
                               size="small"
                                type='submit'
-                                startIcon={<SaveIcon />} >
+                               style={{backgroundColor:'#2185d0',textTransform:"capitalize"}} >
                                    Save
                                 </Button></div>
 

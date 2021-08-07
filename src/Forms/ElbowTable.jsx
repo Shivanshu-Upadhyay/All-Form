@@ -25,15 +25,15 @@ function ElbowTable() {
           <form onSubmit={handleSubmit} className="ui form">
             <div className="">
              
-              <h4> <u>STRENGTH & ROM</u> </h4>
+              <h4> <u>Strength & ROM</u> </h4>
              
               <br />
               <Table striped bordered hover>
                 <thead>
                   <tr>
-                    <th className='text-center pb-4' rowSpan='2'> <h5>MOVEMENTS</h5> </th>
-                    <th colSpan='3' className='text-center'>LEFT</th>
-                    <th colSpan='3' className='text-center' >RIGTH</th>
+                    <th className='text-center pb-4' rowSpan='2'> <h5>Movements</h5> </th>
+                    <th colSpan='3' className='text-center'>Left</th>
+                    <th colSpan='3' className='text-center' >Right</th>
 
                     
                   </tr>
@@ -42,25 +42,25 @@ function ElbowTable() {
                   <tr>
                     
                     <th>
-                        MMT(STRENGTH)
+                        MMT(Strength)
                     </th>
                     
                     <th>
-                        ACTIVE(ROM)
+                        Active(ROM)
                     </th>
                     <th>
-                         PASSIVE(ROM)
-                    </th>
-
-                    <th>
-                        MMT(STRENGTH)
+                         Passive(ROM)
                     </th>
 
                     <th>
-                        ACTIVE(ROM)
+                        MMT(Strength)
+                    </th>
+
+                    <th>
+                        Active(ROM)
                     </th>
                     <th>
-                        PASSIVE(ROM)
+                        Passive(ROM)
                     </th>
                   </tr>
                   <tr>
@@ -354,14 +354,7 @@ function ElbowTable() {
 
 
                  
-                       <div className='text-center'>  <Button
-                            variant="contained"
-                             color="primary"
-                              size="small"
-                               type='submit'
-                                startIcon={<SaveIcon />} >
-                                   Save
-                                </Button></div>
+                       
 
 
 
