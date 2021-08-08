@@ -18,7 +18,7 @@ function Table7() {
             <div className="">
               
           
-              <h5 className="pl-2"> <u> LIMB LENGTH DISCREPANCY </u></h5>
+              <h5 className="pl-2"> <u> Limb Length Discrepancy </u></h5>
               <br />
               
               <Table striped bordered hover>

@@ -18,7 +18,7 @@ function Table8() {
             <div className="">
               
           
-              <h5 className="pl-2"> <u> MUSCLE GIRTH </u></h5>
+              <h5 className="pl-2"> <u> Muscle Girth </u></h5>
               <br />
               
               <Table striped bordered hover>

@@ -7,7 +7,7 @@ import Elbow from './Forms/Elbow';
 import Hip from './Forms/Hip';
 import Knee from './Forms/Knee';
 import Neuro from './Forms/Neurological';
-import Proform from './Forms/Proform';
+import Paediatric from './Forms/Paediatric';
 import PostNatal from './Forms/PostNatal';
 import Cardio from './Forms/Cardio';
 import AntiNatal from './Forms/AntiNatal';
@@ -30,7 +30,7 @@ import Shoulder from './Forms/Shoulder';
             <Route exact path ="/hipform" component ={Hip}/>
             <Route exact path ="/kneeform" component ={Knee}/>
             <Route exact path ="/neuroform" component ={Neuro}/>
-            <Route exact path ="/paediatricform" component ={Proform}/>
+            <Route exact path ="/paediatricform" component ={Paediatric}/>
             <Route exact path ="/postnatalform" component ={PostNatal}/>
             <Route exact path ="/shoulderform" component ={Shoulder}/>
            

@@ -18,7 +18,7 @@ function Table5() {
             <div className="">
               
           
-              <h5 className="pl-2"> <u> MIDBRAIN REFLEXES </u></h5>
+              <h5 className="pl-2"> <u> Midbrain Reflexes </u></h5>
               <br />
               
               <Table striped bordered hover>

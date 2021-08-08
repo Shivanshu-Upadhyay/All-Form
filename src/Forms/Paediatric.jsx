@@ -30,14 +30,14 @@ import {
 } from "@material-ui/core";
 import { TextField, Checked, Radio, Select } from "final-form-material-ui";
 
-function Proform() {
+function Paediatric() {
   const onSubmit = (formValues) => {
     console.log(formValues);
   };
 
   return (
     <div >
-      <h3 className="text-center"> PAEDIATRIC EVALUATION</h3>
+      <h3 className="text-center"> Paediatric Evaluation</h3>
 
       <Form onSubmit={onSubmit}>
         {({ handleSubmit }) => (
@@ -48,8 +48,8 @@ function Proform() {
                   <div>
                     <Field name="dateofassessment">
                       {({ input }) => (
-                        <div className="mb-3">
-                          <label className=" ">Date Of Assessment-</label>
+                        <div className="mb-3 fullw10">
+                          <label className=" ">Date Of Assessment</label>
                           <input type="date" {...input} placeholder="" />
                         </div>
                       )}
@@ -61,9 +61,9 @@ function Proform() {
                   <div>
                     <Field name="patientid">
                       {({ input }) => (
-                        <div className="cardio">
-                          <label>Patient ID-</label>
-                          <input type="number" {...input} placeholder="" />
+                        <div className="fullw10">
+                          <label>Patient ID</label>
+                          <input type="text" {...input} placeholder="" />
                         </div>
                       )}
                     </Field>
@@ -77,8 +77,8 @@ function Proform() {
                   <div>
                     <Field name="name">
                       {({ input }) => (
-                        <div className="upname ">
-                          <label className="name">Name-</label>
+                        <div className="fullw10 ">
+                          <label className="name">Name</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -90,8 +90,8 @@ function Proform() {
                   <div>
                     <Field name="age">
                       {({ input }) => (
-                        <div className="cardio1">
-                          <label className="age">Age-</label>
+                        <div className="fullw10">
+                          <label className="age">Age</label>
                            
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -101,18 +101,18 @@ function Proform() {
                 </Grid>
                 <Grid item md={4} xs={12}>
                   <div className="">
-                    <label>Gender-</label>
+                    <label className='d-block'>Gender</label>
 
                      <label className='p-1 bold1'>
-      M:<Field name="Gender" type="radio" value="M" component="input" />
+      M <Field name="Gender" type="radio" value="M" component="input" />
           </label>
                     
                       <label className='p-1 bold1'>
-      F:<Field name="Gender" type="radio" value="F" component="input" />
+      F <Field name="Gender" type="radio" value="F" component="input" />
           </label>
                    
                      <label className='p-1 bold1'>
-      O:<Field name="Gender" type="radio" value="O" component="input" />
+      Other <Field name="Gender" type="radio" value="O" component="input" />
           </label>
                   </div>
                 </Grid>
@@ -124,7 +124,7 @@ function Proform() {
                     <Field name="dateofbirth">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className=" ">Date Of Birth-</label>
+                          <label className=" ">Date Of Birth</label>
                           <input type="date" {...input} placeholder="" />
                         </div>
                       )}
@@ -169,7 +169,7 @@ function Proform() {
                     <Field name="address">
                       {({ input }) => (
                         <div className="fullw100 ">
-                          <label className="name">Address:</label>
+                          <label className="name">Address</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -183,10 +183,10 @@ function Proform() {
              <Grid item xs={12}>
 
               <div>
-                    <Field name="chief complaints">
+                    <Field name="chiefcomplaints">
                       {({ input }) => (
                         <div className="fullw100 ">
-                          <label className="name">Chief Complaints-</label>
+                          <label className="name">Chief Complaints</label>
                          <textarea
                             className=""
                             
@@ -201,7 +201,7 @@ function Proform() {
            </Grid>
 
 
-              <h4 className='m-2 text-uppercase'> <u >History</u></h4>
+              <h4 className='m-2 text-capitalize'> <u >History</u></h4>
 
                <Grid container  className='mb-3' spacing={2}>
                  <Grid item md={3} xs={12}>
@@ -247,7 +247,7 @@ function Proform() {
 
               <Grid item md={3} xs={12}>
                     <div>
-                    <Field name="family history">
+                    <Field name="familyhistory">
                       {({ input }) => (
                         <div className="fullw10 ">
                           <label className="name">Family History</label>
@@ -260,7 +260,7 @@ function Proform() {
 
          </Grid>
 
-                     <h4 className='m-2 text-uppercase'> <u >Observation</u></h4>
+                     <h4 className='m-2 '> <u >Observation</u></h4>
 
                <Grid container  className='mb-3' spacing={2}>
                  <Grid item md={4} xs={12}>
@@ -309,12 +309,12 @@ function Proform() {
 
 
 
-                <h4 className='m-2 text-uppercase'> <u >Milestones</u></h4>
+                <h4 className='m-2 '> <u >Milestones</u></h4>
 
                <Grid container  className='mb-3' spacing={2}>
                  <Grid item md={4} xs={12}>
                     <div>
-                    <Field name="social smile">
+                    <Field name="socialsmile">
                       {({ input }) => (
                         <div className="fullw10 ">
                           <label className="name">Social Smile</label>
@@ -327,7 +327,7 @@ function Proform() {
 
                    <Grid item md={4} xs={12}>
                     <div>
-                    <Field name="follow with eyes">
+                    <Field name="followwitheyes">
                       {({ input }) => (
                         <div className="fullw10 ">
                           <label className="name">Follow with eyes</label>
@@ -341,7 +341,7 @@ function Proform() {
 
                  <Grid item md={4} xs={12}>
                     <div>
-                    <Field name="head holding">
+                    <Field name="headholding">
                       {({ input }) => (
                         <div className="fullw10 ">
                           <label className="name">Head Holding</label>
@@ -357,7 +357,7 @@ function Proform() {
                  <Grid container  className='mb-3' spacing={2}>
                  <Grid item md={4} xs={12}>
                     <div>
-                    <Field name="roll over">
+                    <Field name="rollover">
                       {({ input }) => (
                         <div className="fullw10 ">
                           <label className="name">Roll over</label>
@@ -384,7 +384,7 @@ function Proform() {
 
                  <Grid item md={4} xs={12}>
                     <div>
-                    <Field name="sitting without">
+                    <Field name="sittingwithout">
                       {({ input }) => (
                         <div className="fullw10 ">
                           <label className="name">Sitting '(without support)'</label>
@@ -427,7 +427,7 @@ function Proform() {
 
                  <Grid item md={4} xs={12}>
                     <div>
-                    <Field name="walking with">
+                    <Field name="walkingwith">
                       {({ input }) => (
                         <div className="fullw10 ">
                           <label className="name">Walking '(with support)'</label>
@@ -441,7 +441,7 @@ function Proform() {
 
               <Grid item md={4} xs={12}>
                     <div>
-                    <Field name="walkiout support">
+                    <Field name="walkioutsupport">
                       {({ input }) => (
                         <div className=" ">
                           <label className="name">Walking '(without support)'</label>
@@ -458,7 +458,7 @@ function Proform() {
 
                 
 
-                     <h4 className='m-2 text-uppercase'> <u >Reflex evaluation</u></h4>
+                     <h4 className='m-2 '> <u >Reflex evaluation</u></h4>
                         <p>Neonatal reflexes</p>
                <Grid container  className='mb-3' spacing={2}>
                  <Grid item md={3} xs={12}>
@@ -503,7 +503,7 @@ function Proform() {
 
                 <Grid item md={3} xs={12}>
                     <div>
-                    <Field name="upper limb">
+                    <Field name="upperlimb">
                       {({ input }) => (
                         <div className="fullw10 ">
                           <label className="name">Upper limb placing</label>
@@ -518,7 +518,7 @@ function Proform() {
 
 {/* +++++++++++++++++++Table1+++++++++++++++++++++++++++ */}
      
-  <h4 className='m-2 text-uppercase'> <u >Development Reflexes</u></h4>
+  <h4 className='m-2 '> <u >Development Reflexes</u></h4>
 
 
 
@@ -585,12 +585,12 @@ function Proform() {
 
 
 
-<h4 className='m-2 text-uppercase'> <u >Examination</u></h4>
+<h4 className='m-2 '> <u >Examination</u></h4>
 
  <Grid container  className='mb-3' spacing={2}>
                  <Grid item md={4} xs={12}>
                     <div>
-                    <Field name="Highes costical">
+                    <Field name="Highescostical">
                       {({ input }) => (
                         <div className="fullw10 ">
                           <label className="name">Higher Cortical Function</label>
@@ -603,7 +603,7 @@ function Proform() {
 
                    <Grid item md={4} xs={12}>
                     <div>
-                    <Field name="I-surrounding">
+                    <Field name="Isurrounding">
                       {({ input }) => (
                         <div className="fullw10 ">
                           <label className="name">Intergration with Surroundings</label>
@@ -721,7 +721,7 @@ function Proform() {
 
                <Grid item md={4} xs={12}>
                     <div>
-                    <Field name="carnial nerve">
+                    <Field name="carnialnerve">
                       {({ input }) => (
                         <div className="fullw10 ">
                           <label className="name">Carnial Nerve Examination</label>
@@ -738,7 +738,7 @@ function Proform() {
 
 
             
-                     <h4 className='m-2 text-uppercase'> <u >Physical Examination</u></h4>
+                     <h4 className='m-2 '> <u >Physical Examination</u></h4>
                         
                <Grid container  className='mb-3' spacing={2}>
                  <Grid item md={3} xs={12}>
@@ -770,7 +770,7 @@ function Proform() {
 
                  <Grid item md={3} xs={12}>
                     <div>
-                    <Field name="chest ciseumfesence">
+                    <Field name="chestciseumfesence">
                       {({ input }) => (
                         <div className="fullw10 ">
                           <label className="name">Chest Circumference</label>
@@ -783,7 +783,7 @@ function Proform() {
 
                 <Grid item md={3} xs={12}>
                     <div>
-                    <Field name="head circumference">
+                    <Field name="headcircumference">
                       {({ input }) => (
                         <div className="fullw10 ">
                           <label className="name">Head Circumference</label>
@@ -856,7 +856,7 @@ function Proform() {
 
 
 
-   <h4 className='m-2 text-uppercase'> <u >Tendon Reflex</u></h4>
+   <h4 className='m-2 '> <u >Tendon Reflex</u></h4>
                         
                <Grid container  className='mb-3' spacing={2}>
                  <Grid item md={3} xs={12}>
@@ -917,12 +917,12 @@ function Proform() {
 
            
 
-   <h4 className='m-2 text-uppercase'> <u >Respiratory Status</u></h4>
+   <h4 className='m-2 '> <u >Respiratory Status</u></h4>
                         
                <Grid container  className='mb-3' spacing={2}>
                  <Grid item md={6} xs={12}>
                     <div>
-                    <Field name="patter  bseathing">
+                    <Field name="patterbseathing">
                       {({ input }) => (
                         <div className="fullw10 ">
                           <label className="name">Pattern of Breathing</label>
@@ -952,7 +952,7 @@ function Proform() {
 
 
 
-                 <h4 className='m-2 text-uppercase'> <u >Sensory Examination</u></h4>
+                 <h4 className='m-2 '> <u >Sensory Examination</u></h4>
                         
                <Grid container  className='mb-3' spacing={2}>
                  <Grid item md={4} xs={12}>
@@ -984,7 +984,7 @@ function Proform() {
 
                  <Grid item md={4} xs={12}>
                     <div>
-                    <Field name="combined costical">
+                    <Field name="combinedcostical">
                       {({ input }) => (
                         <div className="fullw10 ">
                           <label className="name">Combined Cortical Sensation</label>
@@ -1002,12 +1002,12 @@ function Proform() {
 
 
 
-  <h4 className='m-2 text-uppercase'> <u >Motor Assessment</u></h4>
+  <h4 className='m-2 '> <u >Motor Assessment</u></h4>
                         
                <Grid container  className='mb-3' spacing={2}>
                  <Grid item md={4} xs={12}>
                     <div>
-                    <Field name="active rom">
+                    <Field name="activerom">
                       {({ input }) => (
                         <div className="fullw10 ">
                           <label className="name">Active ROM</label>
@@ -1020,7 +1020,7 @@ function Proform() {
 
                    <Grid item md={4} xs={12}>
                     <div>
-                    <Field name="passive row">
+                    <Field name="passiverow">
                       {({ input }) => (
                         <div className="fullw10 ">
                           <label className="name">Passive ROM</label>
@@ -1034,7 +1034,7 @@ function Proform() {
 
                  <Grid item md={4} xs={12}>
                     <div>
-                    <Field name="musele power">
+                    <Field name="muselepower">
                       {({ input }) => (
                         <div className="fullw10 ">
                           <label className="name">Muscle Power</label>
@@ -1057,7 +1057,7 @@ function Proform() {
                <Grid container  className='mb-3' spacing={2}>
                  <Grid item md={4} xs={12}>
                     <div>
-                    <Field name="muscle tone">
+                    <Field name="muscletone">
                       {({ input }) => (
                         <div className="fullw10 ">
                           <label className="name">Muscle Tone</label>
@@ -1142,7 +1142,7 @@ function Proform() {
 
 
 
-   <h4 className='m-2 text-uppercase'> <u >Posture Assessment</u></h4>
+   <h4 className='m-2 '> <u >Posture Assessment</u></h4>
                         
                <Grid container  className='mb-3' spacing={2}>
                  <Grid item md={3} xs={12}>
@@ -1160,7 +1160,7 @@ function Proform() {
 
                    <Grid item md={3} xs={12}>
                     <div>
-                    <Field name="Co-Ordination">
+                    <Field name="CoOrdination">
                       {({ input }) => (
                         <div className="fullw10 ">
                           <label className="name">Co-Ordination </label>
@@ -1203,7 +1203,7 @@ function Proform() {
 
 
 
-   <h4 className='m-2 text-uppercase'> <u >Sitting Balance</u></h4>
+   <h4 className='m-2 '> <u >Sitting Balance</u></h4>
                         
                <Grid container  className='mb-3' spacing={2}>
                  <Grid item md={6} xs={12}>
@@ -1240,10 +1240,10 @@ function Proform() {
                <Grid container  className='mb-3' spacing={2}>
                  <Grid item md={12} xs={12}>
                     <div>
-                    <Field name="standing balance">
+                    <Field name="standingbalance">
                       {({ input }) => (
                         <div className=" ">
-                          <label className="name">Standing Balance:-</label>
+                          <label className="name">Standing Balance</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -1262,10 +1262,10 @@ function Proform() {
                <Grid container  className='mb-3' spacing={2}>
                  <Grid item md={12} xs={12}>
                     <div>
-                    <Field name="bolwer control">
+                    <Field name="bolwercontrol">
                       {({ input }) => (
                         <div className=" ">
-                          <label className="name">Bladder or Bowel Control:-</label>
+                          <label className="name">Bladder or Bowel Control</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -1281,7 +1281,7 @@ function Proform() {
 
 
 
-   <h4 className='m-2 text-uppercase'> <u > Functional Assessment</u></h4>
+   <h4 className='m-2 '> <u > Functional Assessment</u></h4>
 
    <h6 className='p-2'><u>Sphincters</u></h6>
                         
@@ -1301,7 +1301,7 @@ function Proform() {
 
                    <Grid item md={6} xs={12}>
                     <div>
-                    <Field name="bowel management">
+                    <Field name="bowelmanagement">
                       {({ input }) => (
                         <div className="fullw10 ">
                           <label className="name">Bowel Management</label>
@@ -1314,7 +1314,7 @@ function Proform() {
 
          </Grid>
 
-<h6 className='p-2 text-uppercase'><u>Self Care</u></h6>
+<h6 className='p-2 '><u>Self Care</u></h6>
 
          
                <Grid container  className='mb-3' spacing={2}>
@@ -1380,7 +1380,7 @@ function Proform() {
 
                    <Grid item md={4} xs={12}>
                     <div>
-                    <Field name="dressing-upper">
+                    <Field name="dressingupper">
                       {({ input }) => (
                         <div className="fullw10 ">
                           <label className="name">Dressing-Upper Body</label>
@@ -1394,7 +1394,7 @@ function Proform() {
 
                  <Grid item md={4} xs={12}>
                     <div>
-                    <Field name="dressing-lower">
+                    <Field name="dressinglower">
                       {({ input }) => (
                         <div className="fullw10 ">
                           <label className="name">Dressing-Lower Body</label>
@@ -1411,7 +1411,7 @@ function Proform() {
                          
 
 
-<h4 className='m-2 text-uppercase'><u>Communication</u></h4>
+<h4 className='m-2 '><u>Communication</u></h4>
 
 
          
@@ -1448,7 +1448,7 @@ function Proform() {
                          
 
 
-<h4 className='m-2 text-uppercase'><u>Mobility</u></h4>
+<h4 className='m-2 '><u>Mobility</u></h4>
          
                <Grid container  className='mb-3' spacing={2}>
                  <Grid item md={4} xs={12}>
@@ -1480,7 +1480,7 @@ function Proform() {
 
                  <Grid item md={4} xs={12}>
                     <div>
-                    <Field name="transfes tab">
+                    <Field name="transfestab">
                       {({ input }) => (
                         <div className="fullw10 ">
                           <label className="name">Transfers Tab</label>
@@ -1498,13 +1498,13 @@ function Proform() {
 
 
 
-<h4 className='m-2 text-uppercase'><u>Locomotion</u></h4>
+<h4 className='m-2 '><u>Locomotion</u></h4>
 
          
                <Grid container  className='mb-3' spacing={2}>
                  <Grid item md={4} xs={12}>
                     <div>
-                    <Field name="crowls/walk">
+                    <Field name="crowlswalk">
                       {({ input }) => (
                         <div className="fullw10 ">
                           <label className="name">Crawls/walk/Wheelchair</label>
@@ -1535,12 +1535,12 @@ function Proform() {
                          
 
 
-<h4 className='m-2 text-uppercase'><u> Social Cognition</u></h4>
+<h4 className='m-2 '><u> Social Cognition</u></h4>
          
                <Grid container  className='mb-3' spacing={2}>
                  <Grid item md={4} xs={12}>
                     <div>
-                    <Field name="social interaction">
+                    <Field name="socialinteraction">
                       {({ input }) => (
                         <div className="fullw10 ">
                           <label className="name">Social Interaction</label>
@@ -1553,7 +1553,7 @@ function Proform() {
 
                    <Grid item md={4} xs={12}>
                     <div>
-                    <Field name="problem solving">
+                    <Field name="problemsolving">
                       {({ input }) => (
                         <div className="fullw10 ">
                           <label className="name">Problem Solving</label>
@@ -1585,7 +1585,7 @@ function Proform() {
 
 
 
-    <div className='mb-4'> <h4 className='text-center text-uppercase'><u>Present Medication</u></h4> </div>
+    <div className='mb-4'> <h4 ><u>Present Medication</u></h4> </div>
 
          
                <Grid container  className='mb-3' spacing={2}>
@@ -1594,7 +1594,7 @@ function Proform() {
                     <Field name="inverstigation">
                       {({ input }) => (
                         <div className="">
-                          <label className="widthsame bold">Investigation-</label>
+                          <label className="widthsame bold">Investigation</label>
                           <input type="text" {...input} placeholder="" className='lastw'/>
                         </div>
                       )}
@@ -1607,7 +1607,7 @@ function Proform() {
                     <Field name="diagnosis">
                       {({ input }) => (
                         <div className=" ">
-                          <label className="widthsame bold">Diagnosis-</label>
+                          <label className="widthsame bold">Diagnosis</label>
                           <input type="text" {...input} placeholder="" className='lastw' />
                         </div>
                       )}
@@ -1618,10 +1618,10 @@ function Proform() {
 
                  <Grid item md={12} xs={12}>
                     <div>
-                    <Field name="clinical impression">
+                    <Field name="clinicalimpression">
                       {({ input }) => (
                         <div className="">
-                          <label className="widthsame bold">Clinical Impression-</label>
+                          <label className="widthsame bold">Clinical Impression</label>
                           <input type="text" {...input} placeholder="" className='lastw'/>
                         </div>
                       )}
@@ -1632,10 +1632,10 @@ function Proform() {
 
                <Grid item md={12} xs={12}>
                     <div>
-                    <Field name="Treatment goal">
+                    <Field name="Treatmentgoal">
                       {({ input }) => (
                         <div className="">
-                          <label className="widthsame bold">Treatment Goal-</label>
+                          <label className="widthsame bold">Treatment Goal</label>
                           <input type="text" {...input} placeholder="" className='lastw'/>
                         </div>
                       )}
@@ -1646,10 +1646,10 @@ function Proform() {
 
               <Grid item md={12} xs={12}>
                     <div>
-                    <Field name="Treatment plan">
+                    <Field name="Treatmentplan">
                       {({ input }) => (
                         <div className="">
-                          <label className="widthsame bold">Treatment Plan-</label>
+                          <label className="widthsame bold">Treatment Plan</label>
                           <input type="text" {...input} placeholder="" className='lastw' />
                         </div>
                       )}
@@ -1669,7 +1669,7 @@ function Proform() {
                              color="primary"
                               size="small"
                                type='submit'
-                                startIcon={<SaveIcon />} >
+                                style={{backgroundColor:'#2185d0',textTransform:"capitalize"}} >
                                    Save
                                 </Button></div>
 
@@ -1692,4 +1692,4 @@ function Proform() {
     </div>
   );
 }
-export default Proform;
+export default Paediatric;

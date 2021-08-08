@@ -18,7 +18,7 @@ function Table3() {
             <div className="">
               
           
-              <h5 className="pl-2"> <u> TILT REACTIONS </u></h5>
+              <h5 className="pl-2"> <u> Tilt Reactions </u></h5>
               <br />
               
               <Table striped bordered hover>

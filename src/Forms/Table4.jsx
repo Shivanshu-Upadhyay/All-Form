@@ -18,7 +18,7 @@ function Table4() {
             <div className="">
               
           
-              <h5 className="pl-2"> <u> BRAINSTEM REFLEXES </u></h5>
+              <h5 className="pl-2"> <u> Brainstem Reflexes </u></h5>
               <br />
               
               <Table striped bordered hover>
