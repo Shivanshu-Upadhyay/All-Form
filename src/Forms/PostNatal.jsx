@@ -26,8 +26,8 @@ function PostNatal() {
 
   return (
     <div>
-      <h3>
-        <u>POST NATAL EVALUATION</u>
+      <h3 className='text-center mt-3'>
+        <u>Post Natal Evaluation</u>
       </h3>
       <Form onSubmit={onSubmit}>
         {({ handleSubmit }) => (
@@ -38,8 +38,8 @@ function PostNatal() {
                   <div>
                     <Field name="dateofassessment">
                       {({ input }) => (
-                        <div className="cardio4">
-                          <label className="ass"> Assessment Date-</label>
+                        <div className="cardio4 fullw10">
+                          <label className="ass"> Assessment Date</label>
                           <input type="date" {...input} placeholder="" />
                         </div>
                       )}
@@ -50,9 +50,9 @@ function PostNatal() {
                   <div>
                     <Field name="patientid">
                       {({ input }) => (
-                        <div className="cardio">
-                          <label>Patient ID-</label>
-                          <input type="number" {...input} placeholder="" />
+                        <div className="cardio fullw10">
+                          <label>Patient ID</label>
+                          <input type="text" {...input} placeholder="" />
                         </div>
                       )}
                     </Field>
@@ -78,8 +78,8 @@ function PostNatal() {
                   <div>
                     <Field name="age">
                       {({ input }) => (
-                        <div className="cardiop">
-                          <label className="age">Age</label>
+                        <div className="fullw10">
+                          <label className="">Age</label>
 
                           <input type="number" {...input} placeholder="" />
                         </div>
@@ -88,7 +88,7 @@ function PostNatal() {
                   </div>
                 </Grid>
                 <Grid item xs={3}>
-                  <div className="wws">
+                  <div className="">
                     <label className="sr">Marrital Status</label>
                     <Field className ="marrital" component ="select">
                         <option></option>
@@ -98,11 +98,11 @@ function PostNatal() {
                   </div>
                 </Grid>
                 <Grid item xs={3}>
-                  <div className="qq">
+                  <div className="">
                     <Field name="occu">
                       {({ input }) => (
-                        <div className="cardio">
-                          <label>Occupation-</label>
+                        <div className="cardio fullw10">
+                          <label>Occupation</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -168,9 +168,9 @@ function PostNatal() {
               </Grid>
               <br />
 
-              <h3>
-                <u>CHEIF COMPLAINTS</u>
-              </h3>
+              <h4 className='m-3 '>
+                <u>Cheif Complaints</u>
+              </h4>
 
               <Grid container alignItems="flex-start" spacing={2}>
                 <Grid item xs={4}>
@@ -231,9 +231,9 @@ function PostNatal() {
                   </div>
                 </Grid>
               </Grid>
-              <h3>
-                <u>PRESENT MEDICAL HISTORY</u>
-              </h3>
+              <h4 className='m-3 '>
+                <u>Present Medical History</u>
+              </h4>
 
               <Grid container alignItems="flex-start" spacing={2}>
                 <Grid item xs={4}>
@@ -340,12 +340,13 @@ function PostNatal() {
               </Grid>
             </Paper>
 
-            {/* page 2 */}
-            <h3>
-              <u>AFTER PAIN</u>
-            </h3>
+            
+            
 
-            <Paper style={{ padding: 50 }}>
+            <Paper style={{ paddingLeft: 50 }}>
+            <h4 className='m-3 '>
+              <u>After Pain</u>
+            </h4>
               <Grid container alignItems="flex-start" spacing={2}>
                 <Grid item xs={4}>
                   <div>
@@ -449,9 +450,9 @@ function PostNatal() {
                   </div>
                 </Grid>
               </Grid>
-              <h3>
+              <h4 className='m-3 '>
                 <u>Associated Medical History Condition</u>
-              </h3>
+              </h4>
               <Grid container alignItems="flex-start" spacing={2}>
                 <Grid item xs={4}>
                   <div className="text-center">
@@ -840,30 +841,11 @@ function PostNatal() {
               </Paper>
 
             
-              <Paper style={{ padding: 50 }}>
-                <Grid container alignItems="flex-start" spacing={2}>
-                  <Grid item xs={12}>
-                    <Field name="bodychart">
-                      {({ input }) => (
-                        <div className="field2">
-                          <label>
-                            <h3>Body Chart</h3>
-                          </label>
-                          <textarea
-                            className="viral27"
-                            row="3"
-                            {...input}
-                          ></textarea>
-                        </div>
-                      )}
-                    </Field>
-                  </Grid>
-                </Grid>
-              </Paper>
+              
 
-              <h3>OBSTERIC HISTORY</h3>
-              <br />
-              <br />
+              <h4 className='m-3 '>Obsteric History</h4>
+              
+              
               <Table striped bordered hover>
                 <thead>
                   <tr>
@@ -1302,9 +1284,9 @@ function PostNatal() {
             
              
 
-              <h3>
-                <u>PAIN ASSESSMENT</u>
-              </h3>
+              <h4 className='m-3 '>
+                <u>Pain Assessment</u>
+              </h4>
 
               <Paper style={{ padding: 50 }}>
                 <Grid container alignItems="flex-start" spacing={2}>
@@ -1359,6 +1341,7 @@ function PostNatal() {
                         )}
                       </Field>
                       <br />
+                      
                       <Field name="nightpain">
                         {({ input }) => (
                           <div className="cardio">
@@ -1368,8 +1351,7 @@ function PostNatal() {
                         )}
                       </Field>
                     </Grid>
-                    <Grid item xs={3}></Grid>
-                    <Grid item xs={3}></Grid>
+                    
                     <Grid item xs={3}>
                       <Field name="rele">
                         {({ input }) => (
@@ -1401,9 +1383,9 @@ function PostNatal() {
                 </Grid>
                 </Paper>
 
-                <h3>
+                <h4 className='m-3 '>
                   <u>OBSERVATION</u>
-                </h3>
+                </h4>
 
                 <Paper style={{ padding: 50 }}>
                   <Grid container alignItems="flex-start" spacing={2}>
@@ -1551,9 +1533,9 @@ function PostNatal() {
                       </div>
                     </Grid>
                   </Grid>
-                  <h3>
+                  <h4 className='m-3 '>
                     <u>ON PALPATION</u>
-                  </h3>
+                  </h4>
                   <Grid container alignItems="flex-start" spacing={2}>
                     <Grid item xs={4}>
                       <Field name="tenderness">
@@ -1591,11 +1573,11 @@ function PostNatal() {
                   </Grid>
                 </Paper>
 
-                <h3>
+                <h4 className='m-3 '>
                   <u>ON EXAMINATION</u>
-                </h3>
+                </h4>
                 <br />
-                <h4> VITALS</h4>
+                <h4 className='m-3 '> VITALS</h4>
 
                 <Paper style={{ padding: 50 }}>
                   <Grid container alignItems="flex-start" spacing={2}>
@@ -1642,7 +1624,7 @@ function PostNatal() {
                       </div>
                     </Grid>
                   </Grid>
-                  <h4>CHEST EXAMINATION</h4>
+                  <h4 className='m-3 '>CHEST EXAMINATION</h4>
                   <Grid container alignItems="flex-start" spacing={2}>
                     <Grid item xs={4}>
                       <Field name="pattern">
@@ -1694,7 +1676,7 @@ function PostNatal() {
                     </Grid>
                   </Grid>
                 </Paper>
-                <h4>EDEMA EVALUATION</h4>
+                <h4 className='m-3 '>EDEMA EVALUATION</h4>
 
                 <Paper style={{ padding: 50 }}>
                   <Grid container alignItems="flex-start" spacing={2}>
@@ -1765,7 +1747,7 @@ function PostNatal() {
                       )}
                     </Field>
                   </Grid>
-                  <h4>BREAST EXAMINATION</h4>
+                  <h4 className='m-3 '>BREAST EXAMINATION</h4>
 
                   <Grid container alignItems="flex-start" spacing={2}>
                     <Grid item xs={4}>
@@ -1804,7 +1786,7 @@ function PostNatal() {
                   </Grid>
                 </Paper>
 
-                <h3>INFANT FEEDING</h3>
+                <h4 className='m-3 '>INFANT FEEDING</h4>
 
                 <Paper style={{ padding: 50 }}>
                   <Grid container alignItems="flex-start" spacing={2}>
@@ -1931,9 +1913,9 @@ function PostNatal() {
                     </div>
                   </Grid>
                 </Paper>
-                <h4></h4>
+                <h4 className='m-3 '></h4>
 
-                <h3>FUNCTIONAL ASSESSMENT</h3>
+                <h4 className='m-3 '>FUNCTIONAL ASSESSMENT</h4>
 
                 <Paper style={{ padding: 50 }}>
                   <Grid container alignItems="flex-start" spacing={2}>

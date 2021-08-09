@@ -30,9 +30,9 @@ function AntiNatal(props) {
   const getText = (value) => "${value}";
 
   return (
-    <div>
-      <h3>
-        <u>ANTENATAL ASSESSMENT</u>
+    <div >
+      <h3 className='text-center mt-3'>
+        <u>Anenatal Assessment</u>
       </h3>
 
       <Form onSubmit={onSubmit}>
@@ -44,8 +44,8 @@ function AntiNatal(props) {
                   <div>
                     <Field name="dateofassessment">
                       {({ input }) => (
-                        <div className="cardio4">
-                          <label className="ass"> Assessment Date-</label>
+                        <div className="cardio4 fullw10">
+                          <label className="ass"> Assessment Date</label>
                           <input type="date" {...input} placeholder="" />
                         </div>
                       )}
@@ -56,21 +56,21 @@ function AntiNatal(props) {
                   <div>
                     <Field name="patientID">
                       {({ input }) => (
-                        <div className="cardio">
-                          <label>Patient ID-</label>
-                          <input type="number" {...input} placeholder="" />
+                        <div className="cardio fullw10">
+                          <label>Patient ID</label>
+                          <input type="text" {...input} placeholder="" />
                         </div>
                       )}
                     </Field>
                   </div>
                 </Grid>
 
-                <Grid container alignItems="flex-start" spacing={2}>
-                  <Grid item xs={3}>
+                <Grid container  >
+                  <Grid item xs={3} className='mb-3' >
                     <div>
                       <Field name="name">
                         {({ input }) => (
-                          <div className="cardio">
+                          <div className="cardio fullw10">
                             <label className="name">Name</label>
                             <input type="text" {...input} placeholder="" />
                           </div>
@@ -83,20 +83,20 @@ function AntiNatal(props) {
                     <div>
                       <Field name="age">
                         {({ input }) => (
-                          <div className="cardiop">
+                          <div className="cardio">
                             <label className="age">Age</label>
 
-                            <input type="number" {...input} placeholder="" />
+                            <input type="text" {...input} placeholder="" />
                           </div>
                         )}
                       </Field>
                     </div>
                   </Grid>
                   <Grid item xs={3}>
-                    <div className="wws">
-                      <label className="sr">Marrital Status</label>
-                      {/* <select className="kk2"> */}
-                      <Field className ="marrital" component ="select">
+                    <div className="">
+                      <label className=" d-block">Marrital Status</label>
+                      
+                      <Field className ="d-block" component ="select">
                         <option></option>
                         <option value="married">Married</option>
                         <option value="single">Single</option>
@@ -105,11 +105,11 @@ function AntiNatal(props) {
                     </div>
                   </Grid>
                   <Grid item xs={3}>
-                    <div className="qq">
+                    <div className="">
                       <Field name="occupation">
                         {({ input }) => (
-                          <div className="cardio">
-                            <label>occupation-</label>
+                          <div className="cardio fullw10">
+                            <label>Occupation</label>
                             <input type="text" {...input} placeholder="" />
                           </div>
                         )}
@@ -129,14 +129,14 @@ function AntiNatal(props) {
                       </Field>
                     </div>
 
-                    <br />
+                    
                   </Grid>
                   <Grid item xs={4}>
                     <div>
                       <Field name="weight">
                         {({ input }) => (
-                          <div className="cardio">
-                            <label className="name">Weight</label>
+                          <div className="cardio fullw10">
+                            <label className="">Weight</label>
                             <input type="number" {...input} placeholder="" />
                           </div>
                         )}
@@ -147,11 +147,11 @@ function AntiNatal(props) {
                   </Grid>
 
                   <Grid item xs={4}>
-                    <div className="www">
+                    <div className="">
                       <Field name="bmi">
                         {({ input }) => (
-                          <div className="cardio5">
-                            <label className="ward">BMI-</label>
+                          <div className="cardio fullw10">
+                            <label className="">BMI</label>
                             <input type="number" {...input} placeholder="" />
                           </div>
                         )}
@@ -175,9 +175,9 @@ function AntiNatal(props) {
                 </Grid>
               </Grid>
               <br />
-              <h3>
-                <u>CHIEF COMPLAINTS</u>
-              </h3>
+              <h4 className='m-3'>
+                <u>Chief Complaints</u>
+              </h4>
 
               <Grid container alignItems="flex-start" spacing={2}>
                 <Grid item xs={4}>
@@ -283,9 +283,9 @@ function AntiNatal(props) {
                 </Grid>
               </Grid>
               <br />
-              <h3>
-                <u>HISTORY OF GASTROINTESTINAL SYSTEM</u>
-              </h3>
+              <h4 className='m-3'>
+                <u>History Of Gastrointestinal System</u>
+              </h4>
               <Grid container alignItems="flex-start" spacing={2}>
                 <Grid item xs={4}>
                   <Field name="lossofappetite">
@@ -331,9 +331,9 @@ function AntiNatal(props) {
                 </Grid>
               </Grid>
               <br />
-              <h3>
-                <u>HISTORY OF GENITOURINARY SYSTEM</u>
-              </h3>
+              <h4 className='m-3'>
+                <u>History Of Genitourinary System</u>
+              </h4>
               <Grid container alignItems="flex-start" spacing={2}>
                 <Grid item xs={4}>
                   <Field name="incontinence">
@@ -379,9 +379,9 @@ function AntiNatal(props) {
                 </Grid>
               </Grid>
               <br />
-              <h3>
-                <u>HISTORY OF CARDIO-RESPIRATORY SYSTEM</u>
-              </h3>
+              <h4 className='m-3'>
+                <u>History Of Cardio-Respiratory System</u>
+              </h4>
 
               <Grid container alignItems="flex-start" spacing={2}>
                 <Grid item xs={4}>
@@ -473,9 +473,9 @@ function AntiNatal(props) {
                 </div>
               </Grid>
 
-              <h3>
-                <u>ASSOCIATED MEDICAL CONDITIONS</u>
-              </h3>
+              <h4 className='m-3'>
+                <u>Associated Medical Conditions</u>
+              </h4>
               <Grid container alignItems="flex-start" spacing={2}>
                 <Grid item xs={4}>
                   <div className="text-center">
@@ -518,7 +518,7 @@ function AntiNatal(props) {
                 <Grid item xs={4}>
                   <div className="text-center1">
                     <div class="field">
-                      <label className="yess">
+                      <label className="yess d-block">
                         <h5>Asthma</h5>
                       </label>
                       <ButtonGroup color="primary">
@@ -706,9 +706,9 @@ function AntiNatal(props) {
                 </Grid>
               </Grid>
               <br />
-              <h3>
-                <u>PERSONAL HISTORY</u>
-              </h3>
+              <h4 className='m-3'>
+                <u>Personal History</u>
+              </h4>
 
               <Grid container alignItems="flex-start" spacing={1}>
                 <Grid item xs={4}>
@@ -814,33 +814,19 @@ function AntiNatal(props) {
                     </Field>
                   </div>
                 </Grid>
-                <Grid item xs={12}>
-                  <Field name="bodychart">
-                    {({ input }) => (
-                      <div className="field2">
-                        <label>
-                          <h3>Body Chart</h3>
-                        </label>
-                        <textarea
-                          className="viral27"
-                          row="3"
-                          {...input}
-                        ></textarea>
-                      </div>
-                    )}
-                  </Field>
-                </Grid>
+                
               </Grid>
             </Paper>
 
             {/* strt page 2 */}
 
-            <h3>OBSTERIC HISTORY</h3>
-            <br />
-            <br />
-            <div className="tables">
-            <Table striped bordered hover>
+            
+            
+            <div className="tables container">
+            <h4 className='m-3'>Obsteric History</h4>
+            <Table striped bordered hover id='tableAnti'>
               <thead>
+                 
                 <tr>
                   <th>S.No</th>
                   <th>No Of Deliveries</th>
@@ -1307,9 +1293,9 @@ function AntiNatal(props) {
               </Grid>
 
               <br />
-              <h3>
-                <u>PAIN ASSESSMENT</u>
-              </h3>
+              <h4 className='m-3'>
+                <u>Pain Assessment</u>
+              </h4>
 
               <Grid container alignItems="flex-start" spacing={2}>
                 <Grid item xs={4}>
@@ -1384,28 +1370,7 @@ function AntiNatal(props) {
                 </Grid>
               </Grid>
 
-              {/* slider ui */}
-              <Grid container alignItems="flex-start" spacing={1}>
-                <Grid item xs={12}>
-                  <label className="cc">INTENSITY OF PAIN</label>
-                  <Slider
-                    style={{ width: 240, marginTop: 15, marginLeft: 400 }}
-                    min={0}
-                    max={10}
-                    defaultValue={10}
-                    step={1}
-                    marks
-                    getAriaValueText={getText}
-                    valueLabelDisplay="auto"
-                    value={value}
-                    onChange={changeValue}
-                  />
-                </Grid>
-              </Grid>
-
-              <br />
-              <br />
-              <br />
+             
               <Grid container alignItems="flex-start" spacing={2}>
                 <Grid item xs={4}>
                   <Field name="nightpain">
@@ -1429,12 +1394,48 @@ function AntiNatal(props) {
                   </Field>
                 </Grid>
               </Grid>
-              <br />
-              <br />
-              <br />
-              <h3>
-                <u>OBSERVATION</u>
-              </h3>
+
+
+
+<div className='m-3'> <h4><u>Intensity Of Pain</u></h4>  </div>
+
+
+{/* ++++++++++++++++++++++++++++++++= */}
+
+  
+<Grid container  spacing={2} className='mb-3'>
+                <Grid item md={12} xs={12}>
+                  <div>
+                    <label>VAS Score- </label>
+            <Field name="VASScore" component="select">
+              <option />
+              <option value="1">1</option>
+              <option value="2"> 2</option>
+              <option value="3"> 3</option>
+              <option value="4"> 4</option>
+              <option value="5"> 5</option>
+              <option value="6"> 6</option>
+              <option value="7"> 7</option>
+              <option value="8"> 8</option>
+              <option value="9"> 9</option>
+              <option value="10"> 10</option>
+             
+            </Field>
+                  </div>
+                </Grid>
+                 </Grid>
+
+
+
+
+{/* ++++++++++++++++++++++++++++++++= */}
+
+
+
+              
+              <h4 className='m-3'>
+                <u>Observation</u>
+              </h4>
 
               <Grid container alignItems="flex-start" spacing={1}>
                 <Grid item xs={4}>
@@ -1544,9 +1545,9 @@ function AntiNatal(props) {
 
               <br />
               <br />
-              <h3>
-                <u>ON PALPATION</u>
-              </h3>
+              <h4 className='m-3'>
+                <u>On Palpation</u>
+              </h4>
               <Grid container alignItems="flex-start" spacing={2}>
                 <Grid item xs={4}>
                   <Field name="tenderness">
@@ -1583,11 +1584,11 @@ function AntiNatal(props) {
               <br />
               <br />
 
-              <h3>
-                <u> EXAMINATION</u>
-              </h3>
+              <h4 className='m-3'>
+                <u> Examination</u>
+              </h4>
               <br />
-              <h4> 1.VITALS</h4>
+              <h5 className='m-3'> 1.Vitals</h5>
 
               <Grid container alignItems="flex-start" spacing={2}>
                 <Grid item xs={4}>
@@ -1627,7 +1628,7 @@ function AntiNatal(props) {
 
               <br />
               <br />
-              <h4>2.ABDOMINAL GIRTH</h4>
+              <h5 className='m-3'>2.Abdominal Girth</h5>
 
               <Grid container alignItems="flex-start" spacing={2}>
                 <Grid item xs={4}>
@@ -1643,7 +1644,7 @@ function AntiNatal(props) {
               </Grid>
 
               <br />
-              <h4> EDEMA ASSESSMENT</h4>
+              <h5 className='m-3'> Edema Assessment</h5>
 
               <Grid container alignItems="flex-start" spacing={2}>
                 <Grid item xs={4}>
@@ -1680,10 +1681,8 @@ function AntiNatal(props) {
                   </div>
                 </Grid>
               </Grid>
-              <br />
-              <br />
-              <br />
-              <Grid container alignItems="flex-start" spacing={2}>
+              
+              <Grid container alignItems="flex-start" spacing={2} className='mt-3 mb-3'>
                 <Grid item xs={4}>
                   <Field name="rangeofmotion">
                     {({ input }) => (
@@ -1694,11 +1693,9 @@ function AntiNatal(props) {
                     )}
                   </Field>
                 </Grid>
-              </Grid>
-              <br />
-              <br />
-              <br />
-              <Grid container alignItems="flex-start" spacing={2}>
+              
+              
+              
                 <Grid item xs={4}>
                   <Field name="musclestrengths">
                     {({ input }) => (
@@ -1709,11 +1706,8 @@ function AntiNatal(props) {
                     )}
                   </Field>
                 </Grid>
-              </Grid>
-              <br />
-              <br />
-              <br />
-              <Grid container alignItems="flex-start" spacing={2}>
+              
+              
                 <Grid item xs={4}>
                   <Field name="deeptendonreflex">
                     {({ input }) => (
@@ -1724,11 +1718,7 @@ function AntiNatal(props) {
                     )}
                   </Field>
                 </Grid>
-              </Grid>
-              <br />
-              <br />
-              <br />
-              <Grid container alignItems="flex-start" spacing={2}>
+              
                 <Grid item xs={4}>
                   <Field name="diastasisrecti">
                     {({ input }) => (
@@ -1743,12 +1733,10 @@ function AntiNatal(props) {
                 </Grid>
               </Grid>
 
-              <br />
-              <br />
-              <br />
+              
 
-              <h4>
-                <u>BREAST EXAMINATION </u>
+              <h4 className='m-3'>
+                <u>Breast Examination </u>
               </h4>
               <br />
 
@@ -1789,8 +1777,8 @@ function AntiNatal(props) {
               </Grid>
 
               <br />
-              <br />
-              <br />
+              
+              
 
               <Grid container alignItems="flex-start" spacing={2}>
                 <Grid item xs={4}>
@@ -1814,12 +1802,7 @@ function AntiNatal(props) {
                     )}
                   </Field>
                 </Grid>
-              </Grid>
-
-              <br />
-              <br />
-              <br />
-              <Grid container alignItems="flex-start" spacing={2}>
+              
                 <Grid item xs={4}>
                   <Field name="incontineneceassessment">
                     {({ input }) => (
@@ -1834,8 +1817,8 @@ function AntiNatal(props) {
 
               <br />
               <br />
-              <h4>
-                <u>EXERCISE TOLERANCE TESTING </u>
+              <h4 className='m-3'>
+                <u>Exercise Tolerance Testing </u>
               </h4>
 
               <Grid container alignItems="flex-start" spacing={2}>
@@ -1864,8 +1847,7 @@ function AntiNatal(props) {
                 </Grid>
               </Grid>
               <br />
-              <br />
-              <br />
+              
               <Grid container alignItems="flex-start" spacing={2}>
                 <Grid item xs={4}>
                   <Field name="specialtest">
@@ -1877,11 +1859,7 @@ function AntiNatal(props) {
                     )}
                   </Field>
                 </Grid>
-              </Grid>
-              <br />
-              <br />
-              <br />
-              <Grid container alignItems="flex-start" spacing={2}>
+              
                 <Grid item xs={4}>
                   <Field name="functionalassessment">
                     {({ input }) => (
@@ -1894,11 +1872,10 @@ function AntiNatal(props) {
                 </Grid>
               </Grid>
               <br />
-              <br />
-              <br />
-              <h3>
-                <u>INVESTIGATIONS</u>
-              </h3>
+              
+              <h4 className='m-3'>
+                <u>Investigations</u>
+              </h4>
               <Grid container alignItems="flex-start" spacing={2}>
                 <Grid item xs={4}>
                   <Field name="fundalheight">
@@ -1910,11 +1887,7 @@ function AntiNatal(props) {
                     )}
                   </Field>
                 </Grid>
-              </Grid>
-              <br />
-              <br />
-              <br />
-              <Grid container alignItems="flex-start" spacing={2}>
+              
                 <Grid item xs={4}>
                   <Field name="liepresentation">
                     {({ input }) => (
@@ -1934,9 +1907,9 @@ function AntiNatal(props) {
                     <Field name="diagnosis">
                       {({ input }) => (
                         <div className="cardio2">
-                          <label className="agep">DIAGNOSIS</label>
+                          <label className="agep">Diagnosis</label>
 
-                          <input type="text" {...input} placeholder="" />
+                          <input type="text fullw100" {...input} placeholder="" />
                         </div>
                       )}
                     </Field>
@@ -1947,7 +1920,7 @@ function AntiNatal(props) {
                     <Field name="treatmentgols">
                       {({ input }) => (
                         <div className="cardio2">
-                          <label className="agep">TREATMENT GOAL</label>
+                          <label className="agep">Treatment Goals</label>
 
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -1961,7 +1934,7 @@ function AntiNatal(props) {
                     <Field name="treatmentplans">
                       {({ input }) => (
                         <div className="cardio2">
-                          <label className="agep">TREATMENT PLAN</label>
+                          <label className="agep">Treatment Plans</label>
 
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -1972,9 +1945,17 @@ function AntiNatal(props) {
               </Grid>
               <br />
               <br />
-              <div style={{ textAlign: "center" }}>
-                <button className="uibuttons">Save</button>
-              </div>
+              
+                       <div className='text-center'>  <Button
+                            variant="contained"
+                             color="primary"
+                              size="small"
+                               type='submit'
+                                  style={{backgroundColor:'#2185d0',textTransform:"capitalize"}}>
+                                   Save
+                                </Button></div>
+
+
             </Paper>
 
            

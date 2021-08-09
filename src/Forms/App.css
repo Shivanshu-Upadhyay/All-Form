@@ -235,8 +235,9 @@
     font-weight: bold;
   }
   
-  
-  
+  tr th input{
+    width: 8rem;
+  }
   
   
   
