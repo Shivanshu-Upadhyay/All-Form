@@ -226,7 +226,7 @@ function Knee() {
               <Grid item md={6} xs={12}>
 
               <div>
-                    <Field name="sur/pro
+                    <Field name="surpro
                     ">
                       {({ input }) => (
                         <div className="fullw10  ">
@@ -330,7 +330,7 @@ function Knee() {
                 </Grid>
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Skin Changes">
+                    <Field name="SkinChanges">
                       {({ input }) => (
                         <div className='fullw10'>
                           <label className="">Skin Changes</label>
@@ -453,7 +453,7 @@ function Knee() {
                 <Grid item md={4} xs={12}>
                   <div className='fullw10'>
                     <label>Giving Away</label>
-            <Field name="Giving Away" component="select">
+            <Field name="GivingAway" component="select">
               <option />
               <option value="gileft">Left</option>
               <option value="giight"> Right</option>
@@ -520,7 +520,7 @@ function Knee() {
 
                 <Grid item md={6} xs={12}>
                   <div>
-                    <Field name="Site Of Pain">
+                    <Field name="SiteOfPain">
                       {({ input }) => (
                         <div className="fullw10">
                           <label className="">Site Of Pain</label>
@@ -791,7 +791,7 @@ function Knee() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={8} xs={12}>
                   <div>
-                    <Field name="VarusStressTest">
+                    <Field name="VarusStressTest88">
                       {({ input }) => (
                         <div className="">
 
@@ -1014,7 +1014,7 @@ function Knee() {
                <Grid container  className='mb-3' spacing={2}>
                  <Grid item md={12} xs={12}>
                     <div>
-                    <Field name="inverstigation">
+                    <Field name="Investigation">
                       {({ input }) => (
                         <div className="">
                           <label className="widthsame bold">Investigation</label>

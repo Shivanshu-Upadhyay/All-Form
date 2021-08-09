@@ -1023,10 +1023,10 @@ function Elbow() {
                <Grid container  className='mb-3' spacing={2}>
                  <Grid item md={12} xs={12}>
                     <div>
-                    <Field name="inverstigation">
+                    <Field name="Investigation">
                       {({ input }) => (
                         <div className="">
-                          <label className="widthsame bold">Inverstigation</label>
+                          <label className="widthsame bold">Investigation</label>
                           <input type="text" {...input} placeholder="" className='lastw'/>
                         </div>
                       )}

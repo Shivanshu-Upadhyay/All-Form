@@ -227,7 +227,7 @@ function Shoulder() {
               <Grid item md={6} xs={12}>
 
               <div>
-                    <Field name="sur/pro
+                    <Field name="surpro
                     ">
                       {({ input }) => (
                         <div className="fullw10  ">
@@ -355,7 +355,7 @@ function Shoulder() {
   <Grid item md={4} xs={12}>
                   <div className='fullw10'>
                     <label>Clicking Sound</label>
-            <Field name="Clicking Sound" component="select">
+            <Field name="ClickingSound" component="select">
               <option />
               <option value="propleft">Left</option>
               <option value="propright"> Right</option>
@@ -404,7 +404,7 @@ function Shoulder() {
 <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={4} xs={12}>
                   <div className='fullw10'>
-                    <Field name="MuscleAtophy-">
+                    <Field name="MuscleAtophy">
                       {({ input }) => (
                         <div className="fullw10">
                           <label className=" ">Muscle Atrophy</label>
@@ -639,7 +639,7 @@ function Shoulder() {
 <Grid container  spacing={2} className='mb-2'>
  <Grid item md={12} xs={12}>
                   <div>
-                    <Field name="Relieving Factor">
+                    <Field name="RelievingFactor">
                       {({ input }) => (
                         <div className='fullw10'>
                           <label className=" ">Relieving Factor</label>
@@ -1026,10 +1026,10 @@ function Shoulder() {
                <Grid container  className='mb-3' spacing={2}>
                  <Grid item md={12} xs={12}>
                     <div>
-                    <Field name="inverstigation">
+                    <Field name="Investigation">
                       {({ input }) => (
                         <div className="">
-                          <label className="widthsame bold">Inverstigation</label>
+                          <label className="widthsame bold">Investigation</label>
                           <input type="text" {...input} placeholder="" className='lastw'/>
                         </div>
                       )}

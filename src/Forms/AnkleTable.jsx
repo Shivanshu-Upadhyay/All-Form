@@ -96,7 +96,7 @@ function AnkleTable() {
                   
 
 <tr>
-                    <th scope="row">Plantorflexion</th>
+                    <th scope="row">Plantarflexion</th>
 
                     <th>
                     <Field name="oa">
@@ -144,7 +144,7 @@ function AnkleTable() {
 
 
                     <tr>
-                    <th scope="row">Inversion</th>
+                    <th scope="row">Investigation</th>
 
                     <th>
                     <Field name="ob">

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { connect } from "react-redux";
-import { addAntiNatalData } from "./antiNatalAction";
+// import { addAntiNatalData } from "./antiNatalAction";
 
 
 import Button from "@material-ui/core/Button";
@@ -1993,7 +1993,9 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps, { addAntiNatalData })(
-  AntiNatal
-);
+export default AntiNatal;
+
+// connect(mapStateToProps, { addAntiNatalData })(
+//   AntiNatal
+// );
 

@@ -534,7 +534,7 @@ function Neuro() {
                     <Field name="InvoluntoryMovements">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className="">Involuntory Movements</label>
+                          <label className="">Involuntary Movements</label>
                            
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -578,8 +578,8 @@ function Neuro() {
                  <Field name="MuscleTone" component="select">
               <option />
               <option value="teleft">Atonic</option>
-              <option value="teight"> Floccid</option>
-              <option value="teilateral"> Spostive</option>
+              <option value="teight"> Flaccid</option>
+              <option value="teilateral"> Spastive</option>
               <option value="teilateral"> Rigid</option>
              
                   </Field>
@@ -798,7 +798,7 @@ function Neuro() {
                     <Field name="AbnorrmalFlexion">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className="">Abnorrmal Flexion</label>
+                          <label className="">Abnormal Flexion</label>
                            
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -843,7 +843,7 @@ function Neuro() {
 
 
 
-<div className='mb-3'> <h6>(c) Verbol Response</h6>  </div>
+<div className='mb-3'> <h6>(c) Verbal Response</h6>  </div>
 <Grid container  spacing={4} className='mb-3'>
                 <Grid item md={6} xs={12}>
                    <div>
@@ -1389,14 +1389,14 @@ function Neuro() {
 
 
 
-<div className='mb-3'> <h5> <b>10.</b> Deep Tenden Reflexes</h5>  </div>
+<div className='mb-3'> <h5> <b>10.</b> Deep Tendon Reflexes</h5>  </div>
 
 
 
 <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Biceps(C5,C6)">
+                    <Field name="Biceps">
                       {({ input }) => (
                         <div className="fullw10">
                           <label className=" "> Biceps(C<sub>5</sub> ,C<sub>6</sub>)</label>
@@ -1425,7 +1425,7 @@ function Neuro() {
                     <Field name="Patellor">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className="">Patellor(L<sub>2</sub> ,L<sub>3</sub> ,L<sub>4</sub>)</label>
+                          <label className="">Patellar(L<sub>2</sub> ,L<sub>3</sub> ,L<sub>4</sub>)</label>
                            
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -1507,8 +1507,8 @@ function Neuro() {
                    <label> <b>12.</b>Involuntary Movement  </label>
                    <Field name="InvoluntoryMovement" component="select">
               <option />
-              <option value="Intentionol Tremor">Intentionol Tremor</option>
-              <option value="Posturol Tremor"> Posturol Tremor</option>
+              <option value="Intentionol Tremor">Intentional Tremor</option>
+              <option value="Posturol Tremor"> Postural Tremor</option>
              <option value="Resting Tremor"> Resting Tremor</option>
              
                   </Field>
@@ -1563,7 +1563,7 @@ function Neuro() {
                     <Field name="FingertoNose">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className="">Finger to Nose</label>
+                          <label className="">Finger to Alternate nose</label>
                            
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -1660,7 +1660,7 @@ function Neuro() {
                     <Field name="Topping(hand & foot)">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className="">Topping(hand & foot)</label>
+                          <label className="">Tapping(hand & foot)</label>
                            
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -1987,10 +1987,10 @@ function Neuro() {
                <Grid container  className='mb-3' spacing={2}>
                  <Grid item md={12} xs={12}>
                     <div>
-                    <Field name="inverstigation">
+                    <Field name="Investigation">
                       {({ input }) => (
                         <div className="">
-                          <label className="widthsame bold">Inverstigation</label>
+                          <label className="widthsame bold">Investigation</label>
                           <input type="text" {...input} placeholder="" className='lastw'/>
                         </div>
                       )}

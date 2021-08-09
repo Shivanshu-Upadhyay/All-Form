@@ -1,8 +1,11 @@
 import React from "react";
 import "./App.css";
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import "./index.css";
 import { Form, Field } from "react-final-form";
 
 
+import { Button } from "@material-ui/core";
 
 import { Paper, Checkbox, Grid, FormControlLabel } from "@material-ui/core";
 
@@ -17,9 +20,9 @@ function Cardio(props) {
   const initialValues = { date: new Date().toISOString().substr(0, 10) };
 
   return (
-    <div className="ssss">
-      <h3>
-        <u>CARDIO-PULMONARY EVALUTION</u>
+    <div className="">
+      <h3 className='text-center mt-3'>
+        <u>Cardio-Pulmonary Evaluation</u>
       </h3>
 
       <Form onSubmit={onSubmit} initialValues={initialValues}>
@@ -31,8 +34,8 @@ function Cardio(props) {
                   <div>
                     <Field name="date">
                       {({ input }) => (
-                        <div className="cardio4">
-                          <label className="ass">Date Of Assessment-</label>
+                        <div className="cardio4 fullw10">
+                          <label className="ass">Date Of Assessment</label>
                           <input type="date" {...input} placeholder="" />
                         </div>
                       )}
@@ -43,9 +46,9 @@ function Cardio(props) {
                   <div>
                     <Field name="patientid">
                       {({ input }) => (
-                        <div className="cardio">
-                          <label>Patient ID-</label>
-                          <input type="number" {...input} placeholder="" />
+                        <div className="cardio fullw10">
+                          <label>Patient ID</label>
+                          <input type="text" {...input} placeholder="" />
                         </div>
                       )}
                     </Field>
@@ -58,7 +61,7 @@ function Cardio(props) {
                   <div>
                     <Field name="name">
                       {({ input }) => (
-                        <div className="cardio">
+                        <div className="cardio fullw10">
                           <label className="name">Name</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -71,47 +74,38 @@ function Cardio(props) {
                   <div>
                     <Field name="age">
                       {({ input }) => (
-                        <div className="cardio1">
+                        <div className="">
                           <label className="age">Age</label>
 
-                          <input type="number" {...input} placeholder="" />
+                          <input type="text" {...input} placeholder="" />
                         </div>
                       )}
                     </Field>
                   </div>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item md={3} xs={12}>
+                  <div className="">
+                    <label className='d-block'>Gender</label>
 
-               
-                  <div className="ww">
-                  <label>Gender-</label>
-
-<label className='p-1 bold1'>
-M:<Field name="gender" type="radio" value="M" component="input" />
-</label>
-
- <label className='p-1 bold1'>
-F:<Field name="gender" type="radio" value="F" component="input" />
-</label>
-
-<label className='p-1 bold1'>
-O:<Field name="gender" type="radio" value="O" component="input" />
-</label>
-
-                
-               
-
-              
-             
-               
+                     <label className='p-1 bold1'>
+      M <Field name="Gender" type="radio" value="M" component="input" />
+          </label>
+                    
+                      <label className='p-1 bold1'>
+      F <Field name="Gender" type="radio" value="F" component="input" />
+          </label>
+                   
+                     <label className='p-1 bold1'>
+      Other <Field name="Gender" type="radio" value="O" component="input" />
+          </label>
                   </div>
                 </Grid>
                 <Grid item xs={3}>
                   <div className="qq">
                     <Field name="occupation">
                       {({ input }) => (
-                        <div className="cardio">
-                          <label>Occupation-</label>
+                        <div className="cardio fullw10">
+                          <label>Occupation</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -160,7 +154,7 @@ O:<Field name="gender" type="radio" value="O" component="input" />
                   <div className="www">
                     <Field name="ward">
                       {({ input }) => (
-                        <div className="cardio5">
+                        <div className="cardio5 fullw10">
                           <label className="ward">Ward</label>
                           <input type="number" {...input} placeholder="" />
                         </div>
@@ -219,47 +213,47 @@ O:<Field name="gender" type="radio" value="O" component="input" />
 
                     {/* <label>Personal History</label> */}
                     <Grid container alignItems="flex-start" spacing={2}>
-                      <Grid item xs={3}>
+                      <Grid item xs={6}>
 
                       <div>
             <label>Personal Medical History</label>
-            <div className="xy">
-              <label className='pr-5'>
+            <div >
+              <label className='mr-5'>
                 <Field
                   name="personalhistory"
                   component="input"
                   type="checkbox"
                   value="Smoking"
-                />
+                className='mr-3'/>
                 Smoking
               </label>
-              <label className='pl-4'>
+              <label className=''>
                 <Field
                   name="personalhistory"
                   component="input"
                   type="checkbox"
                   value="Tobacco"
-                />
+                className='mr-3'/>
                 Tobacco
               </label>
               </div>
-              <div className="xy">
-              <label className='pr-5'>
+              <div >
+              <label className='mr-5'>
                 <Field
                   name="personalhistory"
                   component="input"
                   type="checkbox"
                   value="Alcohol"
-                />
+                className='mr-3'/>
                 Alcohol
               </label>
-              <label className= 'pl-5'>
+              <label className= 'ml-2'>
                 <Field
                   name="personalhistory"
                   component="input"
                   type="checkbox"
                   value="Allergy"
-                />
+                className='mr-3'/>
                 Allergy
               </label>
             </div>
@@ -267,35 +261,7 @@ O:<Field name="gender" type="radio" value="O" component="input" />
 
 
                   
-                        {/* <FormControlLabel
-                          value="smoking"
-                          control={
-                            <Checkbox style={{ transform: "scale(1)" }} />
-                          }
-                          label="Smoking"
-                          labelPlacement="start"
-                        />
-                        <FormControlLabel
-                          value="alcohol"
-                          control={<Checkbox style={{ width: "42px" }} />}
-                          label="Alcohol"
-                          labelPlacement="start"
-                        />
-                      </Grid>
-                      <Grid item xs={3}>
-                        <FormControlLabel
-                          value="tobacco"
-                          control={<Checkbox color="primary" />}
-                          label="Tobacco"
-                          labelPlacement="start"
-                        />
-
-                        <FormControlLabel
-                          value="allergy"
-                          control={<Checkbox style={{ width: "42px" }} />}
-                          label="Allergy"
-                          labelPlacement="start"
-                        /> */}
+                       
 
 
                       </Grid>
@@ -305,27 +271,12 @@ O:<Field name="gender" type="radio" value="O" component="input" />
                   </div>
                 </Grid>
 
-                <Grid item xs={12}>
-                  <Field name="bodychart">
-                    {({ input }) => (
-                      <div  className="field2">
-                        <label className="viral">Body Chart</label>
-                        <textarea
-                        
-                          className="viral27"
-                          row="3"
-                  
-                          {...input}
-                        ></textarea>
-                      </div>
-                    )}
-                  </Field>
-                </Grid>
+
               </Grid>
             </Paper>
 
-            <h3>
-              <u>VITAL SIGNS</u>
+            <h3 className='ml-4'>
+              <u>Vital Signs</u>
             </h3>
 
             <Paper style={{ padding: 50 }}>
@@ -506,8 +457,8 @@ O:<Field name="gender" type="radio" value="O" component="input" />
               <br />
               <br />
             </Paper>
-            <h3>
-              <u>SIGNS OF RESPIRATORY DISTRESS</u>
+            <h3 className='ml-4'>
+              <u>Signs Of Respiratory Distress</u>
             </h3>
             <br />
 
@@ -646,7 +597,7 @@ O:<Field name="gender" type="radio" value="O" component="input" />
                   <div>
                     <Field name="upperlobe">
                       {({ input }) => (
-                        <div className="pp">
+                        <div className=" fullw10">
                           <label>Upper Lobe</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -657,7 +608,7 @@ O:<Field name="gender" type="radio" value="O" component="input" />
                   <div>
                     <Field name="middlelobe">
                       {({ input }) => (
-                        <div className="pp">
+                        <div className=" fullw10">
                           <label>Middle Lobe</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -668,7 +619,7 @@ O:<Field name="gender" type="radio" value="O" component="input" />
                   <div>
                     <Field name="lowerlobe">
                       {({ input }) => (
-                        <div className="pp">
+                        <div className=" fullw10">
                           <label>Lower Lobe</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -681,7 +632,7 @@ O:<Field name="gender" type="radio" value="O" component="input" />
                   <div>
                     <Field name="aopte">
                       {({ input }) => (
-                        <div className="field2">
+                        <div className="field2 fullw10">
                           <label className="viral">
                             Assessment Of Posterior Thoracic Expansion
                           </label>
@@ -699,7 +650,7 @@ O:<Field name="gender" type="radio" value="O" component="input" />
                   <div>
                     <Field name="trachialposition">
                       {({ input }) => (
-                        <div className="pp">
+                        <div className="fullw10">
                           <label>Trachial Position</label>
 
                           <input type="text" {...input} placeholder="" />
@@ -711,7 +662,7 @@ O:<Field name="gender" type="radio" value="O" component="input" />
                   <div>
                     <Field name="heartposition">
                       {({ input }) => (
-                        <div className="pppp">
+                        <div className=" fullw10">
                           <label>Heart Position</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -723,7 +674,7 @@ O:<Field name="gender" type="radio" value="O" component="input" />
                   <div>
                     <Field name="mediastinalposition">
                       {({ input }) => (
-                        <div className="ppp">
+                        <div className=" fullw10">
                           <label>Mediastinal Position</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -734,8 +685,8 @@ O:<Field name="gender" type="radio" value="O" component="input" />
               </Grid>
             </Paper>
 
-            <h3>
-              <u>ON PALPATION</u>
+            <h3 className='ml-4'>
+              <u>On Palpation</u>
             </h3>
 
             <Paper style={{ padding: 50 }}>
@@ -813,8 +764,8 @@ O:<Field name="gender" type="radio" value="O" component="input" />
               </Grid>
             </Paper>
 
-            <h3>
-              <u>ON AUSCULTATION</u>
+            <h3 className='ml-4'>
+              <u>On Auscultation</u>
             </h3>
 
             <Paper style={{ padding: 50 }}>
@@ -858,9 +809,9 @@ O:<Field name="gender" type="radio" value="O" component="input" />
               </Grid>
             </Paper>
 
-            <h2>
-              <u>EXAMINATION</u>
-            </h2>
+            <h3 className='ml-4'>
+              <u>Examination</u>
+            </h3>
 
             <Paper style={{ padding: 50 }}>
               <Grid container alignItems="flex-start" spacing={2}>
@@ -1157,17 +1108,17 @@ O:<Field name="gender" type="radio" value="O" component="input" />
               </Grid>
             </Paper>
 
-            <h3>
-              <u>PHYSIO TREATMENT</u>
+            <h3 className='ml-4'>
+              <u>Physio Treatment</u>
             </h3>
 
-            <Grid container alignItems="flex-start" spacing={1}>
-              <Grid item xs={6}>
+            <Grid container alignItems="flex-start" spacing={2}>
+              <Grid item xs={6}> 
                 <div>
                   <Field name="treatementgoal">
                     {({ input }) => (
-                      <div className="field">
-                        <label> Treatement Goal--</label>
+                      <div className="field fullw10">
+                        <label> Treatement Goal</label>
                         <input type="text" {...input} placeholder="" />
                       </div>
                     )}
@@ -1178,8 +1129,8 @@ O:<Field name="gender" type="radio" value="O" component="input" />
                 <div>
                   <Field name="treatementplan">
                     {({ input }) => (
-                      <div className="field">
-                        <label>Treatement Plan--</label>
+                      <div className="field fullw10">
+                        <label>Treatement Plan</label>
                         <input type="text" {...input} placeholder="" />
                       </div>
                     )}
@@ -1188,9 +1139,14 @@ O:<Field name="gender" type="radio" value="O" component="input" />
               </Grid>
             </Grid>
             <br />
-            <div className ="mb-5"style={{ textAlign: "center" }}>
-              <button className="uiibutton">Save</button>
-            </div>
+            <div className='text-center mb-5'>  <Button
+                            variant="contained"
+                             color="primary"
+                              size="small"
+                               type='submit'
+                                style={{backgroundColor:'#2185d0',textTransform:"capitalize"}} >
+                                   Save
+                                </Button></div>
           </form>
         )}
       </Form>

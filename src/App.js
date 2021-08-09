@@ -10,8 +10,8 @@ import Neuro from './Forms/Neurological';
 import Paediatric from './Forms/Paediatric';
 import PostNatal from './Forms/PostNatal';
 import Cardio from './Forms/Cardio';
+import Shoulder from './Forms/Shoulder'; 
 import AntiNatal from './Forms/AntiNatal';
-import Shoulder from './Forms/Shoulder';
 
 
 
@@ -24,7 +24,6 @@ import Shoulder from './Forms/Shoulder';
         <div>
           <Switch>
             <Route exact path ="/ankleform" component ={Ankle}/>
-            <Route exact path ="/antenatalform" component ={AntiNatal}/>
             <Route exact path ="/cardioform" component ={Cardio}/>
             <Route exact path ="/elbowform" component ={Elbow}/>
             <Route exact path ="/hipform" component ={Hip}/>
@@ -33,6 +32,7 @@ import Shoulder from './Forms/Shoulder';
             <Route exact path ="/paediatricform" component ={Paediatric}/>
             <Route exact path ="/postnatalform" component ={PostNatal}/>
             <Route exact path ="/shoulderform" component ={Shoulder}/>
+            <Route exact path ="/antenatalform" component ={AntiNatal}/>
            
             <Nav/>
             

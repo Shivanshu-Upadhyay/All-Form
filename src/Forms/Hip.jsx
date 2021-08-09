@@ -230,7 +230,7 @@ function Hip() {
               <Grid item md={6} xs={12}>
 
               <div>
-                    <Field name="sur/pro
+                    <Field name="surpro
                     ">
                       {({ input }) => (
                         <div className="fullw10 ">
@@ -345,7 +345,7 @@ function Hip() {
   <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={6} xs={12}>
                   <div>
-                    <Field name="duration of pain">
+                    <Field name="durationofpain">
                       {({ input }) => (
                         <div className='fullw10'>
                           <label className=" ">Duration Of Pain </label>
@@ -358,7 +358,7 @@ function Hip() {
 
                 <Grid item md={6} xs={12}>
                   <div>
-                    <Field name="Site Of Pain">
+                    <Field name="SiteOfPain">
                       {({ input }) => (
                         <div className='fullw10'>
                           <label className="">Site Of Pain </label>
@@ -382,7 +382,7 @@ function Hip() {
                 <Grid item md={6} xs={12}>
                   <div className='fullw10'>
                     <label>Nature Of Pain </label>
-            <Field name="Nature Of Pain" component="select">
+            <Field name="NaturOfPain" component="select">
               <option />
               <option value="Dull">Dull Ache</option>
               <option value="Sharp"> Sharp Shooting</option>
@@ -401,7 +401,7 @@ function Hip() {
   <Grid item md={6} xs={12}>
                   <div className='fullw10'>
                     <label>Pain Type</label>
-                 <Field name="Pain Type" component="select">
+                 <Field name="PainType" component="select">
               <option />
               <option value="Constant">Constant</option>
               <option value="Internittent"> Intermittent </option>
@@ -421,7 +421,7 @@ function Hip() {
                 <Grid item md={6} xs={12}>
                   <div className='fullw10'>
                     <label>Aggravating Factors </label>
-            <Field name="Aggravating Factors" component="select">
+            <Field name="AggravatingFactors" component="select">
               <option />
               <option value="Walk-">Walk</option>
               <option value="Up/Down stairs"> Up/Down stairs</option>
@@ -440,7 +440,7 @@ function Hip() {
   <Grid item md={6} xs={12}>
                   <div className='fullw10'>
                     <label>Relieving Factors </label>
-                 <Field name="Pain Type" component="select">
+                 <Field name="PainType" component="select">
               <option />
               <option value="Rest-">Rest</option>
               <option value="Positioning-"> Positioning</option>
@@ -479,7 +479,7 @@ function Hip() {
 
                <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Skin Changes">
+                    <Field name="SkinChanges">
                       {({ input }) => (
                         <div className="fullw10">
                           <label className=" ">Skin Changes</label>
@@ -528,7 +528,7 @@ function Hip() {
 
                <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Clicking Sound">
+                    <Field name="ClickingSound">
                       {({ input }) => (
                         <div className="fullw10">
                           <label className=" ">Clicking Sound</label>
@@ -542,7 +542,7 @@ function Hip() {
 
                 <Grid item md={4} xs={12}>
                   <div>
-                    <Field name="Muscle Atrophy">
+                    <Field name="MuscleAtrophy">
                       {({ input }) => (
                         <div className="fullw10">
                           <label className=" ">Muscle Atrophy</label>
@@ -565,7 +565,7 @@ function Hip() {
 <Grid container  spacing={2} className='mb-3'>
                 <Grid item md={12} xs={12}>
                   <div>
-                    <Field name="Contractures/Deformities">
+                    <Field name="ContracturesDeformities">
                       {({ input }) => (
                         <div className="fullw100">
                           <label className=" ">Contractures/Deformities</label>
@@ -1011,7 +1011,7 @@ function Hip() {
                <Grid container  className='mb-3' spacing={2}>
                  <Grid item md={12} xs={12}>
                     <div>
-                    <Field name="inverstigation">
+                    <Field name="Investigation">
                       {({ input }) => (
                         <div className="">
                           <label className="widthsame bold">Investigation</label>
