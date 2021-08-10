@@ -212,11 +212,14 @@ function Cardio(props) {
                     <br />
 
                     {/* <label>Personal History</label> */}
-                    <Grid container alignItems="flex-start" spacing={2}>
+                    <Grid container alignItems="flex-start" spacing={4}>
                       <Grid item xs={6}>
 
-                      <div>
+                      
             <label className='mb-5'>Personal Medical History</label>
+
+
+
             <div className=''>
               <label className='mr-5'>
                 <Field
@@ -227,7 +230,7 @@ function Cardio(props) {
                 className='mr-3'/>
                 Smoking
               </label>
-              <label className='ml-4'>
+              <label className='ml-3'>
                 <Field
                   name="personalhistory"
                   component="input"
@@ -253,11 +256,11 @@ function Cardio(props) {
                   component="input"
                   type="checkbox"
                   value="Allergy"
-                className='mr-3'/>
+                className='mr-4 '/>
                 Allergy
               </label>
             </div>
-          </div>
+          
 
 
                   

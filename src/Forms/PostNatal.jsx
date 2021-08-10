@@ -78,7 +78,7 @@ function PostNatal() {
                   <div>
                     <Field name="age">
                       {({ input }) => (
-                        <div className="fullw10">
+                        <div className="cardio fullw10">
                           <label className="">Age</label>
 
                           <input type="number" {...input} placeholder="" />
@@ -1363,28 +1363,56 @@ function PostNatal() {
                       </Field>
                     </Grid>
                   </Grid>
-                  <Grid container alignItems="flex-start" spacing={1}>
-                    <Grid item xs={12}>
-                      <label className="cc">INTENSITY OF PAIN</label>
-                      <Slider
-                        style={{ width: 240, marginTop: 15, marginLeft: 400 }}
-                        min={0}
-                        max={10}
-                        defaultValue={10}
-                        step={1}
-                        marks
-                        getAriaValueText={getText}
-                        valueLabelDisplay="auto"
-                        value={value}
-                        onChange={changeValue}
-                      />
-                    </Grid>
-                  </Grid>
+<br /><br />
+<br /><br />
+<br /><br />
+<br /><br />
+<br /><br />
+
+
+
+
+{/* ++++++++++++++++++++++++++++++++= */}
+
+  
+<Grid container  spacing={2} className='mb-3'>
+
+
+<div className='mb-3'> <h4><u>Intensity Of Pain</u></h4>  </div>
+                <Grid item md={12} xs={12}>
+                  <div>
+                    <label>VAS Score- </label>
+            <Field name="VASScore" component="select">
+              <option />
+              <option value="1">1</option>
+              <option value="2"> 2</option>
+              <option value="3"> 3</option>
+              <option value="4"> 4</option>
+              <option value="5"> 5</option>
+              <option value="6"> 6</option>
+              <option value="7"> 7</option>
+              <option value="8"> 8</option>
+              <option value="9"> 9</option>
+              <option value="10"> 10</option>
+             
+            </Field>
+                  </div>
+                </Grid>
+                 </Grid>
+
+
+
+
+{/* ++++++++++++++++++++++++++++++++= */}
+
+
+
+
                 </Grid>
                 </Paper>
 
                 <h4 className='m-3 '>
-                  <u>OBSERVATION</u>
+                  <u>Observation</u>
                 </h4>
 
                 <Paper style={{ padding: 50 }}>
@@ -1534,7 +1562,7 @@ function PostNatal() {
                     </Grid>
                   </Grid>
                   <h4 className='m-3 '>
-                    <u>ON PALPATION</u>
+                    <u>On Palpation</u>
                   </h4>
                   <Grid container alignItems="flex-start" spacing={2}>
                     <Grid item xs={4}>
@@ -1574,12 +1602,12 @@ function PostNatal() {
                 </Paper>
 
                 <h4 className='m-3 '>
-                  <u>ON EXAMINATION</u>
+                  <u>On Examination</u>
                 </h4>
                 <br />
-                <h4 className='m-3 '> VITALS</h4>
+                <h5 className='ml-3 '> Vitals</h5>
 
-                <Paper style={{ padding: 50 }}>
+                <Paper style={{ paddingLeft: 50 }}>
                   <Grid container alignItems="flex-start" spacing={2}>
                     <Grid item xs={4}>
                       <Field name="respiratoryrate">
@@ -1624,7 +1652,7 @@ function PostNatal() {
                       </div>
                     </Grid>
                   </Grid>
-                  <h4 className='m-3 '>CHEST EXAMINATION</h4>
+                  <h4 className='m-3 '>Chest Examination</h4>
                   <Grid container alignItems="flex-start" spacing={2}>
                     <Grid item xs={4}>
                       <Field name="pattern">
@@ -1676,7 +1704,7 @@ function PostNatal() {
                     </Grid>
                   </Grid>
                 </Paper>
-                <h4 className='m-3 '>EDEMA EVALUATION</h4>
+                <h4 className='m-3 '>Edema Evaluation</h4>
 
                 <Paper style={{ padding: 50 }}>
                   <Grid container alignItems="flex-start" spacing={2}>
@@ -1718,7 +1746,7 @@ function PostNatal() {
                   </Grid>
                 </Paper>
 
-                <Paper style={{ padding: 50 }}>
+                <Paper style={{ paddingLeft: 50 }}>
                   <Grid container alignItems="flex-start" spacing={2}>
                     <Grid item xs={4}>
                       <div>
@@ -1732,10 +1760,8 @@ function PostNatal() {
                         </Field>
                       </div>
                     </Grid>
-                  </Grid>
-                  <br />
-                  <br />
-                  <br />
+                  
+                  
 
                   <Grid item xs={4}>
                     <Field name="deep">
@@ -1747,7 +1773,8 @@ function PostNatal() {
                       )}
                     </Field>
                   </Grid>
-                  <h4 className='m-3 '>BREAST EXAMINATION</h4>
+                  </Grid>
+                  <h4 className='m-3 '>Breast Examination</h4>
 
                   <Grid container alignItems="flex-start" spacing={2}>
                     <Grid item xs={4}>
@@ -1785,11 +1812,12 @@ function PostNatal() {
                     </Grid>
                   </Grid>
                 </Paper>
-
-                <h4 className='m-3 '>INFANT FEEDING</h4>
+              
+                
 
                 <Paper style={{ padding: 50 }}>
-                  <Grid container alignItems="flex-start" spacing={2}>
+                <div><h4 className='m-3 '>Infant Feeding</h4></div>
+                  <Grid container alignItems="flex-start" >
                     <Grid item xs={4}>
                       <Field name="type">
                         {({ input }) => (
@@ -1827,7 +1855,7 @@ function PostNatal() {
                 </Paper>
 
                 <Paper style={{ padding: 50 }}>
-                  <Grid container alignItems="flex-start" spacing={2}>
+                  <Grid container alignItems="flex-start" >
                     <Grid item xs={4}>
                       <Field name="nipp">
                         {({ input }) => (
@@ -1838,10 +1866,8 @@ function PostNatal() {
                         )}
                       </Field>
                     </Grid>
-                  </Grid>
-                  <br />
-                  <br />
-                  <br />
+                  
+                  
                   <Grid item xs={4}>
                     <Field name="sen">
                       {({ input }) => (
@@ -1852,10 +1878,11 @@ function PostNatal() {
                       )}
                     </Field>
                   </Grid>
+                  </Grid>
                 </Paper>
 
                 <Paper style={{ padding: 50 }}>
-                  <Grid container alignItems="flex-start" spacing={2}>
+                  <Grid container alignItems="flex-start" >
                     <Grid item xs={4}>
                       <Field name="type">
                         {({ input }) => (
@@ -1883,7 +1910,7 @@ function PostNatal() {
                 </Paper>
 
                 <Paper style={{ padding: 50 }}>
-                  <Grid container alignItems="flex-start" spacing={2}>
+                  <Grid container alignItems="flex-start" >
                     <Grid item xs={4}>
                       <div>
                         <Field name="sutureer">
@@ -1896,10 +1923,8 @@ function PostNatal() {
                         </Field>
                       </div>
                     </Grid>
-                  </Grid>
-                  <br />
-                  <br />
-                  <br />
+                  
+                  
                   <Grid item xs={4}>
                     <div>
                       <Field name="sptest">
@@ -1912,66 +1937,90 @@ function PostNatal() {
                       </Field>
                     </div>
                   </Grid>
+                  </Grid>
                 </Paper>
                 <h4 className='m-3 '></h4>
 
-                <h4 className='m-3 '>FUNCTIONAL ASSESSMENT</h4>
+                <h4 className='m-3 '>Functional Assessment</h4>
 
                 <Paper style={{ padding: 50 }}>
-                  <Grid container alignItems="flex-start" spacing={2}>
-                    <Grid item xs={4}>
-                      <div>
-                        <Field name="investigate">
-                          {({ input }) => (
-                            <div className="cardio">
-                              <label className="name">INVESTIGATION</label>
-                              <input type="text" {...input} placeholder="" />
-                            </div>
-                          )}
-                        </Field>
-                      </div>
-
-                      <br />
-                      <div>
-                        <Field name="diagnosis">
-                          {({ input }) => (
-                            <div className="cardio">
-                              <label className="name">DIAGNOSIS</label>
-                              <input type="text" {...input} placeholder="" />
-                            </div>
-                          )}
-                        </Field>
-                      </div>
-                    </Grid>
-
-                    <Grid item xs={4}>
-                      <Field name="treatementg">
-                        {({ input }) => (
-                          <div className="cardio">
-                            <label className="name">TREATEMENT GOAL</label>
-                            <input type="text" {...input} placeholder="" />
-                          </div>
-                        )}
-                      </Field>
-
-                      <br />
-                      <div>
-                        <Field name="tplan">
-                          {({ input }) => (
-                            <div className="cardio">
-                              <label className="name">TREATEMENT PLAN</label>
-                              <input type="text" {...input} placeholder="" />
-                            </div>
-                          )}
-                        </Field>
-                      </div>
-                    </Grid>
-                  </Grid>
-                  <br />
-                  <br />
-                  <div style={{ textAlign: "center" }}>
-                    <button className="uibutton">Save</button>
+                  
+               <Grid container  className='mb-3' spacing={2}>
+                 <Grid item md={12} xs={12}>
+                    <div>
+                    <Field name="Investigation">
+                      {({ input }) => (
+                        <div className="">
+                          <label className="widthsame bold">Investigation</label>
+                          <input type="text" {...input} placeholder="" className='lastw'/>
+                        </div>
+                      )}
+                    </Field>
                   </div>
+              </Grid>
+
+                   <Grid item md={12} xs={12}>
+                    <div>
+                    <Field name="diagnosis">
+                      {({ input }) => (
+                        <div className=" ">
+                          <label className="widthsame bold">Diagnosis</label>
+                          <input type="text" {...input} placeholder="" className='lastw' />
+                        </div>
+                      )}
+                    </Field>
+                  </div>
+              </Grid>
+
+
+                 <Grid item md={12} xs={12}>
+                    <div>
+                    <Field name="TREATMENTGOAL">
+                      {({ input }) => (
+                        <div className="">
+                          <label className="widthsame bold">Treatment Goal</label>
+                          <input type="text" {...input} placeholder="" className='lastw'/>
+                        </div>
+                      )}
+                    </Field>
+                  </div>
+              </Grid>
+
+
+               <Grid item md={12} xs={12}>
+                    <div>
+                    <Field name="TreatmentPLAN">
+                      {({ input }) => (
+                        <div className="">
+                          <label className="widthsame bold">Treatment Plan</label>
+                          <input type="text" {...input} placeholder="" className='lastw'/>
+                        </div>
+                      )}
+                    </Field>
+                  </div>
+              </Grid>
+
+
+            
+                    
+                
+         </Grid>
+
+                         
+
+
+                       <div className='text-center'>  <Button
+                            variant="contained"
+                             color="primary"
+                              size="small"
+                               type='submit'
+                                 style={{backgroundColor:'#2185d0',textTransform:"capitalize"}} >
+                                   Save
+                                </Button></div>
+
+
+
+
                 </Paper>
              
             
