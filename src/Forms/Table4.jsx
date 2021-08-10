@@ -170,7 +170,7 @@ function Table4() {
                    
                   </tr>
                   <tr>
-                    <th scope="row">Negative Supposting</th>
+                    <th scope="row">Negative Supporting</th>
                     <td>
                       3-5 months
                     </td>

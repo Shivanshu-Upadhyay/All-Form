@@ -144,7 +144,7 @@ function AnkleTable() {
 
 
                     <tr>
-                    <th scope="row">Investigation</th>
+                    <th scope="row">Inversion</th>
 
                     <th>
                     <Field name="ob">

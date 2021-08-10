@@ -32,7 +32,7 @@ function Table6() {
                   </tr>
 
                   <tr>
-                    <th scope="row">Neek Righting</th>
+                    <th scope="row">Neck Righting</th>
 
                     <td>
                        

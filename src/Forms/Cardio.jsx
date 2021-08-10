@@ -74,7 +74,7 @@ function Cardio(props) {
                   <div>
                     <Field name="age">
                       {({ input }) => (
-                        <div className="">
+                        <div className="cardio">
                           <label className="age">Age</label>
 
                           <input type="text" {...input} placeholder="" />
@@ -101,7 +101,7 @@ function Cardio(props) {
                   </div>
                 </Grid>
                 <Grid item xs={3}>
-                  <div className="qq">
+                  <div className="">
                     <Field name="occupation">
                       {({ input }) => (
                         <div className="cardio fullw10">
@@ -151,7 +151,7 @@ function Cardio(props) {
                   </div>
                 </Grid>
                 <Grid item xs={4}>
-                  <div className="www">
+                  <div className="">
                     <Field name="ward">
                       {({ input }) => (
                         <div className="cardio5 fullw10">
@@ -216,8 +216,8 @@ function Cardio(props) {
                       <Grid item xs={6}>
 
                       <div>
-            <label>Personal Medical History</label>
-            <div >
+            <label className='mb-5'>Personal Medical History</label>
+            <div className=''>
               <label className='mr-5'>
                 <Field
                   name="personalhistory"
@@ -227,7 +227,7 @@ function Cardio(props) {
                 className='mr-3'/>
                 Smoking
               </label>
-              <label className=''>
+              <label className='ml-4'>
                 <Field
                   name="personalhistory"
                   component="input"
@@ -247,7 +247,7 @@ function Cardio(props) {
                 className='mr-3'/>
                 Alcohol
               </label>
-              <label className= 'ml-2'>
+              <label className= 'ml-4'>
                 <Field
                   name="personalhistory"
                   component="input"
@@ -275,9 +275,9 @@ function Cardio(props) {
               </Grid>
             </Paper>
 
-            <h3 className='ml-4'>
+            <h4 className='ml-4'>
               <u>Vital Signs</u>
-            </h3>
+            </h4>
 
             <Paper style={{ padding: 50 }}>
               <Grid container alignItems="flex-start" spacing={2}>
@@ -457,9 +457,9 @@ function Cardio(props) {
               <br />
               <br />
             </Paper>
-            <h3 className='ml-4'>
+            <h4 className='ml-4'>
               <u>Signs Of Respiratory Distress</u>
-            </h3>
+            </h4>
             <br />
 
             <Paper style={{ padding: 50 }}>
@@ -651,7 +651,7 @@ function Cardio(props) {
                     <Field name="trachialposition">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label>Trachial Position</label>
+                          <label>Tracheal Position</label>
 
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -685,9 +685,9 @@ function Cardio(props) {
               </Grid>
             </Paper>
 
-            <h3 className='ml-4'>
+            <h4 className='ml-4'>
               <u>On Palpation</u>
-            </h3>
+            </h4>
 
             <Paper style={{ padding: 50 }}>
               <Grid container alignItems="flex-start" spacing={2}>
@@ -754,7 +754,7 @@ function Cardio(props) {
                     <Field name="onpercusion">
                       {({ input }) => (
                         <div className="cardio">
-                          <label className="name">On Percusion</label>
+                          <label className="name">On Percussion</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -764,9 +764,9 @@ function Cardio(props) {
               </Grid>
             </Paper>
 
-            <h3 className='ml-4'>
+            <h4 className='ml-4'>
               <u>On Auscultation</u>
-            </h3>
+            </h4>
 
             <Paper style={{ padding: 50 }}>
               <Grid container alignItems="flex-start" spacing={1}>
@@ -809,9 +809,9 @@ function Cardio(props) {
               </Grid>
             </Paper>
 
-            <h3 className='ml-4'>
+            <h4 className='ml-4'>
               <u>Examination</u>
-            </h3>
+            </h4>
 
             <Paper style={{ padding: 50 }}>
               <Grid container alignItems="flex-start" spacing={2}>
@@ -918,7 +918,7 @@ function Cardio(props) {
                     <Field name="musulo">
                       {({ input }) => (
                         <div className="cardio">
-                          <label className="name">Musculo-Skeletald </label>
+                          <label className="name">Musculo-skeletal </label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -1002,7 +1002,7 @@ function Cardio(props) {
                     <Field name="ultrasound">
                       {({ input }) => (
                         <div className="cardio">
-                          <label className="name">UltraSound Scan</label>
+                          <label className="name">Ultrasound Scan</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -1106,40 +1106,50 @@ function Cardio(props) {
                   </div>
                 </Grid>
               </Grid>
-            </Paper>
 
-            <h3 className='ml-4'>
+
+<h4 className='m-3'>
               <u>Physio Treatment</u>
-            </h3>
+            </h4>
+               <Grid container  className='mb-3 ' spacing={2}>
+              
 
-            <Grid container alignItems="flex-start" spacing={2}>
-              <Grid item xs={6}> 
-                <div>
-                  <Field name="treatementgoal">
-                    {({ input }) => (
-                      <div className="field fullw10">
-                        <label> Treatement Goal</label>
-                        <input type="text" {...input} placeholder="" />
-                      </div>
-                    )}
-                  </Field>
-                </div>
+                 <Grid item md={12} xs={12}>
+                    <div>
+                    <Field name="TREATMENTGOAL">
+                      {({ input }) => (
+                        <div className="">
+                          <label className="widthsame bold">Treatment Goal</label>
+                          <input type="text" {...input} placeholder="" className='lastw'/>
+                        </div>
+                      )}
+                    </Field>
+                  </div>
               </Grid>
-              <Grid item xs={6}>
-                <div>
-                  <Field name="treatementplan">
-                    {({ input }) => (
-                      <div className="field fullw10">
-                        <label>Treatement Plan</label>
-                        <input type="text" {...input} placeholder="" />
-                      </div>
-                    )}
-                  </Field>
-                </div>
+
+
+               <Grid item md={12} xs={12}>
+                    <div>
+                    <Field name="TreatmentPLAN">
+                      {({ input }) => (
+                        <div className="">
+                          <label className="widthsame bold">Treatment Plan</label>
+                          <input type="text" {...input} placeholder="" className='lastw'/>
+                        </div>
+                      )}
+                    </Field>
+                  </div>
               </Grid>
-            </Grid>
+
+
+            
+                    
+                
+         </Grid>
+
+               
             <br />
-            <div className='text-center mb-5'>  <Button
+            <div className='text-center mb-3'>  <Button
                             variant="contained"
                              color="primary"
                               size="small"
@@ -1147,6 +1157,11 @@ function Cardio(props) {
                                 style={{backgroundColor:'#2185d0',textTransform:"capitalize"}} >
                                    Save
                                 </Button></div>
+
+
+            </Paper>
+
+            
           </form>
         )}
       </Form>

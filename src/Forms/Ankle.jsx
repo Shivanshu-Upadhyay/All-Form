@@ -368,12 +368,7 @@ function Ankle() {
               <option value="propbilateral"> Bilateral</option>
              
             </Field>
-                  </div>
-                </Grid>
-                <Grid item md={4} xs={12}>
-                  <div className='fullw10'>
-
-            <Field name="pro2" component="select">
+             <Field name="pro2" component="select" className='ml-2'>
               <option />
               <option value="normal">Normal</option>
               <option value="absent"> Absent</option>
@@ -381,7 +376,9 @@ function Ankle() {
              
             </Field>
                   </div>
+                  
                 </Grid>
+                
                </Grid>
 
 

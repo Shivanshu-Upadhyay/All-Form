@@ -459,11 +459,13 @@ function AntiNatal(props) {
               <br />
               <Grid item xs={12}>
                 <div>
+
+                <h4 className='m-3'><u>History Of Musculoskeletal Problem</u> </h4>
                   <Field name="historyofmusculoskeletal">
                     {({ input }) => (
                       <div className="cardio2">
                         <label className="ages">
-                          History Of Musculoskeletal Problem
+                          
                         </label>
 
                         <input type="text" {...input} placeholder="" />
@@ -1644,7 +1646,7 @@ function AntiNatal(props) {
               </Grid>
 
               <br />
-              <h5 className='m-3'> Edema Assessment</h5>
+              <h5 className='m-3'>3.Edema Assessment</h5>
 
               <Grid container alignItems="flex-start" spacing={2}>
                 <Grid item xs={4}>
@@ -1873,9 +1875,7 @@ function AntiNatal(props) {
               </Grid>
               <br />
               
-              <h4 className='m-3'>
-                <u>Investigations</u>
-              </h4>
+             
               <Grid container alignItems="flex-start" spacing={2}>
                 <Grid item xs={4}>
                   <Field name="fundalheight">
@@ -1902,6 +1902,22 @@ function AntiNatal(props) {
               <br />
 
               <Grid container alignItems="flex-start" spacing={2}>
+
+                <Grid item xs={12}>
+                  <div>
+                    <Field name="Investigations">
+                      {({ input }) => (
+                        <div className="cardio2">
+                          <label className="agep">Investigations</label>
+
+                          <input type="text" {...input} placeholder="" />
+                        </div>
+                      )}
+                    </Field>
+                  </div>
+                </Grid>
+
+
                 <Grid item xs={12}>
                   <div>
                     <Field name="diagnosis">

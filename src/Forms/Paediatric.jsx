@@ -459,7 +459,7 @@ function Paediatric() {
                 
 
                      <h4 className='m-2 '> <u >Reflex evaluation</u></h4>
-                        <p>Neonatal reflexes</p>
+                        <p><u> Neonatal Reflexes</u></p>
                <Grid container  className='mb-3' spacing={2}>
                  <Grid item md={3} xs={12}>
                     <div>
@@ -724,7 +724,7 @@ function Paediatric() {
                     <Field name="carnialnerve">
                       {({ input }) => (
                         <div className="fullw10 ">
-                          <label className="name">Carnial Nerve Examination</label>
+                          <label className="name">Cranial Nerve Examination</label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}
@@ -1163,7 +1163,7 @@ function Paediatric() {
                     <Field name="CoOrdination">
                       {({ input }) => (
                         <div className="fullw10 ">
-                          <label className="name">Co-Ordination </label>
+                          <label className="name">Co-ordination </label>
                           <input type="text" {...input} placeholder="" />
                         </div>
                       )}

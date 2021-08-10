@@ -1563,7 +1563,7 @@ function Neuro() {
                     <Field name="FingertoNose">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className="">Finger to Alternate nose</label>
+                          <label className="">Finger to  nose</label>
                            
                           <input type="text" {...input} placeholder="" />
                         </div>
@@ -1579,7 +1579,7 @@ function Neuro() {
 <Grid container  spacing={4} className='mb-3'>
                 <Grid item md={6} xs={12}>
                  <div>
-                    <Field name="FingertoTherapist finger">
+                    <Field name="FingertoTherapistfinger">
                       {({ input }) => (
                         <div className="fullw10">
                           <label className="">Finger to Therapist finger</label>
@@ -1596,7 +1596,7 @@ function Neuro() {
                     <Field name="Alternatenosetofinger">
                       {({ input }) => (
                         <div className="fullw10">
-                          <label className="">Alternate nose to finger</label>
+                          <label className="">Finger to Alternate nose</label>
                            
                           <input type="text" {...input} placeholder="" />
                         </div>
